@@ -1,0 +1,21 @@
+[build-system]
+requires = ["setuptools>=77"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "music-ir"
+version = "0.2.0"
+description = "Prototipe IR musik: BM25, BGE-M3, RRF, dan reranking"
+requires-python = ">=3.11"
+dependencies = [
+  "numpy>=1.26,<3", "pandas>=2.2,<4", "pyarrow>=15",
+  "fastapi>=0.115,<1", "uvicorn>=0.30,<1",
+]
+
+[project.optional-dependencies]
+semantic = ["sentence-transformers>=3,<6", "filelock>=3,<5"]
+test = ["httpx>=0.27,<1"]
+
+[tool.setuptools]
+packages = ["music_ir"]
+
