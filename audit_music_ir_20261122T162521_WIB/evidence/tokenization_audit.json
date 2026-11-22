@@ -1,0 +1,13 @@
+{
+  "procedure": "Tokenize active full serialized documents with local tokenizer for pinned revision; no embedding recomputed",
+  "model_name": "BAAI/bge-m3",
+  "revision": "5617a9f61b028005a4858fdac845db406aefb181",
+  "documents": 1437,
+  "special_tokens_to_add": 2,
+  "content_tokens_min": 10,
+  "content_tokens_max": 2217,
+  "would_chunk_over_8192_ids": [],
+  "would_chunk_count": 0,
+  "historical_metadata_chunked_ids": [],
+  "inference_training": false
+}

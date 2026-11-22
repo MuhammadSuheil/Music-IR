@@ -1,0 +1,44 @@
+flowchart TD
+  subgraph OFF[Persiapan dan startup]
+    CSV[CSV bersnapshot] --> MERGE[prepare: gabung per ID]
+    MERGE --> DOCS[corpus JSON dan Parquet]
+    DOCS --> EMB[Encoder pretrained offline]
+    EMB --> VEC[Vektor dokumen dan identitas]
+    DOCS --> INIT[Startup: BM25 lokal dan metadata]
+  end
+  UI[React: AUTO, top_k 30] --> API[POST /api/search via Vite]
+  API --> SEARCH[FastAPI: SearchEngine.search]
+  SEARCH --> MODE{AUTO?}
+  MODE -->|Ya| PLAN[Kutipan, katalog, tema, mood]
+  MODE -->|E1-E5| PARSE[Parser audio dan teks tersisa]
+  PLAN --> ROUTE{Katalog atau audio murni?}
+  ROUTE -->|Ya| NOSEM[Kandidat metadata atau audio]
+  ROUTE -->|Tidak| SEM[Cosine dokumen jika tersedia]
+  PARSE --> EXP[BM25; cosine pada E3-E5]
+  SEM --> BM[BM25 dan bukti lirik kondisional]
+  SEM -->|Gagal pada AUTO| FALL[Warning dan fallback lexical]
+  BM --> ALLOW[Audio mask; AUTO prefilter]
+  FALL --> ALLOW
+  NOSEM --> ALLOW
+  EXP --> AUDIO[Audio seluruh corpus hanya E5]
+  EXP -->|Semantik E3-E5 gagal| ERROR[Error HTTP 503]
+  ALLOW --> UNION[Union dan RRF; deduplikasi]
+  AUDIO --> UNION
+  UNION --> POST[Postfilter audio AUTO dan E5]
+  POST --> FINAL{Mode akhir}
+  FINAL -->|E1-E2| RAW[BM25 mentah]
+  FINAL -->|E3| RRF[RRF, maksimum 100]
+  FINAL -->|AUTO, E4, E5| RANK[100 kandidat; reservasi bukti lirik AUTO]
+  RANK --> THEME{Tema AUTO dan semantik?}
+  THEME -->|Ya| PASS[Potong 24; bagian lirik dan cache]
+  THEME -->|Tidak| FEATURES[Fitur teks, audio, atau katalog]
+  PASS --> SCORE[Skor tema dan bukti bagian]
+  PASS -->|Gagal| DOCFALL[Warning; cosine dokumen; 24 kandidat]
+  DOCFALL --> SCORE
+  FEATURES --> SCORE2[Skor fitur; bonus lirik AUTO]
+  RAW --> DISPLAY[top_k; utama dan serupa dipisah bila berlaku]
+  RRF --> DISPLAY
+  SCORE --> DISPLAY
+  SCORE2 --> DISPLAY
+  DISPLAY --> RESP[Alasan, latency_ms, trace opsional]
+  RESP --> UIRESULT[React menampilkan hasil]

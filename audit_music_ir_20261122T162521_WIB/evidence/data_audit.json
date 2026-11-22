@@ -1,0 +1,276 @@
+{
+  "active_file": "data/processed/corpus.json",
+  "source_file": "data/raw/67d82c39457bc00a38ea384e5a330404e1d39714ccb06fe19d1facf8963d54e1.csv",
+  "source_sha256": "67d82c39457bc00a38ea384e5a330404e1d39714ccb06fe19d1facf8963d54e1",
+  "source_rows": 1686,
+  "source_columns": 30,
+  "column_names": [
+    "energy",
+    "tempo",
+    "danceability",
+    "playlist_genre",
+    "loudness",
+    "liveness",
+    "valence",
+    "track_artist",
+    "time_signature",
+    "speechiness",
+    "track_popularity",
+    "track_href",
+    "uri",
+    "track_album_name",
+    "playlist_name",
+    "analysis_url",
+    "track_id",
+    "track_name",
+    "track_album_release_date",
+    "instrumentalness",
+    "track_album_id",
+    "mode",
+    "key",
+    "duration_ms",
+    "acousticness",
+    "id",
+    "playlist_subgenre",
+    "type",
+    "playlist_id",
+    "lyrics"
+  ],
+  "source_unique_ids": 1437,
+  "missing_id_rows": 0,
+  "non_spotify_format_id_rows": 0,
+  "identical_row_extra_occurrences": 0,
+  "identical_row_groups": 0,
+  "repeated_id_extra_occurrences": 249,
+  "repeated_id_groups": 213,
+  "active_documents": 1437,
+  "active_unique_ids": 1437,
+  "active_corpus_identity": "2708d05f6486650d00bec7db689c2672b61829952f8a9b22ec2c3c9755402758",
+  "rebuild_matches_active_docs": true,
+  "rebuild_audit": {
+    "source_sha256": "67d82c39457bc00a38ea384e5a330404e1d39714ccb06fe19d1facf8963d54e1",
+    "source_rows": 1686,
+    "source_columns": 30,
+    "unique_tracks": 1437,
+    "extra_occurrences": 249,
+    "tracks_without_lyrics": 33,
+    "short_lyrics_ids": [
+      "0U0ldCRmgCqhVvD6ksG63j",
+      "0Z94dtWElamDwU4NrcGoUR"
+    ],
+    "replacement_character_ids": [],
+    "conflicts": [],
+    "corpus_sha256": "2708d05f6486650d00bec7db689c2672b61829952f8a9b22ec2c3c9755402758",
+    "merge_policy": "first nonempty value; playlist fields union; conflicts audited",
+    "source_snapshot": "D:\\CODINGGG\\Music IR\\audit_music_ir_20261122T162521_WIB\\scratch\\rebuild\\raw\\67d82c39457bc00a38ea384e5a330404e1d39714ccb06fe19d1facf8963d54e1.csv",
+    "source_snapshot_included": false,
+    "source_snapshot_note": "Temporary audit-only raw copy removed after comparing rebuilt docs; raw corpus/lyrics intentionally excluded from ZIP, original source identified by SHA"
+  },
+  "lyrics_available": 1404,
+  "without_lyrics": 33,
+  "short_lyrics_definition": "nonempty lyrics with stripped character length <100",
+  "short_lyrics_ids": [
+    "0U0ldCRmgCqhVvD6ksG63j",
+    "0Z94dtWElamDwU4NrcGoUR"
+  ],
+  "numeric": {
+    "energy": {
+      "missing": 0,
+      "types": {
+        "float": 1437
+      },
+      "min": 0.00161,
+      "max": 0.99,
+      "finite_count": 1437
+    },
+    "tempo": {
+      "missing": 0,
+      "types": {
+        "float": 1437
+      },
+      "min": 49.305,
+      "max": 209.688,
+      "finite_count": 1437
+    },
+    "danceability": {
+      "missing": 0,
+      "types": {
+        "float": 1437
+      },
+      "min": 0.136,
+      "max": 0.979,
+      "finite_count": 1437
+    },
+    "loudness": {
+      "missing": 0,
+      "types": {
+        "float": 1437
+      },
+      "min": -43.643,
+      "max": 1.295,
+      "finite_count": 1437
+    },
+    "liveness": {
+      "missing": 0,
+      "types": {
+        "float": 1437
+      },
+      "min": 0.021,
+      "max": 0.95,
+      "finite_count": 1437
+    },
+    "valence": {
+      "missing": 0,
+      "types": {
+        "float": 1437
+      },
+      "min": 0.0348,
+      "max": 0.978,
+      "finite_count": 1437
+    },
+    "speechiness": {
+      "missing": 0,
+      "types": {
+        "float": 1437
+      },
+      "min": 0.0232,
+      "max": 0.848,
+      "finite_count": 1437
+    },
+    "track_popularity": {
+      "missing": 0,
+      "types": {
+        "float": 1437
+      },
+      "min": 68.0,
+      "max": 100.0,
+      "finite_count": 1437
+    },
+    "instrumentalness": {
+      "missing": 0,
+      "types": {
+        "float": 1437
+      },
+      "min": 0.0,
+      "max": 0.971,
+      "finite_count": 1437
+    },
+    "mode": {
+      "missing": 0,
+      "types": {
+        "float": 1437
+      },
+      "min": 0.0,
+      "max": 1.0,
+      "finite_count": 1437
+    },
+    "key": {
+      "missing": 0,
+      "types": {
+        "float": 1437
+      },
+      "min": 0.0,
+      "max": 11.0,
+      "finite_count": 1437
+    },
+    "duration_ms": {
+      "missing": 0,
+      "types": {
+        "float": 1437
+      },
+      "min": 61673.0,
+      "max": 547107.0,
+      "finite_count": 1437
+    },
+    "acousticness": {
+      "missing": 0,
+      "types": {
+        "float": 1437
+      },
+      "min": 1.33e-05,
+      "max": 0.995,
+      "finite_count": 1437
+    },
+    "time_signature": {
+      "missing": 0,
+      "types": {
+        "float": 1437
+      },
+      "min": 1.0,
+      "max": 5.0,
+      "finite_count": 1437
+    }
+  },
+  "active_fields": [
+    "acousticness",
+    "analysis_url",
+    "danceability",
+    "duration_ms",
+    "energy",
+    "id",
+    "instrumentalness",
+    "key",
+    "liveness",
+    "loudness",
+    "lyrics",
+    "lyrics_available",
+    "lyrics_match_status",
+    "lyrics_normalized",
+    "mode",
+    "playlist_genre",
+    "playlist_id",
+    "playlist_name",
+    "playlist_subgenre",
+    "speechiness",
+    "tempo",
+    "time_signature",
+    "track_album_id",
+    "track_album_name",
+    "track_album_release_date",
+    "track_artist",
+    "track_artist_normalized",
+    "track_href",
+    "track_id",
+    "track_name",
+    "track_name_normalized",
+    "track_popularity",
+    "type",
+    "uri",
+    "valence"
+  ],
+  "genre_track_counts": {
+    "punk": 50,
+    "hip-hop": 216,
+    "ambient": 61,
+    "electronic": 137,
+    "pop": 336,
+    "r&b": 50,
+    "latin": 175,
+    "rock": 212,
+    "gaming": 100,
+    "folk": 32,
+    "arabic": 50,
+    "indian": 9,
+    "world": 4,
+    "korean": 8,
+    "k-pop": 11,
+    "blues": 45,
+    "brazilian": 14,
+    "j-pop": 11,
+    "afrobeats": 15,
+    "metal": 18,
+    "classical": 10,
+    "reggae": 4,
+    "turkish": 7,
+    "indie": 4,
+    "soul": 2,
+    "country": 3,
+    "lofi": 2,
+    "jazz": 1
+  },
+  "tracks_multiple_genres": 143,
+  "lyrics_match_status": {
+    "unknown": 1437
+  },
+  "provenance": "raw SHA matches historical prepare metadata; collection method and recording-to-lyrics correctness not established"
+}

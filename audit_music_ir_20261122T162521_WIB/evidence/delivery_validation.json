@@ -1,0 +1,11 @@
+{
+  "json_files_parsed": 62,
+  "claim_records": 22,
+  "markdown_links_checked": true,
+  "annotation_rows": 191,
+  "annotation_grades_blank": true,
+  "report_required_sections": 12,
+  "errors": [],
+  "passed": true,
+  "note": "Mechanical consistency checks; does not certify retrieval effectiveness or complete external-service coverage"
+}

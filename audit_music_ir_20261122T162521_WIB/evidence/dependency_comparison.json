@@ -1,0 +1,413 @@
+{
+  "backend_lock_packages": 57,
+  "backend_lock_vs_installed": [
+    {
+      "name": "annotated-doc",
+      "locked": "0.0.5",
+      "installed": "0.0.5",
+      "matches": true
+    },
+    {
+      "name": "annotated-types",
+      "locked": "0.8.0",
+      "installed": "0.8.0",
+      "matches": true
+    },
+    {
+      "name": "anyio",
+      "locked": "4.16.0",
+      "installed": "4.16.0",
+      "matches": true
+    },
+    {
+      "name": "certifi",
+      "locked": "2026.10.23",
+      "installed": "2026.10.23",
+      "matches": true
+    },
+    {
+      "name": "click",
+      "locked": "8.5.1",
+      "installed": "8.5.1",
+      "matches": true
+    },
+    {
+      "name": "cloudpickle",
+      "locked": "3.1.2",
+      "installed": "3.1.2",
+      "matches": true
+    },
+    {
+      "name": "colorama",
+      "locked": "0.4.6",
+      "installed": "0.4.6",
+      "matches": true
+    },
+    {
+      "name": "fastapi",
+      "locked": "0.162.2",
+      "installed": "0.162.2",
+      "matches": true
+    },
+    {
+      "name": "filelock",
+      "locked": "4.2.9",
+      "installed": "4.2.9",
+      "matches": true
+    },
+    {
+      "name": "fsspec",
+      "locked": "2026.9.0",
+      "installed": "2026.9.0",
+      "matches": true
+    },
+    {
+      "name": "h11",
+      "locked": "0.16.0",
+      "installed": "0.16.0",
+      "matches": true
+    },
+    {
+      "name": "hf-xet",
+      "locked": "1.8.0",
+      "installed": "1.8.0",
+      "matches": true
+    },
+    {
+      "name": "httpcore",
+      "locked": "1.0.9",
+      "installed": "1.0.9",
+      "matches": true
+    },
+    {
+      "name": "httpcore2",
+      "locked": "2.16.0",
+      "installed": "2.16.0",
+      "matches": true
+    },
+    {
+      "name": "httpx",
+      "locked": "0.28.1",
+      "installed": "0.28.1",
+      "matches": true
+    },
+    {
+      "name": "httpx2",
+      "locked": "2.16.0",
+      "installed": "2.16.0",
+      "matches": true
+    },
+    {
+      "name": "huggingface-hub",
+      "locked": "2.4.0",
+      "installed": null,
+      "matches": false
+    },
+    {
+      "name": "idna",
+      "locked": "3.20",
+      "installed": "3.20",
+      "matches": true
+    },
+    {
+      "name": "jinja2",
+      "locked": "3.1.6",
+      "installed": "3.1.6",
+      "matches": true
+    },
+    {
+      "name": "joblib",
+      "locked": "1.6.0",
+      "installed": "1.6.0",
+      "matches": true
+    },
+    {
+      "name": "markdown-it-py",
+      "locked": "4.2.0",
+      "installed": "4.2.0",
+      "matches": true
+    },
+    {
+      "name": "markupsafe",
+      "locked": "3.0.4",
+      "installed": "3.0.4",
+      "matches": true
+    },
+    {
+      "name": "mdurl",
+      "locked": "0.1.2",
+      "installed": "0.1.2",
+      "matches": true
+    },
+    {
+      "name": "mpmath",
+      "locked": "1.3.0",
+      "installed": "1.3.0",
+      "matches": true
+    },
+    {
+      "name": "narwhals",
+      "locked": "2.28.0",
+      "installed": "2.28.0",
+      "matches": true
+    },
+    {
+      "name": "networkx",
+      "locked": "3.7",
+      "installed": "3.7",
+      "matches": true
+    },
+    {
+      "name": "numpy",
+      "locked": "2.5.4",
+      "installed": "2.5.4",
+      "matches": true
+    },
+    {
+      "name": "opentelemetry-api",
+      "locked": "1.45.2",
+      "installed": "1.45.2",
+      "matches": true
+    },
+    {
+      "name": "packaging",
+      "locked": "26.3",
+      "installed": "26.3",
+      "matches": true
+    },
+    {
+      "name": "pandas",
+      "locked": "3.1.1",
+      "installed": "3.1.1",
+      "matches": true
+    },
+    {
+      "name": "pyarrow",
+      "locked": "26.0.1",
+      "installed": "26.0.1",
+      "matches": true
+    },
+    {
+      "name": "pydantic",
+      "locked": "2.14.3",
+      "installed": "2.14.3",
+      "matches": true
+    },
+    {
+      "name": "pydantic-core",
+      "locked": "2.50.4",
+      "installed": null,
+      "matches": false
+    },
+    {
+      "name": "pygments",
+      "locked": "2.21.0",
+      "installed": "2.21.0",
+      "matches": true
+    },
+    {
+      "name": "python-dateutil",
+      "locked": "4.0.0",
+      "installed": "4.0.0",
+      "matches": true
+    },
+    {
+      "name": "pyyaml",
+      "locked": "6.0.3",
+      "installed": "6.0.3",
+      "matches": true
+    },
+    {
+      "name": "regex",
+      "locked": "2026.11.9",
+      "installed": "2026.11.9",
+      "matches": true
+    },
+    {
+      "name": "rich",
+      "locked": "15.0.0",
+      "installed": "15.0.0",
+      "matches": true
+    },
+    {
+      "name": "safetensors",
+      "locked": "0.8.0",
+      "installed": "0.8.0",
+      "matches": true
+    },
+    {
+      "name": "scikit-learn",
+      "locked": "1.9.1",
+      "installed": "1.9.1",
+      "matches": true
+    },
+    {
+      "name": "scipy",
+      "locked": "1.18.1",
+      "installed": "1.18.1",
+      "matches": true
+    },
+    {
+      "name": "sentence-transformers",
+      "locked": "5.7.0",
+      "installed": "5.7.0",
+      "matches": true
+    },
+    {
+      "name": "setuptools",
+      "locked": "84.2.1",
+      "installed": "84.2.1",
+      "matches": true
+    },
+    {
+      "name": "shellingham",
+      "locked": "1.5.4",
+      "installed": "1.5.4",
+      "matches": true
+    },
+    {
+      "name": "starlette",
+      "locked": "1.10.0",
+      "installed": "1.10.0",
+      "matches": true
+    },
+    {
+      "name": "sympy",
+      "locked": "1.14.0",
+      "installed": "1.14.0",
+      "matches": true
+    },
+    {
+      "name": "threadpoolctl",
+      "locked": "3.8.0",
+      "installed": "3.8.0",
+      "matches": true
+    },
+    {
+      "name": "tokenizers",
+      "locked": "0.23.3",
+      "installed": "0.23.3",
+      "matches": true
+    },
+    {
+      "name": "torch",
+      "locked": "2.15.0",
+      "installed": "2.15.0",
+      "matches": true
+    },
+    {
+      "name": "tqdm",
+      "locked": "4.70.1",
+      "installed": "4.70.1",
+      "matches": true
+    },
+    {
+      "name": "transformers",
+      "locked": "5.22.2",
+      "installed": "5.22.2",
+      "matches": true
+    },
+    {
+      "name": "truststore",
+      "locked": "0.10.5",
+      "installed": "0.10.5",
+      "matches": true
+    },
+    {
+      "name": "typer",
+      "locked": "0.28.0",
+      "installed": "0.28.0",
+      "matches": true
+    },
+    {
+      "name": "typing-extensions",
+      "locked": "4.16.0",
+      "installed": null,
+      "matches": false
+    },
+    {
+      "name": "typing-inspection",
+      "locked": "0.4.5",
+      "installed": "0.4.5",
+      "matches": true
+    },
+    {
+      "name": "tzdata",
+      "locked": "2026.6",
+      "installed": "2026.6",
+      "matches": true
+    },
+    {
+      "name": "uvicorn",
+      "locked": "0.54.0",
+      "installed": "0.54.0",
+      "matches": true
+    }
+  ],
+  "frontend": [
+    {
+      "name": "react",
+      "declared": "19.3.1",
+      "lockfile": "19.3.1",
+      "installed": "19.3.1"
+    },
+    {
+      "name": "react-dom",
+      "declared": "19.3.1",
+      "lockfile": "19.3.1",
+      "installed": "19.3.1"
+    },
+    {
+      "name": "lucide-react",
+      "declared": "1.73.0",
+      "lockfile": "1.73.0",
+      "installed": "1.73.0"
+    },
+    {
+      "name": "@types/node",
+      "declared": "^24.0.0",
+      "lockfile": "24.19.2",
+      "installed": "24.19.2"
+    },
+    {
+      "name": "@playwright/test",
+      "declared": "1.65.1",
+      "lockfile": "1.65.1",
+      "installed": "1.65.1"
+    },
+    {
+      "name": "@types/react",
+      "declared": "19.3.0",
+      "lockfile": "19.3.0",
+      "installed": "19.3.0"
+    },
+    {
+      "name": "@types/react-dom",
+      "declared": "19.3.0",
+      "lockfile": "19.3.0",
+      "installed": "19.3.0"
+    },
+    {
+      "name": "@vitejs/plugin-react",
+      "declared": "6.3.0",
+      "lockfile": "6.3.0",
+      "installed": "6.3.0"
+    },
+    {
+      "name": "typescript",
+      "declared": "7.0.2",
+      "lockfile": "7.0.2",
+      "installed": "7.0.2"
+    },
+    {
+      "name": "vite",
+      "declared": "8.3.8",
+      "lockfile": "8.3.8",
+      "installed": "8.3.8"
+    }
+  ],
+  "declared_backend": "evidence/source/pyproject.toml",
+  "installed_inventory": "runtime.json; frontend_installed.json",
+  "node": "v24.15.0",
+  "npm": "11.12.1"
+}

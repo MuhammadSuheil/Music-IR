@@ -1,0 +1,12 @@
+{
+  "command": [
+    "npm.cmd",
+    "run",
+    "dev"
+  ],
+  "cwd": "D:\\CODINGGG\\Music IR\\frontend",
+  "pid": 34272,
+  "started_epoch": 1795339753.6321142,
+  "backend_env": null,
+  "reload": false
+}

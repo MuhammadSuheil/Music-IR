@@ -1,0 +1,15 @@
+{
+  "command": [
+    "netstat",
+    "-ano"
+  ],
+  "cwd": "D:\\CODINGGG\\Music IR",
+  "started_at": "2026-11-22T16:28:12.296582+07:00",
+  "duration_seconds": 0.035944600007496774,
+  "exit_code": 0,
+  "stdout": "",
+  "stderr": "",
+  "ended_at": "2026-11-22T16:28:12.332527+07:00",
+  "start_time_method": "reconstructed from completion timestamp minus measured perf_counter duration; original collector mislabeled end as start",
+  "privacy_filter": "Output retained only for local listening ports 8000,8501,9200; unrelated network addresses omitted"
+}

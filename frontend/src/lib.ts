@@ -24,7 +24,7 @@ export type RankingPolicy = { score_kind: 'eligibility' | 'audio_preference' | '
 export type MoodBasis = 'lyrics' | 'audio' | 'both'
 export type Playlist = { id: string; name: string; tracks: Track[] }
 export type Library = { liked: Track[]; playlists: Playlist[] }
-export type Page = { kind: 'home' | 'liked' | 'catalog' | 'artists' | 'benchmark' } |
+export type Page = { kind: 'home' | 'liked' | 'catalog' | 'artists' | 'benchmark' | 'relevance' } |
   { kind: 'search'; query: string } | { kind: 'genre'; genre: string } | { kind: 'playlist'; id: string }
 
 export async function api<T>(path: string, options: RequestInit = {}): Promise<T> {
@@ -59,7 +59,7 @@ export function readPage(): Page {
   if (params.get('genre')) return { kind: 'genre', genre: params.get('genre')! }
   if (params.get('playlist')) return { kind: 'playlist', id: params.get('playlist')! }
   const kind = params.get('view')
-  return { kind: kind === 'liked' || kind === 'catalog' || kind === 'artists' || kind === 'benchmark' ? kind : 'home' }
+  return { kind: kind === 'liked' || kind === 'catalog' || kind === 'artists' || kind === 'benchmark' || kind === 'relevance' ? kind : 'home' }
 }
 export function pageUrl(page: Page) {
   const params = new URLSearchParams()

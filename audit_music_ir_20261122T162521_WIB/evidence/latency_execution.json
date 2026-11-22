@@ -1,0 +1,15 @@
+{
+  "command": [
+    "D:\\CODINGGG\\Music IR\\.venv\\Scripts\\python.exe",
+    "D:\\CODINGGG\\Music IR\\audit_music_ir_20261122T162521_WIB\\audit_search.py",
+    "latency"
+  ],
+  "cwd": "D:\\CODINGGG\\Music IR",
+  "started_at": "2026-11-22T16:33:41.859480+07:00",
+  "duration_seconds": 74.59174709999934,
+  "exit_code": 0,
+  "stdout": "warmup E4\nwarmup E2\nwarmup E3\nwarmup E5\nwarmup E1\nwarmup AUTO\nlatency 1 / 180\nlatency 19 / 180\nlatency 37 / 180\nlatency 55 / 180\nlatency 73 / 180\nlatency 91 / 180\nlatency 109 / 180\nlatency 127 / 180\nlatency 145 / 180\nlatency 163 / 180\n",
+  "stderr": "",
+  "ended_at": "2026-11-22T16:34:56.451227+07:00",
+  "start_time_method": "reconstructed from completion timestamp minus measured perf_counter duration; original collector mislabeled end as start"
+}

@@ -1,0 +1,17 @@
+[
+  {
+    "url": "http://127.0.0.1:8000/health",
+    "error": "URLError(ConnectionRefusedError(10061, 'No connection could be made because the target machine actively refused it', None, 10061, None))",
+    "seconds": 2.095185499987565
+  },
+  {
+    "url": "http://127.0.0.1:8501/",
+    "error": "URLError(ConnectionRefusedError(10061, 'No connection could be made because the target machine actively refused it', None, 10061, None))",
+    "seconds": 2.0579420999856666
+  },
+  {
+    "url": "http://127.0.0.1:9200/",
+    "error": "URLError(ConnectionRefusedError(10061, 'No connection could be made because the target machine actively refused it', None, 10061, None))",
+    "seconds": 2.0473682999727316
+  }
+]

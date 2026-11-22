@@ -1,0 +1,13 @@
+{
+  "command": [
+    "node",
+    "D:\\CODINGGG\\Music IR\\audit_music_ir_20261122T162521_WIB\\audit_ui.cjs"
+  ],
+  "cwd": "D:\\CODINGGG\\Music IR",
+  "started_at": "2026-11-22T16:38:10.774840+07:00",
+  "ended_at": "2026-11-22T16:38:14.338688+07:00",
+  "duration_seconds": 3.5638761000009254,
+  "exit_code": 0,
+  "stdout": "{\"screenshots\":4,\"real_backend\":true,\"mocked_routes\":false,\"page_errors\":[]}\n",
+  "stderr": ""
+}

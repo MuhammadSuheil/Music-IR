@@ -1,0 +1,902 @@
+[
+  {
+    "mode": "E4",
+    "query_id": "L-title",
+    "index": 0,
+    "status": 200,
+    "http_ms": 360.274400038179,
+    "engine_ms": 233.31,
+    "model_loading_ms": 0.002,
+    "passages": {
+      "passages": 0,
+      "encoded": 0,
+      "cache_hits": 0
+    },
+    "error": null
+  },
+  {
+    "mode": "E4",
+    "query_id": "L-artist",
+    "index": 1,
+    "status": 200,
+    "http_ms": 379.31579997530207,
+    "engine_ms": 217.83,
+    "model_loading_ms": 0.002,
+    "passages": {
+      "passages": 0,
+      "encoded": 0,
+      "cache_hits": 0
+    },
+    "error": null
+  },
+  {
+    "mode": "E4",
+    "query_id": "L-lyrics",
+    "index": 2,
+    "status": 200,
+    "http_ms": 487.4518999713473,
+    "engine_ms": 342.75,
+    "model_loading_ms": 0.002,
+    "passages": {
+      "passages": 0,
+      "encoded": 0,
+      "cache_hits": 0
+    },
+    "error": null
+  },
+  {
+    "mode": "E4",
+    "query_id": "L-theme",
+    "index": 3,
+    "status": 200,
+    "http_ms": 411.1800999962725,
+    "engine_ms": 261.4,
+    "model_loading_ms": 0.003,
+    "passages": {
+      "passages": 0,
+      "encoded": 0,
+      "cache_hits": 0
+    },
+    "error": null
+  },
+  {
+    "mode": "E4",
+    "query_id": "L-audio",
+    "index": 4,
+    "status": 200,
+    "http_ms": 132.59749999269843,
+    "engine_ms": 1.81,
+    "model_loading_ms": 0.0,
+    "passages": {
+      "passages": 0,
+      "encoded": 0,
+      "cache_hits": 0
+    },
+    "error": null
+  },
+  {
+    "mode": "E4",
+    "query_id": "L-mixed",
+    "index": 5,
+    "status": 200,
+    "http_ms": 447.6936000282876,
+    "engine_ms": 296.53,
+    "model_loading_ms": 0.002,
+    "passages": {
+      "passages": 0,
+      "encoded": 0,
+      "cache_hits": 0
+    },
+    "error": null
+  },
+  {
+    "mode": "E4",
+    "query_id": "L-title",
+    "index": 6,
+    "status": 200,
+    "http_ms": 389.4288999726996,
+    "engine_ms": 250.12,
+    "model_loading_ms": 0.003,
+    "passages": {
+      "passages": 0,
+      "encoded": 0,
+      "cache_hits": 0
+    },
+    "error": null
+  },
+  {
+    "mode": "E4",
+    "query_id": "L-artist",
+    "index": 7,
+    "status": 200,
+    "http_ms": 370.8543999819085,
+    "engine_ms": 242.3,
+    "model_loading_ms": 0.002,
+    "passages": {
+      "passages": 0,
+      "encoded": 0,
+      "cache_hits": 0
+    },
+    "error": null
+  },
+  {
+    "mode": "E4",
+    "query_id": "L-lyrics",
+    "index": 8,
+    "status": 200,
+    "http_ms": 521.0277999867685,
+    "engine_ms": 385.42,
+    "model_loading_ms": 0.003,
+    "passages": {
+      "passages": 0,
+      "encoded": 0,
+      "cache_hits": 0
+    },
+    "error": null
+  },
+  {
+    "mode": "E4",
+    "query_id": "L-theme",
+    "index": 9,
+    "status": 200,
+    "http_ms": 306.2791000120342,
+    "engine_ms": 201.14,
+    "model_loading_ms": 0.004,
+    "passages": {
+      "passages": 0,
+      "encoded": 0,
+      "cache_hits": 0
+    },
+    "error": null
+  },
+  {
+    "mode": "E2",
+    "query_id": "L-title",
+    "index": 0,
+    "status": 200,
+    "http_ms": 127.6423999806866,
+    "engine_ms": 33.62,
+    "model_loading_ms": 0.0,
+    "passages": {
+      "passages": 0,
+      "encoded": 0,
+      "cache_hits": 0
+    },
+    "error": null
+  },
+  {
+    "mode": "E2",
+    "query_id": "L-artist",
+    "index": 1,
+    "status": 200,
+    "http_ms": 91.81990002980456,
+    "engine_ms": 11.4,
+    "model_loading_ms": 0.0,
+    "passages": {
+      "passages": 0,
+      "encoded": 0,
+      "cache_hits": 0
+    },
+    "error": null
+  },
+  {
+    "mode": "E2",
+    "query_id": "L-lyrics",
+    "index": 2,
+    "status": 200,
+    "http_ms": 155.86449997499585,
+    "engine_ms": 45.14,
+    "model_loading_ms": 0.0,
+    "passages": {
+      "passages": 0,
+      "encoded": 0,
+      "cache_hits": 0
+    },
+    "error": null
+  },
+  {
+    "mode": "E2",
+    "query_id": "L-theme",
+    "index": 3,
+    "status": 200,
+    "http_ms": 88.78970000660047,
+    "engine_ms": 4.36,
+    "model_loading_ms": 0.0,
+    "passages": {
+      "passages": 0,
+      "encoded": 0,
+      "cache_hits": 0
+    },
+    "error": null
+  },
+  {
+    "mode": "E2",
+    "query_id": "L-audio",
+    "index": 4,
+    "status": 200,
+    "http_ms": 105.34469998674467,
+    "engine_ms": 0.68,
+    "model_loading_ms": 0.0,
+    "passages": {
+      "passages": 0,
+      "encoded": 0,
+      "cache_hits": 0
+    },
+    "error": null
+  },
+  {
+    "mode": "E2",
+    "query_id": "L-mixed",
+    "index": 5,
+    "status": 200,
+    "http_ms": 129.6427000197582,
+    "engine_ms": 17.29,
+    "model_loading_ms": 0.0,
+    "passages": {
+      "passages": 0,
+      "encoded": 0,
+      "cache_hits": 0
+    },
+    "error": null
+  },
+  {
+    "mode": "E2",
+    "query_id": "L-title",
+    "index": 6,
+    "status": 200,
+    "http_ms": 180.01870001899078,
+    "engine_ms": 35.17,
+    "model_loading_ms": 0.0,
+    "passages": {
+      "passages": 0,
+      "encoded": 0,
+      "cache_hits": 0
+    },
+    "error": null
+  },
+  {
+    "mode": "E2",
+    "query_id": "L-artist",
+    "index": 7,
+    "status": 200,
+    "http_ms": 116.47359997732565,
+    "engine_ms": 11.59,
+    "model_loading_ms": 0.0,
+    "passages": {
+      "passages": 0,
+      "encoded": 0,
+      "cache_hits": 0
+    },
+    "error": null
+  },
+  {
+    "mode": "E2",
+    "query_id": "L-lyrics",
+    "index": 8,
+    "status": 200,
+    "http_ms": 208.7710999767296,
+    "engine_ms": 72.37,
+    "model_loading_ms": 0.0,
+    "passages": {
+      "passages": 0,
+      "encoded": 0,
+      "cache_hits": 0
+    },
+    "error": null
+  },
+  {
+    "mode": "E2",
+    "query_id": "L-theme",
+    "index": 9,
+    "status": 200,
+    "http_ms": 91.11169999232516,
+    "engine_ms": 5.11,
+    "model_loading_ms": 0.0,
+    "passages": {
+      "passages": 0,
+      "encoded": 0,
+      "cache_hits": 0
+    },
+    "error": null
+  },
+  {
+    "mode": "E3",
+    "query_id": "L-title",
+    "index": 0,
+    "status": 200,
+    "http_ms": 297.0428999979049,
+    "engine_ms": 185.58,
+    "model_loading_ms": 0.001,
+    "passages": {
+      "passages": 0,
+      "encoded": 0,
+      "cache_hits": 0
+    },
+    "error": null
+  },
+  {
+    "mode": "E3",
+    "query_id": "L-artist",
+    "index": 1,
+    "status": 200,
+    "http_ms": 290.5625999555923,
+    "engine_ms": 165.67,
+    "model_loading_ms": 0.002,
+    "passages": {
+      "passages": 0,
+      "encoded": 0,
+      "cache_hits": 0
+    },
+    "error": null
+  },
+  {
+    "mode": "E3",
+    "query_id": "L-lyrics",
+    "index": 2,
+    "status": 200,
+    "http_ms": 406.34220000356436,
+    "engine_ms": 258.3,
+    "model_loading_ms": 0.003,
+    "passages": {
+      "passages": 0,
+      "encoded": 0,
+      "cache_hits": 0
+    },
+    "error": null
+  },
+  {
+    "mode": "E3",
+    "query_id": "L-theme",
+    "index": 3,
+    "status": 200,
+    "http_ms": 324.5679999818094,
+    "engine_ms": 198.22,
+    "model_loading_ms": 0.002,
+    "passages": {
+      "passages": 0,
+      "encoded": 0,
+      "cache_hits": 0
+    },
+    "error": null
+  },
+  {
+    "mode": "E3",
+    "query_id": "L-audio",
+    "index": 4,
+    "status": 200,
+    "http_ms": 100.62370001105592,
+    "engine_ms": 0.78,
+    "model_loading_ms": 0.0,
+    "passages": {
+      "passages": 0,
+      "encoded": 0,
+      "cache_hits": 0
+    },
+    "error": null
+  },
+  {
+    "mode": "E3",
+    "query_id": "L-mixed",
+    "index": 5,
+    "status": 200,
+    "http_ms": 347.6986000314355,
+    "engine_ms": 216.36,
+    "model_loading_ms": 0.003,
+    "passages": {
+      "passages": 0,
+      "encoded": 0,
+      "cache_hits": 0
+    },
+    "error": null
+  },
+  {
+    "mode": "E3",
+    "query_id": "L-title",
+    "index": 6,
+    "status": 200,
+    "http_ms": 322.59349996456876,
+    "engine_ms": 185.3,
+    "model_loading_ms": 0.002,
+    "passages": {
+      "passages": 0,
+      "encoded": 0,
+      "cache_hits": 0
+    },
+    "error": null
+  },
+  {
+    "mode": "E3",
+    "query_id": "L-artist",
+    "index": 7,
+    "status": 200,
+    "http_ms": 300.1757999882102,
+    "engine_ms": 182.97,
+    "model_loading_ms": 0.002,
+    "passages": {
+      "passages": 0,
+      "encoded": 0,
+      "cache_hits": 0
+    },
+    "error": null
+  },
+  {
+    "mode": "E3",
+    "query_id": "L-lyrics",
+    "index": 8,
+    "status": 200,
+    "http_ms": 431.38960003852844,
+    "engine_ms": 292.41,
+    "model_loading_ms": 0.002,
+    "passages": {
+      "passages": 0,
+      "encoded": 0,
+      "cache_hits": 0
+    },
+    "error": null
+  },
+  {
+    "mode": "E3",
+    "query_id": "L-theme",
+    "index": 9,
+    "status": 200,
+    "http_ms": 311.3421999732964,
+    "engine_ms": 199.37,
+    "model_loading_ms": 0.001,
+    "passages": {
+      "passages": 0,
+      "encoded": 0,
+      "cache_hits": 0
+    },
+    "error": null
+  },
+  {
+    "mode": "E5",
+    "query_id": "L-title",
+    "index": 0,
+    "status": 200,
+    "http_ms": 423.0865999707021,
+    "engine_ms": 222.57,
+    "model_loading_ms": 0.001,
+    "passages": {
+      "passages": 0,
+      "encoded": 0,
+      "cache_hits": 0
+    },
+    "error": null
+  },
+  {
+    "mode": "E5",
+    "query_id": "L-artist",
+    "index": 1,
+    "status": 200,
+    "http_ms": 366.93999997805804,
+    "engine_ms": 243.99,
+    "model_loading_ms": 0.002,
+    "passages": {
+      "passages": 0,
+      "encoded": 0,
+      "cache_hits": 0
+    },
+    "error": null
+  },
+  {
+    "mode": "E5",
+    "query_id": "L-lyrics",
+    "index": 2,
+    "status": 200,
+    "http_ms": 447.7696000249125,
+    "engine_ms": 306.89,
+    "model_loading_ms": 0.002,
+    "passages": {
+      "passages": 0,
+      "encoded": 0,
+      "cache_hits": 0
+    },
+    "error": null
+  },
+  {
+    "mode": "E5",
+    "query_id": "L-theme",
+    "index": 3,
+    "status": 200,
+    "http_ms": 364.5601000171155,
+    "engine_ms": 241.61,
+    "model_loading_ms": 0.002,
+    "passages": {
+      "passages": 0,
+      "encoded": 0,
+      "cache_hits": 0
+    },
+    "error": null
+  },
+  {
+    "mode": "E5",
+    "query_id": "L-audio",
+    "index": 4,
+    "status": 200,
+    "http_ms": 145.6964000244625,
+    "engine_ms": 32.99,
+    "model_loading_ms": 0.0,
+    "passages": {
+      "passages": 0,
+      "encoded": 0,
+      "cache_hits": 0
+    },
+    "error": null
+  },
+  {
+    "mode": "E5",
+    "query_id": "L-mixed",
+    "index": 5,
+    "status": 200,
+    "http_ms": 329.5514999772422,
+    "engine_ms": 173.84,
+    "model_loading_ms": 0.002,
+    "passages": {
+      "passages": 0,
+      "encoded": 0,
+      "cache_hits": 0
+    },
+    "error": null
+  },
+  {
+    "mode": "E5",
+    "query_id": "L-title",
+    "index": 6,
+    "status": 200,
+    "http_ms": 343.1134999846108,
+    "engine_ms": 215.02,
+    "model_loading_ms": 0.003,
+    "passages": {
+      "passages": 0,
+      "encoded": 0,
+      "cache_hits": 0
+    },
+    "error": null
+  },
+  {
+    "mode": "E5",
+    "query_id": "L-artist",
+    "index": 7,
+    "status": 200,
+    "http_ms": 359.18490000767633,
+    "engine_ms": 223.07,
+    "model_loading_ms": 0.002,
+    "passages": {
+      "passages": 0,
+      "encoded": 0,
+      "cache_hits": 0
+    },
+    "error": null
+  },
+  {
+    "mode": "E5",
+    "query_id": "L-lyrics",
+    "index": 8,
+    "status": 200,
+    "http_ms": 428.2602000166662,
+    "engine_ms": 296.48,
+    "model_loading_ms": 0.002,
+    "passages": {
+      "passages": 0,
+      "encoded": 0,
+      "cache_hits": 0
+    },
+    "error": null
+  },
+  {
+    "mode": "E5",
+    "query_id": "L-theme",
+    "index": 9,
+    "status": 200,
+    "http_ms": 343.4070000075735,
+    "engine_ms": 239.42,
+    "model_loading_ms": 0.002,
+    "passages": {
+      "passages": 0,
+      "encoded": 0,
+      "cache_hits": 0
+    },
+    "error": null
+  },
+  {
+    "mode": "E1",
+    "query_id": "L-title",
+    "index": 0,
+    "status": 200,
+    "http_ms": 172.71710000932217,
+    "engine_ms": 38.98,
+    "model_loading_ms": 0.0,
+    "passages": {
+      "passages": 0,
+      "encoded": 0,
+      "cache_hits": 0
+    },
+    "error": null
+  },
+  {
+    "mode": "E1",
+    "query_id": "L-artist",
+    "index": 1,
+    "status": 200,
+    "http_ms": 119.21809997875243,
+    "engine_ms": 16.93,
+    "model_loading_ms": 0.0,
+    "passages": {
+      "passages": 0,
+      "encoded": 0,
+      "cache_hits": 0
+    },
+    "error": null
+  },
+  {
+    "mode": "E1",
+    "query_id": "L-lyrics",
+    "index": 2,
+    "status": 200,
+    "http_ms": 134.5831000362523,
+    "engine_ms": 35.98,
+    "model_loading_ms": 0.0,
+    "passages": {
+      "passages": 0,
+      "encoded": 0,
+      "cache_hits": 0
+    },
+    "error": null
+  },
+  {
+    "mode": "E1",
+    "query_id": "L-theme",
+    "index": 3,
+    "status": 200,
+    "http_ms": 80.67530003609136,
+    "engine_ms": 3.47,
+    "model_loading_ms": 0.0,
+    "passages": {
+      "passages": 0,
+      "encoded": 0,
+      "cache_hits": 0
+    },
+    "error": null
+  },
+  {
+    "mode": "E1",
+    "query_id": "L-audio",
+    "index": 4,
+    "status": 200,
+    "http_ms": 93.19590002996847,
+    "engine_ms": 0.91,
+    "model_loading_ms": 0.0,
+    "passages": {
+      "passages": 0,
+      "encoded": 0,
+      "cache_hits": 0
+    },
+    "error": null
+  },
+  {
+    "mode": "E1",
+    "query_id": "L-mixed",
+    "index": 5,
+    "status": 200,
+    "http_ms": 118.52819996420294,
+    "engine_ms": 17.16,
+    "model_loading_ms": 0.0,
+    "passages": {
+      "passages": 0,
+      "encoded": 0,
+      "cache_hits": 0
+    },
+    "error": null
+  },
+  {
+    "mode": "E1",
+    "query_id": "L-title",
+    "index": 6,
+    "status": 200,
+    "http_ms": 110.45169999124482,
+    "engine_ms": 24.46,
+    "model_loading_ms": 0.0,
+    "passages": {
+      "passages": 0,
+      "encoded": 0,
+      "cache_hits": 0
+    },
+    "error": null
+  },
+  {
+    "mode": "E1",
+    "query_id": "L-artist",
+    "index": 7,
+    "status": 200,
+    "http_ms": 117.28669999865815,
+    "engine_ms": 12.99,
+    "model_loading_ms": 0.0,
+    "passages": {
+      "passages": 0,
+      "encoded": 0,
+      "cache_hits": 0
+    },
+    "error": null
+  },
+  {
+    "mode": "E1",
+    "query_id": "L-lyrics",
+    "index": 8,
+    "status": 200,
+    "http_ms": 128.21239995537326,
+    "engine_ms": 28.16,
+    "model_loading_ms": 0.0,
+    "passages": {
+      "passages": 0,
+      "encoded": 0,
+      "cache_hits": 0
+    },
+    "error": null
+  },
+  {
+    "mode": "E1",
+    "query_id": "L-theme",
+    "index": 9,
+    "status": 200,
+    "http_ms": 83.10599997639656,
+    "engine_ms": 3.23,
+    "model_loading_ms": 0.0,
+    "passages": {
+      "passages": 0,
+      "encoded": 0,
+      "cache_hits": 0
+    },
+    "error": null
+  },
+  {
+    "mode": "AUTO",
+    "query_id": "L-title",
+    "index": 0,
+    "status": 200,
+    "http_ms": 906.9812999805436,
+    "engine_ms": 827.41,
+    "model_loading_ms": 0.0,
+    "passages": {
+      "passages": 0,
+      "encoded": 0,
+      "cache_hits": 0
+    },
+    "error": null
+  },
+  {
+    "mode": "AUTO",
+    "query_id": "L-artist",
+    "index": 1,
+    "status": 200,
+    "http_ms": 82.8161999816075,
+    "engine_ms": 8.24,
+    "model_loading_ms": 0.0,
+    "passages": {
+      "passages": 0,
+      "encoded": 0,
+      "cache_hits": 0
+    },
+    "error": null
+  },
+  {
+    "mode": "AUTO",
+    "query_id": "L-lyrics",
+    "index": 2,
+    "status": 200,
+    "http_ms": 459.66409996617585,
+    "engine_ms": 333.92,
+    "model_loading_ms": 0.003,
+    "passages": {
+      "passages": 0,
+      "encoded": 0,
+      "cache_hits": 0
+    },
+    "error": null
+  },
+  {
+    "mode": "AUTO",
+    "query_id": "L-theme",
+    "index": 3,
+    "status": 200,
+    "http_ms": 688.6708000092767,
+    "engine_ms": 579.29,
+    "model_loading_ms": 0.002,
+    "passages": {
+      "passages": 65,
+      "encoded": 0,
+      "cache_hits": 65
+    },
+    "error": null
+  },
+  {
+    "mode": "AUTO",
+    "query_id": "L-audio",
+    "index": 4,
+    "status": 200,
+    "http_ms": 154.39570002490655,
+    "engine_ms": 38.14,
+    "model_loading_ms": 0.0,
+    "passages": {
+      "passages": 0,
+      "encoded": 0,
+      "cache_hits": 0
+    },
+    "error": null
+  },
+  {
+    "mode": "AUTO",
+    "query_id": "L-mixed",
+    "index": 5,
+    "status": 200,
+    "http_ms": 290.79539998201653,
+    "engine_ms": 177.72,
+    "model_loading_ms": 0.002,
+    "passages": {
+      "passages": 0,
+      "encoded": 0,
+      "cache_hits": 0
+    },
+    "error": null
+  },
+  {
+    "mode": "AUTO",
+    "query_id": "L-title",
+    "index": 6,
+    "status": 200,
+    "http_ms": 88.22450001025572,
+    "engine_ms": 3.32,
+    "model_loading_ms": 0.0,
+    "passages": {
+      "passages": 0,
+      "encoded": 0,
+      "cache_hits": 0
+    },
+    "error": null
+  },
+  {
+    "mode": "AUTO",
+    "query_id": "L-artist",
+    "index": 7,
+    "status": 200,
+    "http_ms": 87.93059998424724,
+    "engine_ms": 8.69,
+    "model_loading_ms": 0.0,
+    "passages": {
+      "passages": 0,
+      "encoded": 0,
+      "cache_hits": 0
+    },
+    "error": null
+  },
+  {
+    "mode": "AUTO",
+    "query_id": "L-lyrics",
+    "index": 8,
+    "status": 200,
+    "http_ms": 464.4787000142969,
+    "engine_ms": 328.63,
+    "model_loading_ms": 0.003,
+    "passages": {
+      "passages": 0,
+      "encoded": 0,
+      "cache_hits": 0
+    },
+    "error": null
+  },
+  {
+    "mode": "AUTO",
+    "query_id": "L-theme",
+    "index": 9,
+    "status": 200,
+    "http_ms": 633.5529999923892,
+    "engine_ms": 535.19,
+    "model_loading_ms": 0.001,
+    "passages": {
+      "passages": 65,
+      "encoded": 0,
+      "cache_hits": 65
+    },
+    "error": null
+  }
+]

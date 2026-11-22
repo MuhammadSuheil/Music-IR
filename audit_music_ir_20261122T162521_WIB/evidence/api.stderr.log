@@ -1,0 +1,7 @@
+INFO:     Started server process [33988]
+INFO:     Waiting for application startup.
+INFO:     Application startup complete.
+INFO:     Uvicorn running on http://127.0.0.1:8000 (Press CTRL+C to quit)
+Loading weights:   0%|          | 0/391 [00:00<?, ?it/s]Loading weights: 100%|██████████| 391/391 [00:00<00:00, 20186.02it/s]
+D:\CODINGGG\Music IR\music_ir\passages.py:64: FutureWarning: The `get_sentence_embedding_dimension` method has been renamed to `get_embedding_dimension`.
+  if vector.shape == (model.get_sentence_embedding_dimension(),) and np.isfinite(vector).all() and np.isclose(np.linalg.norm(vector), 1, atol=1e-4):

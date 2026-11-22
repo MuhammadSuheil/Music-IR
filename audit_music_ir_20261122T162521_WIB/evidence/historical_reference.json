@@ -1,0 +1,10 @@
+{
+  "status": "historical_only",
+  "code_reference": "evidence/source/docs/REVISI_LAPORAN_MUSIC_IR.md:449",
+  "historical_claims": {
+    "sad_cache_miss_engine_ms": 37606.82,
+    "sad_cache_hit_engine_ms": 662.48
+  },
+  "warning": "Copied only as document comparison; these are NOT audit rerun measurements and no general speedup ratio is inferred",
+  "tuning_trial_files_found": []
+}

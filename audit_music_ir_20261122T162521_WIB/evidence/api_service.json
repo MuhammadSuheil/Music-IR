@@ -1,0 +1,17 @@
+{
+  "command": [
+    "D:\\CODINGGG\\Music IR\\.venv\\Scripts\\python.exe",
+    "-m",
+    "uvicorn",
+    "music_ir.api:app",
+    "--host",
+    "127.0.0.1",
+    "--port",
+    "8000"
+  ],
+  "cwd": "D:\\CODINGGG\\Music IR",
+  "pid": 3964,
+  "started_epoch": 1795339754.0120914,
+  "backend_env": null,
+  "reload": false
+}

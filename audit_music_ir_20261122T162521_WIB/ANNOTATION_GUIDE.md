@@ -1,0 +1,14 @@
+# Lembar anotasi manusia
+
+Belum ada label relevansi manusia. `evidence/annotation_needed.csv` berisi kandidat untuk sepuluh query draft, bukan ground truth. `evidence/query_review_checklist.csv` mencakup seluruh 160 query; 150 query belum dipool dalam audit ini. Pool audit terpisah dari database penilaian pengguna dan tidak menulis nilai ke aplikasi.
+
+1. Tinjau maksud query dan `intent_note` sebelum menilai. Tentukan apakah suasana berarti makna lirik, nuansa musik, atau keduanya; arti versi/cover, kolaborasi, dan batas numerik juga harus jelas. Semua query masih `needs_review` sampai manusia menyetujuinya.
+2. Buka ID kandidat melalui tautan rekaman dan/atau endpoint lokal `/tracks/{id}` saat API aktif. CSV hanya berisi cuplikan lirik 250 karakter; penilaian tema perlu konteks lirik lengkap. Ketepatan pasangan lirik dengan rekaman perlu diperiksa tersendiri. Aplikasi tidak menganalisis rekaman audio.
+3. Isi `annotator_code`, `relevance`, dan catatan. Skala: 0 tidak relevan; 1 sedikit terkait; 2 relevan; 3 sangat relevan/tepat. Nilai 2–3 merupakan relevan biner untuk evaluator saat ini. Kolom kosong berarti **belum dinilai**, bukan nilai 0. Tidak ada nilai yang dipilih otomatis.
+4. Sebaiknya dua penilai bekerja secara independen, dengan salinan terpisah. Lakukan pemeriksaan silang dan adjudikasi perbedaan sebelum ekspor qrels. Ini rencana kerja; dua penilai maupun adjudikasi belum dilakukan pada saat audit.
+5. Urutan kandidat diacak deterministik per query. Form penilaian menghilangkan mode, skor, posisi ranking, dan hint target. Jangan memakai file trace/skor ketika melakukan penilaian buta. Metadata audio/genre dapat diperiksa untuk permintaan eksplisit, tetapi kepatuhan batas belum berarti relevansi keseluruhan tema.
+6. Pool audit: union hasil **utama** top-10 dari AUTO, E1–E5 pada sepuluh query yang dibekukan. Hasil serupa ada pada trace terpisah dan tidak menjadi objek pool ini. Tidak ada label berdasarkan asal kandidat. Perluas pool dan query sebelum menyebutnya benchmark lengkap, terutama untuk Recall@100.
+7. Pertahankan pembagian dev/test dan group_id. Tiga query draft juga muncul pada regresi aktif (`artist-001`, `lyrics-001`, `title-016`); yang terakhir berada pada test. Struktur group yang terpisah tidak menjamin test bebas paparan pengembangan. Jangan mengubah aturan memakai test yang akan diklaim independen.
+8. Setelah seluruh pool yang diperlukan dinilai, simpan qrels dengan kolom `query_id,track_id,relevance,annotator` dan query berstatus approved. Simpan asal label dan adjudikasi. Jalankan seluruh mode pada snapshot corpus/config/query/qrels yang sama. Jangan menilai hint_track_ids sebagai relevan secara otomatis.
+
+Pooling dangkal dapat menyisakan dokumen relevan yang tidak diketahui. Semua 191 pasangan pada lembar audit masih unjudged pada saat pembuatan. Pengukuran efektivitas tetap `null` sampai qrels layak tersedia. Hasil fixture evaluator di paket ini hanya pengujian rumus.

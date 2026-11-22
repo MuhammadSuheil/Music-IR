@@ -1,0 +1,4 @@
+{"query_id":"title-001","query":"Die With A Smile","category":"title","split":"dev","group_id":"die-with-a-smile"}
+{"query_id":"artist-001","query":"Bruno Mars","category":"artist","split":"dev","group_id":"bruno-mars"}
+{"query_id":"semantic-001","query":"lagu tentang tetap bersama ketika dunia berakhir","category":"semantic","split":"dev","group_id":"die-with-a-smile"}
+{"query_id":"audio-001","query":"tempo > 120 BPM","category":"audio","split":"dev","group_id":"tempo-above-120"}

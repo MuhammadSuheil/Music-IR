@@ -344,6 +344,54 @@ Kasus yang perlu diaudit: query `a song about missing someone after a breakup` m
 3. **Tune dan ukur pipeline gabungan.** Pilih bobot pada dev, bekukan config, lalu evaluasi E1–E5 dan AUTO pada test dengan backend Elasticsearch. Periksa apakah semantik/reranking meningkatkan nDCG@10, MRR@10, Recall@100, serta berapa biaya latensinya. AUTO memiliki kebijakan lirik/tema tambahan dan perlu dinilai tersendiri; jangan memasukkan fallback sebagai run E5/AUTO penuh yang sukses. Tuner bobot E1–E5 tidak memilih ambang/pola aturan AUTO.
 4. **Perbaiki berdasarkan analisis kegagalan.** Jika tema lirik belum tertangkap, uji representasi/potongan lirik dan kandidat terlebih dahulu. Cross-encoder atau sparse BGE-M3 dapat diuji sebagai eksperimen terpisah setelah baseline terukur. Tunda penggantian model besar atau pelatihan ulang sampai ada bukti dari qrels.
 
-## Struktur
+## Evaluasi label awal LLM dan review manusia
+
+Workflow baru terpisah dari pencarian dan penilaian benchmark lama. Pipeline, bobot, serta batas kandidat retrieval tidak diubah. Buka **http://127.0.0.1:8501/?view=relevance**, atau tautan review LLM pada halaman Benchmark. Backend dan frontend dijalankan seperti biasa dengan `run.ps1 api` dan `run.ps1 ui`.
+
+Satu run membekukan corpus, query/kebutuhan, konfigurasi, dan hash implementasi. Pool menggabungkan hasil **utama** hingga kedalaman 100 dari E1–E5/AUTO, tanpa hint atau sampel otomatis. Daftar pendek tetap pendek; tema AUTO tetap maksimal 24. Recall mengacu pada dokumen relevan yang diketahui dalam pool, bukan seluruh corpus.
+
+```powershell
+# Gunakan nama run baru; init tidak menimpa direktori yang sudah ada.
+.\.venv\Scripts\python.exe -m music_ir.relevance init --run artifacts/relevance/nama_run_baru
+.\.venv\Scripts\python.exe -m music_ir.relevance pool --run artifacts/relevance/nama_run_baru
+# Command pool yang sama melanjutkan job yang belum berhasil.
+.\.venv\Scripts\python.exe -m music_ir.relevance discover
+```
+
+Untuk batch tanpa pengawasan, konfigurasi model instruksi yang benar-benar tersedia. BGE-M3 adalah encoder, bukan LLM penilai. Contoh opsi ada di `evaluation/judge.env.example`; berkas itu **tidak dimuat otomatis**. Set variabel environment pada terminal yang menjalankan batch, misalnya untuk Ollama yang sudah memiliki model:
+
+```powershell
+$env:MUSIC_IR_JUDGE_PROVIDER = 'ollama'
+$env:MUSIC_IR_JUDGE_BASE_URL = 'http://127.0.0.1:11434'
+$env:MUSIC_IR_JUDGE_MODEL = '<nama-model-instruksi-yang-terpasang>'
+# OpenAI-compatible: provider='openai-compatible', base URL berakhiran /v1.
+# MUSIC_IR_JUDGE_API_KEY diperlukan hanya bila server mensyaratkan key.
+.\.venv\Scripts\python.exe -m music_ir.relevance label --run artifacts/relevance/nama_run_baru --smoke
+.\.venv\Scripts\python.exe -m music_ir.relevance label --run artifacts/relevance/nama_run_baru --retry-errors
+.\.venv\Scripts\python.exe -m music_ir.relevance report --run artifacts/relevance/nama_run_baru
+```
+
+Model, provider, parameter, prompt, input, respons asli, retry, token/biaya yang tersedia, dan cakupan lirik dicatat. Prompt/parameter/model berubah memerlukan run baru. `clone-for-judge --run <asal> --output <run_baru>` memakai ulang ranking/pool beku yang identik tanpa menyalin label atau keputusan manusia. Jika tidak ada endpoint model terkonfigurasi, command label melaporkan `blocked_backend` (exit 2), tidak membuat label palsu.
+
+Penilaian langsung oleh assistant sesi dapat direkam melalui `packet --run <run> --limit 10 --output <run>/packet_baru.json` dan `import-session --run <run> --input <hasil_sesi.json>`. Packet menyembunyikan mode, skor, posisi, dan hint; hash input/prompt diperiksa saat impor. Ini berbeda dari tersedianya API batch, dan hanya pasangan yang benar-benar dinilai pada respons sesi dihitung selesai. Identitas model persis, token, dan biaya yang tidak diekspos tetap `null`.
+
+Halaman review menampilkan seluruh lirik, angka audio, penilaian awal yang bisa disembunyikan, dan tindakan setujui/koreksi/tandai masalah. Nama reviewer dan persetujuan kebutuhan query diperlukan sebelum grade final. Draft disimpan otomatis; grade final hanya muncul setelah keputusan eksplisit manusia. Semua grade termasuk 0/1 masuk antrean. Pembukaan usulan dicatat sebagai paparan; keputusan sesudahnya adalah post-editing, bukan penilaian independen. Revisi query/kebutuhan membuat run baru.
+
+Ekspor menggunakan folder versi `exports/<timestamp>/`: label/qrels otomatis, riwayat review, metrik per query dan agregat per tahap, serta perbandingan pada query dan pool yang sama. Qrels final hanya tersedia untuk query yang disetujui dan seluruh poolnya selesai direview. Query gagal/belum lengkap tidak dibuang. nDCG memakai gain `2^grade−1`; MRR/Recall relevan jika grade≥2. Query tanpa relevan biner tetap dilaporkan dengan MRR/Recall `null`; nDCG masih dapat dihitung untuk grade1, dan menjadi `null` jika IDCG nol. Penyebut macro per metrik dicatat.
+
+## Ekspor otomatis tanpa review manusia
+
+Run otomatis saat ini: `artifacts/relevance/relevance_20261122T203100_WIB_automatic`. Halaman `/?view=relevance` mengenali kebijakan ini dan menyediakan ekspor tanpa nama reviewer atau persetujuan query. Penilaian tema berasal dari agent LLM yang membaca lirik; judul/artis, kutipan literal/variasi terbatas, dan angka audio diperiksa sebagai proksi corpus yang dinyatakan terpisah. Ini bukan ground truth manusia.
+
+```powershell
+# Gabungkan hanya batch penilaian LLM yang sudah benar-benar tersimpan dan valid.
+.\.venv\Scripts\python.exe -m music_ir.automatic_evaluation ingest --run artifacts/relevance/relevance_20261122T203100_WIB_automatic
+# Hitung serta ekspor tanpa membuat human_grade/final_grade palsu.
+.\.venv\Scripts\python.exe -m music_ir.automatic_evaluation export --run artifacts/relevance/relevance_20261122T203100_WIB_automatic
+```
+
+`LAPORAN_EVALUASI_RELEVANSI.md`, `TEKS_SIAP_LAPORAN.md`, qrels otomatis, metrik semua query/mode, dan nilai belum terselesaikan tersedia dalam folder run/ekspor. Semua query wajib dipertahankan. Label belum cukup bukti tetap null; cakupan judgment dan status proses dicantumkan. Ekspor yang dibuat sebelum seluruh batch selesai bertanda `incomplete_processing`, sehingga tidak boleh ditulis seolah seluruh evaluasi telah selesai. Penilaian lanjut melalui agent melanjutkan file batch yang belum ada; tidak membutuhkan pelabelan manusia. Checkpoint dan gangguan kapasitas layanan dicatat pada folder run.
+
+## Struktur berkas
 
 `music_ir/` memuat persiapan data, retrieval, parser audio, reranking, CLI, evaluasi, katalog, dan API. `frontend/` memuat React/TypeScript, CSS, aset lokal, konfigurasi Vite, dan pengujian Playwright. `tests/` memuat pengujian backend. `scripts/fetch_artwork.py` menyiapkan cache sampul opsional. `config.json` menyimpan parameter eksperimen. `compose.yaml` menyiapkan Elasticsearch lokal. Dataset hasil pengolahan, environment, model, node_modules, dan hasil build tidak dimasukkan ke version control.

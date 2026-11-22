@@ -1,0 +1,10 @@
+{
+  "status": "not_evaluated",
+  "metrics": {
+    "ndcg@10": null,
+    "mrr@10": null,
+    "recall@100": null
+  },
+  "reason": "Human qrels must be reviewed and eligible; no labels are inferred from hints or retrieval.",
+  "human_judgment_records": 0
+}

@@ -1,0 +1,15 @@
+{
+  "command": [
+    "git",
+    "rev-parse",
+    "HEAD"
+  ],
+  "cwd": "D:\\CODINGGG\\Music IR",
+  "started_at": "2026-11-22T16:28:01.601400+07:00",
+  "duration_seconds": 0.04548359999898821,
+  "exit_code": 0,
+  "stdout": "d1fa4edf10189dbda73eda292b6e795238af2c7f\n",
+  "stderr": "",
+  "ended_at": "2026-11-22T16:28:01.646884+07:00",
+  "start_time_method": "reconstructed from completion timestamp minus measured perf_counter duration; original collector mislabeled end as start"
+}

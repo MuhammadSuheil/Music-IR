@@ -1,0 +1,36 @@
+{
+  "timestamp_label_normalized_files": [
+    "annotation_execution.json",
+    "backend_tests.json",
+    "frontend_build.json",
+    "frontend_installed.json",
+    "frontend_tests.json",
+    "git_head.json",
+    "git_status_before.json",
+    "latency_execution.json",
+    "netstat.json",
+    "node_version.json",
+    "npm_version.json"
+  ],
+  "application_changes": false,
+  "initial_build_collector_print_error": "cp1252 stdout could not print a Vite checkmark after successful command exit0; complete build output already persisted in frontend_build.json; audit stdout encoding fixed thereafter",
+  "initial_hardware_probe": "CIM access denied; registry and GlobalMemoryStatusEx succeeded; no escalation requested",
+  "renderer_probe": {
+    "mermaid_module": false,
+    "mermaid_cli_module": false,
+    "system_mmdc": null,
+    "system_dot": null
+  },
+  "audit_asgi_wrapper": "Read-only /_audit/runtime endpoint in separate audit_live_api.py used around original app; does not mutate engine/config/search functions",
+  "case_command": [
+    "D:\\CODINGGG\\Music IR\\.venv\\Scripts\\python.exe",
+    "D:\\CODINGGG\\Music IR\\audit_music_ir_20261122T162521_WIB\\audit_search.py",
+    "cases"
+  ],
+  "case_duration_source": "per-request HTTP timings; full script duration not measured separately",
+  "fixture_command": [
+    "D:\\CODINGGG\\Music IR\\.venv\\Scripts\\python.exe",
+    "D:\\CODINGGG\\Music IR\\audit_music_ir_20261122T162521_WIB\\audit_verify.py",
+    "fixtures"
+  ]
+}

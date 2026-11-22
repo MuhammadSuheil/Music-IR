@@ -1,0 +1,26 @@
+{
+  "query_ids": [
+    "title-001",
+    "title-009",
+    "artist-001",
+    "artist-009",
+    "lyrics-001",
+    "lyrics-009",
+    "semantic-001",
+    "semantic-009",
+    "audio-001",
+    "audio-009"
+  ],
+  "modes": [
+    "E1",
+    "E2",
+    "E3",
+    "E4",
+    "E5",
+    "AUTO"
+  ],
+  "depth": 10,
+  "ranking_object": "primary results only; related in separate traces",
+  "selection": "first query of each category and split in actual draft file; frozen before run",
+  "all_other_queries": "review checklist supplied; candidates not generated for them during audit"
+}

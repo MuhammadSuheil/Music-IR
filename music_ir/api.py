@@ -120,3 +120,112 @@ def search(request: SearchRequest):
         raise HTTPException(422, str(exc)) from exc
     except (RuntimeError, OSError, ImportError) as exc:
         raise HTTPException(503, str(exc)) from exc
+
+
+# Relevance evaluation is a separate store; search/ranking and legacy judgments are unchanged.
+class RelevanceActor(BaseModel):
+    reviewer_id: str = Field(min_length=1, max_length=64)
+
+
+class RelevanceQueryReview(RelevanceActor):
+    approved: bool = Field(strict=True)
+    notes: str = Field(default='', max_length=4000)
+
+
+class RelevanceDraft(RelevanceActor):
+    grade: int | None = Field(default=None, ge=0, le=3, strict=True)
+    reason: str = Field(default='', max_length=4000)
+
+
+class RelevanceDecision(RelevanceDraft):
+    action: Literal['independent', 'accept', 'correct', 'flag']
+    expected_updated: str | None = None
+
+
+class RelevanceRevision(RelevanceActor):
+    query: str = Field(min_length=1, max_length=2000)
+    user_need: str = Field(min_length=1, max_length=4000)
+    reason: str = Field(min_length=1, max_length=4000)
+
+
+def relevance_run(run_id):
+    from .relevance_review import open_run
+    return open_run(run_id)
+
+
+@app.get('/relevance/runs')
+def relevance_runs():
+    from .relevance_review import runs_summary
+    return benchmark_call(runs_summary)
+
+
+@app.get('/relevance/runs/{run_id}')
+def relevance_summary(run_id: str):
+    from .relevance_review import run_summary
+    return benchmark_call(lambda: run_summary(relevance_run(run_id)))
+
+
+@app.get('/relevance/runs/{run_id}/queries/{query_id}')
+def relevance_candidates(run_id: str, query_id: str, reviewer_id: str = '',
+                         offset: int = Query(default=0, ge=0), limit: int = Query(default=1, ge=1, le=20)):
+    from .relevance_review import query_candidates
+    return benchmark_call(lambda: query_candidates(relevance_run(run_id), query_id, reviewer_id, offset, limit))
+
+
+@app.put('/relevance/runs/{run_id}/queries/{query_id}/definition')
+def relevance_definition(run_id: str, query_id: str, request: RelevanceQueryReview):
+    from .relevance_review import approve_query
+    return benchmark_call(lambda: approve_query(relevance_run(run_id), query_id, request.reviewer_id, request.approved, request.notes))
+
+
+@app.post('/relevance/runs/{run_id}/queries/{query_id}/revision')
+def relevance_revision(run_id: str, query_id: str, request: RelevanceRevision):
+    from .relevance_review import fork_query
+    return benchmark_call(lambda: fork_query(relevance_run(run_id), query_id, request.reviewer_id, request.query, request.user_need, request.reason))
+
+
+@app.post('/relevance/runs/{run_id}/queries/{query_id}/tracks/{track_id}/proposal')
+def relevance_proposal(run_id: str, query_id: str, track_id: str, request: RelevanceActor):
+    from .relevance_review import reveal_auto
+    return benchmark_call(lambda: reveal_auto(relevance_run(run_id), query_id, track_id, request.reviewer_id))
+
+
+@app.put('/relevance/runs/{run_id}/queries/{query_id}/tracks/{track_id}/draft')
+def relevance_draft(run_id: str, query_id: str, track_id: str, request: RelevanceDraft):
+    from .relevance_review import save_draft
+    return benchmark_call(lambda: save_draft(relevance_run(run_id), query_id, track_id, request.reviewer_id, request.grade, request.reason))
+
+
+@app.put('/relevance/runs/{run_id}/queries/{query_id}/tracks/{track_id}/review')
+def relevance_review(run_id: str, query_id: str, track_id: str, request: RelevanceDecision):
+    from .relevance_review import save_review
+    return benchmark_call(lambda: save_review(relevance_run(run_id), query_id, track_id, request.reviewer_id,
+                                            request.action, request.grade, request.reason, request.expected_updated))
+
+
+@app.post('/relevance/runs/{run_id}/export')
+def relevance_export(run_id: str):
+    from .relevance_review import write_report
+    return benchmark_call(lambda: write_report(relevance_run(run_id)))
+
+
+@app.get('/relevance/runs/{run_id}/export')
+def relevance_export_file(run_id: str, name: str):
+    from fastapi.responses import FileResponse
+    from .relevance_review import open_run
+    allowed={'qrels_auto.tsv','qrels_final.tsv','metrics_auto_summary.json','metrics_final_summary.json',
+             'metrics_auto_per_query.csv','metrics_final_per_query.csv','comparison.json','human_review_history.jsonl',
+             'auto_labels.jsonl','unresolved_pairs.csv','LAPORAN_EVALUASI_RELEVANSI.md','TEKS_SIAP_LAPORAN.md'}
+    def resolve():
+        if name not in allowed:raise ValueError('File ekspor tidak diizinkan.')
+        run=open_run(run_id)
+        import json
+        pointer=run.directory/'latest_export.json'
+        if not pointer.exists():raise KeyError('Buat ekspor terlebih dahulu.')
+        latest=json.loads(pointer.read_text(encoding='utf-8'))
+        path=(run.directory/latest['directory']/name).resolve()
+        if name=='TEKS_SIAP_LAPORAN.md':path=run.directory/name
+        if not path.is_relative_to((run.directory/'exports').resolve()) and name!='TEKS_SIAP_LAPORAN.md':raise ValueError('Path ekspor tidak valid.')
+        if not path.exists():raise KeyError('Belum ada query yang seluruh poolnya selesai direview; qrels final belum tersedia.')
+        return FileResponse(path,filename=name)
+    return benchmark_call(resolve)

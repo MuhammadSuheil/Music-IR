@@ -1,0 +1,418 @@
+{
+  "at": "2026-11-22T16:49:09.981199+07:00",
+  "commit": "d1fa4edf10189dbda73eda292b6e795238af2c7f",
+  "files": {
+    "music_ir/api.py": {
+      "before_sha256": "455e2b51da785fe4464d58e601b2243936d797d391edcfd47fc7fc4747139fa6",
+      "after_sha256": "455e2b51da785fe4464d58e601b2243936d797d391edcfd47fc7fc4747139fa6",
+      "unchanged": true
+    },
+    "music_ir/audio.py": {
+      "before_sha256": "132f05e2ecde31385765337eafb0ee12acfb6e5eb1a3c167891180d12886b73d",
+      "after_sha256": "132f05e2ecde31385765337eafb0ee12acfb6e5eb1a3c167891180d12886b73d",
+      "unchanged": true
+    },
+    "music_ir/benchmark.py": {
+      "before_sha256": "3ab5505b98a78ebd18f6aa16c9b91d4e291e480bb92a9214418d07c183ee486b",
+      "after_sha256": "3ab5505b98a78ebd18f6aa16c9b91d4e291e480bb92a9214418d07c183ee486b",
+      "unchanged": true
+    },
+    "music_ir/catalog.py": {
+      "before_sha256": "d2e47fb2845f44d74eb21e3b755f2a1392cb6de6f504a3e60983493c38474b05",
+      "after_sha256": "d2e47fb2845f44d74eb21e3b755f2a1392cb6de6f504a3e60983493c38474b05",
+      "unchanged": true
+    },
+    "music_ir/data.py": {
+      "before_sha256": "69477530186e39029101265ebe6ab1421cf09248a3c0a69f39b9b422ae78c8e7",
+      "after_sha256": "69477530186e39029101265ebe6ab1421cf09248a3c0a69f39b9b422ae78c8e7",
+      "unchanged": true
+    },
+    "music_ir/diagnostics.py": {
+      "before_sha256": "e4f0b891b3bb48532da3dc629f8e1aa545c52b9cef5973e91342dcae683b36d7",
+      "after_sha256": "e4f0b891b3bb48532da3dc629f8e1aa545c52b9cef5973e91342dcae683b36d7",
+      "unchanged": true
+    },
+    "music_ir/engine.py": {
+      "before_sha256": "67cc4f0e9ab071e54ccb9684f54ab44b29434d4402df86cb655860cf155afa2d",
+      "after_sha256": "67cc4f0e9ab071e54ccb9684f54ab44b29434d4402df86cb655860cf155afa2d",
+      "unchanged": true
+    },
+    "music_ir/evaluate.py": {
+      "before_sha256": "925c3ccd5f339e712813449f743fe5dcd3d9252f82091725eb04566282d72650",
+      "after_sha256": "925c3ccd5f339e712813449f743fe5dcd3d9252f82091725eb04566282d72650",
+      "unchanged": true
+    },
+    "music_ir/lexical.py": {
+      "before_sha256": "15a7609c6cfc69e225418dfb075a7f97416cf55be43876e12f3f32737166b895",
+      "after_sha256": "15a7609c6cfc69e225418dfb075a7f97416cf55be43876e12f3f32737166b895",
+      "unchanged": true
+    },
+    "music_ir/lyrics.py": {
+      "before_sha256": "5403a53cfd4a0fe45f3e2cb8adb64e0949a71f1db5e398c43403254b4225c664",
+      "after_sha256": "5403a53cfd4a0fe45f3e2cb8adb64e0949a71f1db5e398c43403254b4225c664",
+      "unchanged": true
+    },
+    "music_ir/metadata.py": {
+      "before_sha256": "dfea1662b6539bc666ca207221072b7d915a0316dbc8881e83c7abe73b8cb4fe",
+      "after_sha256": "dfea1662b6539bc666ca207221072b7d915a0316dbc8881e83c7abe73b8cb4fe",
+      "unchanged": true
+    },
+    "music_ir/mood.py": {
+      "before_sha256": "e90b00ef8b041e3be0a3b7f3e5b6d16cd24eb30782984d9f6278118670e889f5",
+      "after_sha256": "e90b00ef8b041e3be0a3b7f3e5b6d16cd24eb30782984d9f6278118670e889f5",
+      "unchanged": true
+    },
+    "music_ir/passages.py": {
+      "before_sha256": "5de8139f12d39c6caaa48490b0d6b26c31f5f5151ac97bbd58800a0a91355d12",
+      "after_sha256": "5de8139f12d39c6caaa48490b0d6b26c31f5f5151ac97bbd58800a0a91355d12",
+      "unchanged": true
+    },
+    "music_ir/query.py": {
+      "before_sha256": "591bb32625f274d1264330b8d2a52de3cebbb4e231b209e94c752b4304df4039",
+      "after_sha256": "591bb32625f274d1264330b8d2a52de3cebbb4e231b209e94c752b4304df4039",
+      "unchanged": true
+    },
+    "music_ir/semantic.py": {
+      "before_sha256": "7d8c04e9a330d897b80eca747f20743ee0d3cd3c8be0f79b069ba9c45acc8601",
+      "after_sha256": "7d8c04e9a330d897b80eca747f20743ee0d3cd3c8be0f79b069ba9c45acc8601",
+      "unchanged": true
+    },
+    "music_ir/tune.py": {
+      "before_sha256": "9e3542e188910554a9f817a318b8c4699579bf3a90ddd0aee9dd7d85b113ccc9",
+      "after_sha256": "9e3542e188910554a9f817a318b8c4699579bf3a90ddd0aee9dd7d85b113ccc9",
+      "unchanged": true
+    },
+    "music_ir/__init__.py": {
+      "before_sha256": "4eba52332907d1068e1fbc6682b7e55b20cf7655319dc3a1e771366c01f28639",
+      "after_sha256": "4eba52332907d1068e1fbc6682b7e55b20cf7655319dc3a1e771366c01f28639",
+      "unchanged": true
+    },
+    "music_ir/__main__.py": {
+      "before_sha256": "3506c1d833846dd1d65b9a4fe2211ffde2d6c112db960b2971306a05d30681ec",
+      "after_sha256": "3506c1d833846dd1d65b9a4fe2211ffde2d6c112db960b2971306a05d30681ec",
+      "unchanged": true
+    },
+    "tests/test_benchmark.py": {
+      "before_sha256": "5a2e0d40a2b8f47724b59a69e0d7a3bc60408f083b461a4ca09df50a883a9d25",
+      "after_sha256": "5a2e0d40a2b8f47724b59a69e0d7a3bc60408f083b461a4ca09df50a883a9d25",
+      "unchanged": true
+    },
+    "tests/test_catalog.py": {
+      "before_sha256": "46dac77b6ab75c446d3b3dd6a9902780bb6e9d8ee1fe4f5c573ced3449e76336",
+      "after_sha256": "46dac77b6ab75c446d3b3dd6a9902780bb6e9d8ee1fe4f5c573ced3449e76336",
+      "unchanged": true
+    },
+    "tests/test_checkpoint.py": {
+      "before_sha256": "63c4ead505e47e6e6ff8c9c6abba7df6da8f78eeccbdb0cf266e9d6b2919a657",
+      "after_sha256": "63c4ead505e47e6e6ff8c9c6abba7df6da8f78eeccbdb0cf266e9d6b2919a657",
+      "unchanged": true
+    },
+    "tests/test_diagnostics.py": {
+      "before_sha256": "70ed9966acd9e798e3ee966e433182b9efe1db77e8380261bdce18d58f0a7bad",
+      "after_sha256": "70ed9966acd9e798e3ee966e433182b9efe1db77e8380261bdce18d58f0a7bad",
+      "unchanged": true
+    },
+    "tests/test_elasticsearch.py": {
+      "before_sha256": "f79de3bd757e448539e3eb457d33da60fbf82dcacd5adb6a93ec0c1955694d37",
+      "after_sha256": "f79de3bd757e448539e3eb457d33da60fbf82dcacd5adb6a93ec0c1955694d37",
+      "unchanged": true
+    },
+    "tests/test_intents.py": {
+      "before_sha256": "80e6b1c95cf9054f73640284e184e545760de786f4d4f800650b189674c3a4cf",
+      "after_sha256": "80e6b1c95cf9054f73640284e184e545760de786f4d4f800650b189674c3a4cf",
+      "unchanged": true
+    },
+    "tests/test_lyrics.py": {
+      "before_sha256": "357b6b6239bd331f1f87005a54f24e9c0890c0f5e61ac49ef861d5845f5d9601",
+      "after_sha256": "357b6b6239bd331f1f87005a54f24e9c0890c0f5e61ac49ef861d5845f5d9601",
+      "unchanged": true
+    },
+    "tests/test_mood.py": {
+      "before_sha256": "45b5ee028f60bccc4348dba1bec7c19aaa2116e1e4b9a031863a88f7266f9a5e",
+      "after_sha256": "45b5ee028f60bccc4348dba1bec7c19aaa2116e1e4b9a031863a88f7266f9a5e",
+      "unchanged": true
+    },
+    "tests/test_ranking_policy.py": {
+      "before_sha256": "a8ae35101aca2d3aa288e5412e9bde02be09778afdc8e0d7bb07254521e88ef2",
+      "after_sha256": "a8ae35101aca2d3aa288e5412e9bde02be09778afdc8e0d7bb07254521e88ef2",
+      "unchanged": true
+    },
+    "tests/test_search.py": {
+      "before_sha256": "3d73c2b53a89383e80b7ae1cc39cda46880bf548b259d4c6089b5fcddeba8c00",
+      "after_sha256": "3d73c2b53a89383e80b7ae1cc39cda46880bf548b259d4c6089b5fcddeba8c00",
+      "unchanged": true
+    },
+    "frontend/src/App.tsx": {
+      "before_sha256": "a08f0ecd4fa7fa49cb34276e2b521b51b4e0251509cb5dda800b50a6a4c24b44",
+      "after_sha256": "a08f0ecd4fa7fa49cb34276e2b521b51b4e0251509cb5dda800b50a6a4c24b44",
+      "unchanged": true
+    },
+    "frontend/src/artwork.json": {
+      "before_sha256": "ffdc141d841cd0c9664bbcc9ff9549181ef7d662ad28c36055461e249a123061",
+      "after_sha256": "ffdc141d841cd0c9664bbcc9ff9549181ef7d662ad28c36055461e249a123061",
+      "unchanged": true
+    },
+    "frontend/src/BenchmarkPage.tsx": {
+      "before_sha256": "d5f2d3d4d7c7da820caa6ee79cb2b106311c9c451e008487b3dd293747cc925c",
+      "after_sha256": "d5f2d3d4d7c7da820caa6ee79cb2b106311c9c451e008487b3dd293747cc925c",
+      "unchanged": true
+    },
+    "frontend/src/components.tsx": {
+      "before_sha256": "2f507b56eb0bde7a938b928dac48697ba9c1d2812a00fdd47ca694b5d8e81789",
+      "after_sha256": "2f507b56eb0bde7a938b928dac48697ba9c1d2812a00fdd47ca694b5d8e81789",
+      "unchanged": true
+    },
+    "frontend/src/DiagnosticsPanel.tsx": {
+      "before_sha256": "021ed4aa1465273ae9c97372f1f1cf8a9c77c05930a218b5a4c7cfdf80df9fd5",
+      "after_sha256": "021ed4aa1465273ae9c97372f1f1cf8a9c77c05930a218b5a4c7cfdf80df9fd5",
+      "unchanged": true
+    },
+    "frontend/src/lib.ts": {
+      "before_sha256": "f08ea4fb07e1776a61d4e7eb1cc668fae343605ecafb65b6959a162ee9f017ce",
+      "after_sha256": "f08ea4fb07e1776a61d4e7eb1cc668fae343605ecafb65b6959a162ee9f017ce",
+      "unchanged": true
+    },
+    "frontend/src/main.tsx": {
+      "before_sha256": "dfdade5968e45c4f3a6770a996945357d5f73888bb8e7eec349243dc0835b6ff",
+      "after_sha256": "dfdade5968e45c4f3a6770a996945357d5f73888bb8e7eec349243dc0835b6ff",
+      "unchanged": true
+    },
+    "frontend/src/mood.css": {
+      "before_sha256": "e92136c3227c09706ba639084f3c1e69680e40252e7d9fb62054c91815123458",
+      "after_sha256": "e92136c3227c09706ba639084f3c1e69680e40252e7d9fb62054c91815123458",
+      "unchanged": true
+    },
+    "frontend/src/MoodControls.tsx": {
+      "before_sha256": "e45f2b64c2c459d23dbc498d6078e3e71ba8c46fef92edad45aec84646d363fc",
+      "after_sha256": "e45f2b64c2c459d23dbc498d6078e3e71ba8c46fef92edad45aec84646d363fc",
+      "unchanged": true
+    },
+    "frontend/src/research.css": {
+      "before_sha256": "f81c109829699a72c37e35ef8f8b15bead700db8e97a805b69c5ec486c00846c",
+      "after_sha256": "f81c109829699a72c37e35ef8f8b15bead700db8e97a805b69c5ec486c00846c",
+      "unchanged": true
+    },
+    "frontend/src/research.ts": {
+      "before_sha256": "5f21c2e88cb5d210102e2769c3a461ff169794a6f1efdf8f5bd245ce5724549e",
+      "after_sha256": "5f21c2e88cb5d210102e2769c3a461ff169794a6f1efdf8f5bd245ce5724549e",
+      "unchanged": true
+    },
+    "frontend/src/search.css": {
+      "before_sha256": "eb4627339ce9a81488f402c415418b26fdbcede8ca09905166296d98a729f659",
+      "after_sha256": "eb4627339ce9a81488f402c415418b26fdbcede8ca09905166296d98a729f659",
+      "unchanged": true
+    },
+    "frontend/src/styles.css": {
+      "before_sha256": "70f5ca7c74930abcc20b9051f20ad730e1466323ad6b698b2d71f7392e988610",
+      "after_sha256": "70f5ca7c74930abcc20b9051f20ad730e1466323ad6b698b2d71f7392e988610",
+      "unchanged": true
+    },
+    "frontend/tests/app.spec.ts": {
+      "before_sha256": "62b3c29d453947e45b65650f46d9ea4f5d5323c2eaef5a8bae41a3420522d3e5",
+      "after_sha256": "62b3c29d453947e45b65650f46d9ea4f5d5323c2eaef5a8bae41a3420522d3e5",
+      "unchanged": true
+    },
+    "frontend/tests/intents.spec.ts": {
+      "before_sha256": "025c90c6faad302472637c6cfccbd80021b726c686ad397a7ffa5974d96766ee",
+      "after_sha256": "025c90c6faad302472637c6cfccbd80021b726c686ad397a7ffa5974d96766ee",
+      "unchanged": true
+    },
+    "frontend/tests/mood.spec.ts": {
+      "before_sha256": "92c6ffba4e3bd5c40bce3736427e039b67a36361b59c8d157d6af8e8650adbf1",
+      "after_sha256": "92c6ffba4e3bd5c40bce3736427e039b67a36361b59c8d157d6af8e8650adbf1",
+      "unchanged": true
+    },
+    "frontend/tests/research.spec.ts": {
+      "before_sha256": "ebc27afa0a9edacdf4ce337bfc12021197a299bed50875c722d5f57bd75bcf31",
+      "after_sha256": "ebc27afa0a9edacdf4ce337bfc12021197a299bed50875c722d5f57bd75bcf31",
+      "unchanged": true
+    },
+    "frontend/tests/score-policy.spec.ts": {
+      "before_sha256": "7c1f500bb29e243192e9c53a18eaf24e8653f4d1b3b37efd76ce94c4873cc207",
+      "after_sha256": "7c1f500bb29e243192e9c53a18eaf24e8653f4d1b3b37efd76ce94c4873cc207",
+      "unchanged": true
+    },
+    "evaluation/qrels.template.csv": {
+      "before_sha256": "b2832258b149cbcd4e8d28f25a979cd0b689dcf978e5f99d9a461d6d5b912725",
+      "after_sha256": "b2832258b149cbcd4e8d28f25a979cd0b689dcf978e5f99d9a461d6d5b912725",
+      "unchanged": true
+    },
+    "evaluation/queries.draft.jsonl": {
+      "before_sha256": "d891bd6272371194f881235467c66019c9daa8e320ee97e6698614776db28c13",
+      "after_sha256": "d891bd6272371194f881235467c66019c9daa8e320ee97e6698614776db28c13",
+      "unchanged": true
+    },
+    "evaluation/queries.example.jsonl": {
+      "before_sha256": "1c509cb1547e46bbb06d7a66ee417c56b6af03a0140e32770e3498446cebbd71",
+      "after_sha256": "1c509cb1547e46bbb06d7a66ee417c56b6af03a0140e32770e3498446cebbd71",
+      "unchanged": true
+    },
+    "config.json": {
+      "before_sha256": "ce02d5aa9567fb3c1e654e2dedcb5908d4ae1dbb8215158cda2ccb9e1ab7b8ae",
+      "after_sha256": "ce02d5aa9567fb3c1e654e2dedcb5908d4ae1dbb8215158cda2ccb9e1ab7b8ae",
+      "unchanged": true
+    },
+    "run.ps1": {
+      "before_sha256": "77a2699e11af95884a61b1a2a17afd484cd9baf37d804173b7e6f3eeb702c127",
+      "after_sha256": "77a2699e11af95884a61b1a2a17afd484cd9baf37d804173b7e6f3eeb702c127",
+      "unchanged": true
+    },
+    "pyproject.toml": {
+      "before_sha256": "19d5badc61e24734216d748aa9120b6b83e904e491a16da01ebf9efc47edafe0",
+      "after_sha256": "19d5badc61e24734216d748aa9120b6b83e904e491a16da01ebf9efc47edafe0",
+      "unchanged": true
+    },
+    "requirements.lock.txt": {
+      "before_sha256": "741c9dfe5a919e51b6a1e1ad898f516fc0462cb86368df1696abc8022d7dd800",
+      "after_sha256": "741c9dfe5a919e51b6a1e1ad898f516fc0462cb86368df1696abc8022d7dd800",
+      "unchanged": true
+    },
+    "frontend/package.json": {
+      "before_sha256": "99703270b641298598ee44ad822c5014617d3ccaed3daeb62cf9c06b965ba878",
+      "after_sha256": "99703270b641298598ee44ad822c5014617d3ccaed3daeb62cf9c06b965ba878",
+      "unchanged": true
+    },
+    "frontend/package-lock.json": {
+      "before_sha256": "b7610ff33623468aa7b590dbfc6685aadb02d7963aad346294cf601f6f58e2ef",
+      "after_sha256": "b7610ff33623468aa7b590dbfc6685aadb02d7963aad346294cf601f6f58e2ef",
+      "unchanged": true
+    },
+    "frontend/vite.config.ts": {
+      "before_sha256": "599021d688f668ba680aae42a80d3a0fb0f0db97eec2389ea9327aafec57d108",
+      "after_sha256": "599021d688f668ba680aae42a80d3a0fb0f0db97eec2389ea9327aafec57d108",
+      "unchanged": true
+    },
+    "frontend/playwright.config.ts": {
+      "before_sha256": "b67fa3ab526689ea6aee51324af1891e405460b5b935b74071d0960d943ad196",
+      "after_sha256": "b67fa3ab526689ea6aee51324af1891e405460b5b935b74071d0960d943ad196",
+      "unchanged": true
+    },
+    "data/processed/audit.json": {
+      "before_sha256": "4ef7ae560ee954de681d09d05993dc0bc9c287a0777b4d4cfe5f108cb9078a27",
+      "after_sha256": "4ef7ae560ee954de681d09d05993dc0bc9c287a0777b4d4cfe5f108cb9078a27",
+      "unchanged": true
+    },
+    "data/processed/corpus.json": {
+      "before_sha256": "174cc7143008aa14167c8c1c3500f7b7a5c13f70eb5631e9c6e4c85a5a51e5f0",
+      "after_sha256": "174cc7143008aa14167c8c1c3500f7b7a5c13f70eb5631e9c6e4c85a5a51e5f0",
+      "unchanged": true
+    },
+    "data/processed/corpus.parquet": {
+      "before_sha256": "47f92445bc795cc15ba7e41ff56c66dd0df87e61b0ba031a75c41e44639440a8",
+      "after_sha256": "47f92445bc795cc15ba7e41ff56c66dd0df87e61b0ba031a75c41e44639440a8",
+      "unchanged": true
+    },
+    "data/raw/67d82c39457bc00a38ea384e5a330404e1d39714ccb06fe19d1facf8963d54e1.csv": {
+      "before_sha256": "67d82c39457bc00a38ea384e5a330404e1d39714ccb06fe19d1facf8963d54e1",
+      "after_sha256": "67d82c39457bc00a38ea384e5a330404e1d39714ccb06fe19d1facf8963d54e1",
+      "unchanged": true
+    },
+    "artifacts/semantic/checkpoint.json": {
+      "before_sha256": "325c8f27b3d186f8f0b59503cfa4fc6a16c656ca3b3ceebf24aaaab7d905d0e6",
+      "after_sha256": "325c8f27b3d186f8f0b59503cfa4fc6a16c656ca3b3ceebf24aaaab7d905d0e6",
+      "unchanged": true
+    },
+    "artifacts/semantic/metadata.json": {
+      "before_sha256": "fb9601f208ae8e2849aa506f419630c6ba3a063050ab480593cdb9ca64c3817b",
+      "after_sha256": "fb9601f208ae8e2849aa506f419630c6ba3a063050ab480593cdb9ca64c3817b",
+      "unchanged": true
+    },
+    "artifacts/semantic/progress.json": {
+      "before_sha256": "3db4d867b61d6438f88328b79b1b0bc3004cb18184237528c87586c37a28ba30",
+      "after_sha256": "3db4d867b61d6438f88328b79b1b0bc3004cb18184237528c87586c37a28ba30",
+      "unchanged": true
+    },
+    "artifacts/semantic/vectors.npy": {
+      "before_sha256": "6f03f54c58e2115e14d08e67ee8bc849a83923d1df8641fb2510b87a73da5921",
+      "after_sha256": "6f03f54c58e2115e14d08e67ee8bc849a83923d1df8641fb2510b87a73da5921",
+      "unchanged": true
+    },
+    "artifacts/benchmark/pool.json": {
+      "before_sha256": "93afde6736c40dfef6b748ae5af1bc07321bfd9235c900fcc0d2a8fc2cb9c52a",
+      "after_sha256": "93afde6736c40dfef6b748ae5af1bc07321bfd9235c900fcc0d2a8fc2cb9c52a",
+      "unchanged": true
+    },
+    "artifacts/benchmark/reviews.sqlite3": {
+      "before_sha256": "9c0a0f62fdd0251329225638f3762d2d717fa7792e2c6bb586bb1a8538cd82fb",
+      "after_sha256": "9c0a0f62fdd0251329225638f3762d2d717fa7792e2c6bb586bb1a8538cd82fb",
+      "unchanged": true
+    }
+  },
+  "protected_inputs": [
+    "music_ir/api.py",
+    "music_ir/audio.py",
+    "music_ir/benchmark.py",
+    "music_ir/catalog.py",
+    "music_ir/data.py",
+    "music_ir/diagnostics.py",
+    "music_ir/engine.py",
+    "music_ir/evaluate.py",
+    "music_ir/lexical.py",
+    "music_ir/lyrics.py",
+    "music_ir/metadata.py",
+    "music_ir/mood.py",
+    "music_ir/passages.py",
+    "music_ir/query.py",
+    "music_ir/semantic.py",
+    "music_ir/tune.py",
+    "music_ir/__init__.py",
+    "music_ir/__main__.py",
+    "tests/test_benchmark.py",
+    "tests/test_catalog.py",
+    "tests/test_checkpoint.py",
+    "tests/test_diagnostics.py",
+    "tests/test_elasticsearch.py",
+    "tests/test_intents.py",
+    "tests/test_lyrics.py",
+    "tests/test_mood.py",
+    "tests/test_ranking_policy.py",
+    "tests/test_search.py",
+    "frontend/src/App.tsx",
+    "frontend/src/artwork.json",
+    "frontend/src/BenchmarkPage.tsx",
+    "frontend/src/components.tsx",
+    "frontend/src/DiagnosticsPanel.tsx",
+    "frontend/src/lib.ts",
+    "frontend/src/main.tsx",
+    "frontend/src/mood.css",
+    "frontend/src/MoodControls.tsx",
+    "frontend/src/research.css",
+    "frontend/src/research.ts",
+    "frontend/src/search.css",
+    "frontend/src/styles.css",
+    "frontend/tests/app.spec.ts",
+    "frontend/tests/intents.spec.ts",
+    "frontend/tests/mood.spec.ts",
+    "frontend/tests/research.spec.ts",
+    "frontend/tests/score-policy.spec.ts",
+    "evaluation/qrels.template.csv",
+    "evaluation/queries.draft.jsonl",
+    "evaluation/queries.example.jsonl",
+    "config.json",
+    "run.ps1",
+    "pyproject.toml",
+    "requirements.lock.txt",
+    "frontend/package.json",
+    "frontend/package-lock.json",
+    "frontend/vite.config.ts",
+    "frontend/playwright.config.ts",
+    "data/processed/audit.json",
+    "data/processed/corpus.json",
+    "data/processed/corpus.parquet",
+    "data/raw/67d82c39457bc00a38ea384e5a330404e1d39714ccb06fe19d1facf8963d54e1.csv"
+  ],
+  "protected_input_changes": [],
+  "all_observed_changed_inputs": [],
+  "git_tracked_diff_exit": 0,
+  "git_staged_diff_exit": 0,
+  "git_status": "?? audit_music_ir_20261122T162521_WIB/\n",
+  "active_corpus_identity": "2708d05f6486650d00bec7db689c2672b61829952f8a9b22ec2c3c9755402758",
+  "normal_passage_cache_after_all_runs": {
+    "entries": 337,
+    "sha256": "894b0ce2ef34d2286c0a92d53725598c83bb9641fac09baa27998869025149a6",
+    "bytes": 1597440
+  },
+  "human_judgments_after": 0,
+  "human_reviews_after": 0,
+  "notes": "Audit files are new; frontend dist build may change ignored generated output. No source/config/corpus/judgments modified. Passage cache writes, if any, are normal application inference writes."
+}

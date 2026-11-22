@@ -1,0 +1,127 @@
+{
+  "audit_status": "evidence_package_ready_with_documented_limits",
+  "start": "2026-11-22T16:25:21+07:00",
+  "report_composed_at": "2026-11-22T16:50:25.109685+07:00",
+  "timezone": "Asia/Jakarta",
+  "root": "D:\\CODINGGG\\Music IR",
+  "commit": "d1fa4edf10189dbda73eda292b6e795238af2c7f",
+  "config_unchanged": true,
+  "protected_inputs_unchanged": true,
+  "runtime": {
+    "backend_class": "LocalBM25",
+    "backend": "local",
+    "effective_config": {
+      "field_weights": [
+        3,
+        2,
+        1
+      ],
+      "text_weights": [
+        0.25,
+        0.25,
+        0.25,
+        0.25,
+        0.0
+      ],
+      "audio_weight": 0.5,
+      "candidate_limit": 100,
+      "rrf_constant": 60,
+      "theme": {
+        "candidate_limit": 24,
+        "document_weight": 0.4
+      },
+      "bm25_k1": 1.2,
+      "bm25_b": 0.75,
+      "model_name": "BAAI/bge-m3",
+      "model_revision": "5617a9f61b028005a4858fdac845db406aefb181",
+      "mood": {
+        "default_basis": "both",
+        "sad_max_valence": 0.5,
+        "sad_max_energy": 0.65,
+        "happy_min_valence": 0.5
+      },
+      "tuned": false
+    },
+    "semantic_ready": true,
+    "encoder_loaded": true,
+    "device": "cpu",
+    "dtype": "torch.float32",
+    "max_seq_length": 8192,
+    "embedding_dimension": 1024,
+    "torch_threads": 4,
+    "cuda_available": false,
+    "document_vector_shape": [
+      1437,
+      1024
+    ],
+    "document_vector_dtype": "float32"
+  },
+  "dataset": {
+    "source_rows": 1686,
+    "source_columns": 30,
+    "source_unique_ids": 1437,
+    "lyrics_available": 1404,
+    "without_lyrics": 33,
+    "repeated_id_extra_occurrences": 249,
+    "identical_row_extra_occurrences": 0,
+    "active_corpus_identity": "2708d05f6486650d00bec7db689c2672b61829952f8a9b22ec2c3c9755402758"
+  },
+  "tests": {
+    "backend": {
+      "total": 93,
+      "passed": 88,
+      "failed": 0,
+      "skipped": 5,
+      "skip_reason": "Elasticsearch opt-in unset; service/index not started"
+    },
+    "frontend_mocked": {
+      "passed": 15,
+      "failed": 0,
+      "skipped": 0
+    },
+    "frontend_build_exit": 0,
+    "http_cases": 51,
+    "http_case_failures": 0,
+    "real_ui_screenshots": 4,
+    "independent_score_checks": 8
+  },
+  "retrieval_evaluation": {
+    "status": "not_evaluated",
+    "metrics": {
+      "ndcg@10": null,
+      "mrr@10": null,
+      "recall@100": null
+    },
+    "reason": "160 draft queries; 0 human reviews and 0 judgments; no eligible human qrels"
+  },
+  "latency": {
+    "measured_requests": 180,
+    "warmup_requests": 60,
+    "queries": 6,
+    "seed": 42,
+    "cache": "existing; no deletion; warm passage vectors",
+    "summary_file": "evidence/latency_summary.json"
+  },
+  "annotation": {
+    "queries_pooled": 10,
+    "candidate_pairs": 191,
+    "human_labels_generated": 0,
+    "remaining_queries_unpooled": 150,
+    "file": "evidence/annotation_needed.csv"
+  },
+  "known_bug": "Evaluator fixture error aborts before saving incomplete manifest or partial successful measurements",
+  "missing_artifacts": {
+    "pipeline_actual.png": "Mermaid renderer not installed",
+    "retrieval_metrics_per_query.csv": "No valid human qrels; not produced as empty data",
+    "cold_passage_cache_measurement": "Existing user cache retained; controlled cold cache not performed",
+    "gpu_vram_inventory": "CIM access denied; CPU-only torch runtime observed"
+  },
+  "claim_status_labels": {
+    "executed": "terverifikasi lewat eksekusi saat audit",
+    "code_only": "ditemukan dalam kode tetapi belum dijalankan",
+    "historical_only": "hanya tercatat pada artefak historis",
+    "not_verified": "belum tersedia/tidak dapat diverifikasi"
+  },
+  "claims_file": "evidence/claims.json",
+  "protected_inputs_check": "evidence/snapshot_after.json"
+}

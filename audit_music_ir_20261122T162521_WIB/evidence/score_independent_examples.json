@@ -1,0 +1,308 @@
+{
+  "checks": [
+    {
+      "case_id": "REG-03",
+      "track_id": "6nGeLlakfzlBcFdZXteDq7",
+      "mode": "AUTO",
+      "query_type": "semantic",
+      "features_recomputed": [
+        0.0,
+        0.809269368648529,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "contributions": {
+        "semantic_theme": 0.32370774745941167,
+        "lyric_passage": 0.31658745121210813,
+        "audio": 0.0,
+        "lyric_bonus": 0.0
+      },
+      "raw_scores": {
+        "bm25": 0.0,
+        "cosine": 0.6185387372970581,
+        "audio": 0.0,
+        "rrf": 0.01639344262295082
+      },
+      "audio_weight": 0,
+      "text_weights": {
+        "bm25_normalized": 0.25,
+        "cosine_normalized": 0.25,
+        "title_overlap": 0.25,
+        "artist_overlap": 0.25,
+        "lyric_phrase": 0.0
+      },
+      "expected_score_independent": 0.6402951986715197,
+      "actual_score": 0.6402951986715197,
+      "absolute_error": 0.0,
+      "tolerance": 1e-07,
+      "passed": true
+    },
+    {
+      "case_id": "REG-07",
+      "track_id": "7BqBn9nzAq8spo5e7cZ0dJ",
+      "mode": "AUTO",
+      "query_type": "lyrics",
+      "features_recomputed": [
+        0.18257289578955893,
+        0.7596963942050934,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "contributions": {
+        "bm25_normalized": 0.04564322394738973,
+        "cosine_normalized": 0.18992409110069275,
+        "title_overlap": 0.0,
+        "artist_overlap": 0.0,
+        "lyric_phrase": 0.0,
+        "audio": 0.0,
+        "lyric_bonus": 4.0
+      },
+      "raw_scores": {
+        "bm25": 8.859642419433303,
+        "cosine": 0.5193927884101868,
+        "audio": 0.0,
+        "rrf": 0.035970648505303765
+      },
+      "audio_weight": 0,
+      "text_weights": {
+        "bm25_normalized": 0.25,
+        "cosine_normalized": 0.25,
+        "title_overlap": 0.25,
+        "artist_overlap": 0.25,
+        "lyric_phrase": 0.0
+      },
+      "expected_score_independent": 4.235567322498663,
+      "actual_score": 4.235567315048082,
+      "absolute_error": 7.450580596923828e-09,
+      "tolerance": 1e-07,
+      "passed": true
+    },
+    {
+      "case_id": "AUDIO",
+      "track_id": "2plbrEY59IikOBgBGLjaoe",
+      "mode": "AUTO",
+      "query_type": "audio",
+      "features_recomputed": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "contributions": {
+        "audio": 1.0,
+        "lyric_bonus": 0.0
+      },
+      "raw_scores": {
+        "bm25": 0.0,
+        "cosine": null,
+        "audio": 1.0,
+        "rrf": 0.01639344262295082
+      },
+      "audio_weight": 1,
+      "text_weights": {
+        "bm25_normalized": 0.3333333333333333,
+        "cosine_normalized": 0.0,
+        "title_overlap": 0.3333333333333333,
+        "artist_overlap": 0.3333333333333333,
+        "lyric_phrase": 0.0
+      },
+      "expected_score_independent": 1.0,
+      "actual_score": 1.0,
+      "absolute_error": 0.0,
+      "tolerance": 1e-07,
+      "passed": true
+    },
+    {
+      "case_id": "PREF",
+      "track_id": "6KzdWw8Hi1bz1lVw2AXDzb",
+      "mode": "AUTO",
+      "query_type": "audio",
+      "features_recomputed": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "contributions": {
+        "audio": 1.0,
+        "lyric_bonus": 0.0
+      },
+      "raw_scores": {
+        "bm25": 0.0,
+        "cosine": null,
+        "audio": 1.0,
+        "rrf": 0.01639344262295082
+      },
+      "audio_weight": 1,
+      "text_weights": {
+        "bm25_normalized": 0.3333333333333333,
+        "cosine_normalized": 0.0,
+        "title_overlap": 0.3333333333333333,
+        "artist_overlap": 0.3333333333333333,
+        "lyric_phrase": 0.0
+      },
+      "expected_score_independent": 1.0,
+      "actual_score": 1.0,
+      "absolute_error": 0.0,
+      "tolerance": 1e-07,
+      "passed": true
+    },
+    {
+      "case_id": "MIXTEXT",
+      "track_id": "4cktbXiXOapiLBMprHFErI",
+      "mode": "AUTO",
+      "query_type": "text",
+      "features_recomputed": [
+        1.0,
+        0.7549135684967041,
+        0.5,
+        0.0,
+        0.0
+      ],
+      "contributions": {
+        "bm25_normalized": 0.125,
+        "cosine_normalized": 0.09436419606208801,
+        "title_overlap": 0.0625,
+        "artist_overlap": 0.0,
+        "lyric_phrase": 0.0,
+        "audio": 0.4723189415041783,
+        "lyric_bonus": 0.0
+      },
+      "raw_scores": {
+        "bm25": 34.9767783053719,
+        "cosine": 0.5098271369934082,
+        "audio": 0.9446378830083566,
+        "rrf": 0.038411014338839464
+      },
+      "audio_weight": 0.5,
+      "text_weights": {
+        "bm25_normalized": 0.25,
+        "cosine_normalized": 0.25,
+        "title_overlap": 0.25,
+        "artist_overlap": 0.25,
+        "lyric_phrase": 0.0
+      },
+      "expected_score_independent": 0.7541831375662663,
+      "actual_score": 0.7541831375662663,
+      "absolute_error": 0.0,
+      "tolerance": 1e-07,
+      "passed": true
+    },
+    {
+      "case_id": "MODE-0-E2",
+      "track_id": "6uBhi9gBXWjanegOb2Phh0",
+      "mode": "E2",
+      "query_type": "text",
+      "features_recomputed": [
+        1.0,
+        0.0,
+        1.0,
+        0.0,
+        0.0
+      ],
+      "contributions": {
+        "bm25_raw": 26.92476573772408
+      },
+      "raw_scores": {
+        "bm25": 26.92476573772408,
+        "cosine": null,
+        "audio": 0.0,
+        "rrf": 0.01639344262295082
+      },
+      "audio_weight": 0.0,
+      "text_weights": {
+        "bm25_normalized": 0.25,
+        "cosine_normalized": 0.25,
+        "title_overlap": 0.25,
+        "artist_overlap": 0.25,
+        "lyric_phrase": 0.0
+      },
+      "expected_score_independent": 26.92476573772408,
+      "actual_score": 26.92476573772408,
+      "absolute_error": 0.0,
+      "tolerance": 1e-07,
+      "passed": true
+    },
+    {
+      "case_id": "MODE-0-E3",
+      "track_id": "6uBhi9gBXWjanegOb2Phh0",
+      "mode": "E3",
+      "query_type": "text",
+      "features_recomputed": [
+        1.0,
+        0.8022486865520477,
+        1.0,
+        0.0,
+        0.0
+      ],
+      "contributions": {
+        "rrf": 0.03278688524590164
+      },
+      "raw_scores": {
+        "bm25": 26.92476573772408,
+        "cosine": 0.6044973731040955,
+        "audio": 0.0,
+        "rrf": 0.03278688524590164
+      },
+      "audio_weight": 0.0,
+      "text_weights": {
+        "bm25_normalized": 0.25,
+        "cosine_normalized": 0.25,
+        "title_overlap": 0.25,
+        "artist_overlap": 0.25,
+        "lyric_phrase": 0.0
+      },
+      "expected_score_independent": 0.03278688524590164,
+      "actual_score": 0.03278688524590164,
+      "absolute_error": 0.0,
+      "tolerance": 1e-07,
+      "passed": true
+    },
+    {
+      "case_id": "MODE-0-E4",
+      "track_id": "6uBhi9gBXWjanegOb2Phh0",
+      "mode": "E4",
+      "query_type": "text",
+      "features_recomputed": [
+        1.0,
+        0.8022486865520477,
+        1.0,
+        0.0,
+        0.0
+      ],
+      "contributions": {
+        "bm25_normalized": 0.25,
+        "cosine_normalized": 0.20056217908859253,
+        "title_overlap": 0.25,
+        "artist_overlap": 0.0,
+        "lyric_phrase": 0.0,
+        "audio": 0.0,
+        "lyric_bonus": 0.0
+      },
+      "raw_scores": {
+        "bm25": 26.92476573772408,
+        "cosine": 0.6044973731040955,
+        "audio": 0.0,
+        "rrf": 0.03278688524590164
+      },
+      "audio_weight": 0,
+      "text_weights": {
+        "bm25_normalized": 0.25,
+        "cosine_normalized": 0.25,
+        "title_overlap": 0.25,
+        "artist_overlap": 0.25,
+        "lyric_phrase": 0.0
+      },
+      "expected_score_independent": 0.7005621716380119,
+      "actual_score": 0.7005621790885925,
+      "absolute_error": 7.450580596923828e-09,
+      "tolerance": 1e-07,
+      "passed": true
+    }
+  ],
+  "all_passed": true
+}

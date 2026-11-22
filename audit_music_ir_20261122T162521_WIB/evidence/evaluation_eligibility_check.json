@@ -1,0 +1,6 @@
+{
+  "procedure": "read_benchmark(actual queries.draft.jsonl, actual qrels.template.csv, active docs, required_split=test)",
+  "exception": "ValueError('Tinjau dan setujui draft query dahulu: title-009')",
+  "relevance_run_executed": false,
+  "reason": "The benchmark validation rejects draft/unjudged real queries; no semantic effectiveness computed"
+}

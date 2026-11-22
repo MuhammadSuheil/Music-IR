@@ -1,0 +1,30 @@
+[
+  {
+    "query": "Stay",
+    "all_modes_executed": true,
+    "e3_e4_same_candidate_set": true,
+    "e4_e5_same_results": true,
+    "auto_e5_same_results": false
+  },
+  {
+    "query": "I just woke up from a dream",
+    "all_modes_executed": true,
+    "e3_e4_same_candidate_set": true,
+    "e4_e5_same_results": true,
+    "auto_e5_same_results": false
+  },
+  {
+    "query": "leaving memories dengan energi rendah",
+    "all_modes_executed": true,
+    "e3_e4_same_candidate_set": true,
+    "e4_e5_same_results": false,
+    "auto_e5_same_results": true
+  },
+  {
+    "query": "tempo > 120 BPM",
+    "all_modes_executed": true,
+    "e3_e4_same_candidate_set": true,
+    "e4_e5_same_results": false,
+    "auto_e5_same_results": false
+  }
+]

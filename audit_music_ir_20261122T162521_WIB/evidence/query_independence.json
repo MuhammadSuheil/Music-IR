@@ -1,0 +1,29 @@
+{
+  "group_count": 64,
+  "group_cross_split": {},
+  "exact_normalized_query_duplicates": [],
+  "token_only_collisions_not_equivalent_queries": [
+    {
+      "text": "tempo 120 bpm",
+      "queries": [
+        {
+          "query_id": "audio-001",
+          "query": "tempo > 120 BPM",
+          "split": "dev"
+        },
+        {
+          "query_id": "audio-024",
+          "query": "tempo <= 120 BPM",
+          "split": "test"
+        }
+      ]
+    }
+  ],
+  "hint_track_ids_cross_split": {},
+  "exact_normalized_overlap_with_current_regression_cases": [
+    "artist-001",
+    "lyrics-001",
+    "title-016"
+  ],
+  "development_history": "Full authoring/tuning chronology unavailable; structural split checks do not establish independence from rule development"
+}

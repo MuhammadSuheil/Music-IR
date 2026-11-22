@@ -1,0 +1,9 @@
+{
+  "procedure": "evaluate() with two approved artificial queries and toy labels; raise on search call13 (after ten warmups, two measurement successes)",
+  "calls": 13,
+  "exception": "RuntimeError('audit fixture: required query failure')",
+  "output_directory_exists": false,
+  "incomplete_manifest_written": false,
+  "impact": "existing evaluator aborts before persisting completed runs/failure manifest; future research run needs explicit incomplete status and per-query errors",
+  "scope": "fixture only; no application code fixed and no human relevance labels fabricated"
+}

@@ -1,0 +1,14 @@
+{
+  "command": [
+    "npm.cmd",
+    "--version"
+  ],
+  "cwd": "D:\\CODINGGG\\Music IR",
+  "started_at": "2026-11-22T16:28:07.448775+07:00",
+  "duration_seconds": 0.7555434999521822,
+  "exit_code": 0,
+  "stdout": "11.12.1\n",
+  "stderr": "",
+  "ended_at": "2026-11-22T16:28:08.204318+07:00",
+  "start_time_method": "reconstructed from completion timestamp minus measured perf_counter duration; original collector mislabeled end as start"
+}

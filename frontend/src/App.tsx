@@ -5,6 +5,7 @@ import { ArrowDownWideNarrow, ArrowRight, ArrowUpRight, Check, ChevronLeft, Chev
 import { Artwork, Empty, IconButton, LikedArt, Modal, TrackCard, TrackTable } from './components'
 import DiagnosticsPanel from './DiagnosticsPanel'
 import BenchmarkPage from './BenchmarkPage'
+import RelevancePage from './RelevancePage'
 import MoodControls from './MoodControls'
 import { api, duration, genreName, pageUrl, readLibrary, readPage, spotifyUrl,
   type Catalog, type Health, type Library, type Page, type SearchResult, type Track, type MoodBasis } from './lib'
@@ -229,6 +230,7 @@ export default function App() {
 
         {page.kind === 'artists' && <div className="page-content"><p className="eyebrow">TEMUKAN SUARA BARU</p><h1>Artis di koleksi kita</h1><p className="page-description">Jelajahi artis dari lagu-lagu populer.</p><div className="artist-grid">{cards(artists, true)}</div></div>}
         {page.kind === 'benchmark' && <BenchmarkPage onSearch={search} />}
+        {page.kind === 'relevance' && <RelevancePage />}
 
         {page.kind === 'search' && <div className="page-content search-content"><p className="eyebrow">HASIL PENCARIAN</p><h1 className="search-heading">{page.query}</h1>{busy && <div className="search-loading" role="status"><LoaderCircle className="spin" size={28} /><h3>Mencari musik yang pas…</h3><p>Pencarian pertama mungkin sedikit lebih lama.</p></div>}
           {error && <div className="inline-error" role="alert"><p>{error}</p><button className="white-button" onClick={() => setRefresh(r => r + 1)}>Coba lagi</button></div>}

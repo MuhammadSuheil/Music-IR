@@ -1,0 +1,15 @@
+{
+  "command": [
+    "D:\\CODINGGG\\Music IR\\.venv\\Scripts\\python.exe",
+    "D:\\CODINGGG\\Music IR\\audit_music_ir_20261122T162521_WIB\\audit_search.py",
+    "annotation"
+  ],
+  "cwd": "D:\\CODINGGG\\Music IR",
+  "started_at": "2026-11-22T16:35:43.339767+07:00",
+  "duration_seconds": 101.07817270001397,
+  "exit_code": 0,
+  "stdout": "annotation title-001 23 errors 0\nannotation artist-001 12 errors 0\nannotation lyrics-001 21 errors 0\nannotation title-009 21 errors 0\nannotation artist-009 10 errors 0\nannotation lyrics-009 27 errors 0\nannotation semantic-001 22 errors 0\nannotation semantic-009 15 errors 0\nannotation audio-001 20 errors 0\nannotation audio-009 20 errors 0\n",
+  "stderr": "",
+  "ended_at": "2026-11-22T16:37:24.417940+07:00",
+  "start_time_method": "reconstructed from completion timestamp minus measured perf_counter duration; original collector mislabeled end as start"
+}

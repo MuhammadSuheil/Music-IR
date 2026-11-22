@@ -1,0 +1,369 @@
+[
+  {
+    "claim_id": "CLM-001",
+    "claim": "Snapshot Git, hash dan lingkungan",
+    "value": "d1fa4edf10189dbda73eda292b6e795238af2c7f",
+    "verification_status": "executed",
+    "status_label": "terverifikasi lewat eksekusi saat audit",
+    "code_reference": "music_ir/engine.py:18",
+    "evidence_file": "evidence/snapshot_before.json",
+    "procedure": "audit_collect.py snapshot",
+    "snapshot_commit": "d1fa4edf10189dbda73eda292b6e795238af2c7f",
+    "reason": null
+  },
+  {
+    "claim_id": "CLM-002",
+    "claim": "UI mengirim AUTO dan top_k 30",
+    "value": {
+      "mode": "AUTO",
+      "top_k": 30
+    },
+    "verification_status": "executed",
+    "status_label": "terverifikasi lewat eksekusi saat audit",
+    "code_reference": "frontend/src/App.tsx:97",
+    "evidence_file": "evidence/ui_live_responses.json",
+    "procedure": "audit_verify.py ui",
+    "snapshot_commit": "d1fa4edf10189dbda73eda292b6e795238af2c7f",
+    "reason": null
+  },
+  {
+    "claim_id": "CLM-003",
+    "claim": "Corpus aktif dan audit sumber",
+    "value": {
+      "rows": 1686,
+      "unique_tracks": 1437,
+      "lyrics": 1404
+    },
+    "verification_status": "executed",
+    "status_label": "terverifikasi lewat eksekusi saat audit",
+    "code_reference": "music_ir/data.py:29",
+    "evidence_file": "evidence/data_audit.json",
+    "procedure": "audit_collect.py data; prepare ke scratch audit",
+    "snapshot_commit": "d1fa4edf10189dbda73eda292b6e795238af2c7f",
+    "reason": null
+  },
+  {
+    "claim_id": "CLM-004",
+    "claim": "Model dokumen dan runtime encoder",
+    "value": {
+      "model": "BAAI/bge-m3",
+      "shape": [
+        1437,
+        1024
+      ],
+      "device": "cpu",
+      "dtype": "torch.float32"
+    },
+    "verification_status": "executed",
+    "status_label": "terverifikasi lewat eksekusi saat audit",
+    "code_reference": "music_ir/semantic.py:130",
+    "evidence_file": "evidence/runtime_engine.json",
+    "procedure": "audit_search.py latency; GET /_audit/runtime",
+    "snapshot_commit": "d1fa4edf10189dbda73eda292b6e795238af2c7f",
+    "reason": null
+  },
+  {
+    "claim_id": "CLM-005",
+    "claim": "Backend yang dipakai adalah LocalBM25",
+    "value": "LocalBM25",
+    "verification_status": "executed",
+    "status_label": "terverifikasi lewat eksekusi saat audit",
+    "code_reference": "music_ir/engine.py:56",
+    "evidence_file": "evidence/runtime_engine.json",
+    "procedure": "GET /_audit/runtime",
+    "snapshot_commit": "d1fa4edf10189dbda73eda292b6e795238af2c7f",
+    "reason": null
+  },
+  {
+    "claim_id": "CLM-006",
+    "claim": "E3/E4 identik kandidat pada empat probe",
+    "value": [
+      {
+        "query": "Stay",
+        "all_modes_executed": true,
+        "e3_e4_same_candidate_set": true,
+        "e4_e5_same_results": true,
+        "auto_e5_same_results": false
+      },
+      {
+        "query": "I just woke up from a dream",
+        "all_modes_executed": true,
+        "e3_e4_same_candidate_set": true,
+        "e4_e5_same_results": true,
+        "auto_e5_same_results": false
+      },
+      {
+        "query": "leaving memories dengan energi rendah",
+        "all_modes_executed": true,
+        "e3_e4_same_candidate_set": true,
+        "e4_e5_same_results": false,
+        "auto_e5_same_results": true
+      },
+      {
+        "query": "tempo > 120 BPM",
+        "all_modes_executed": true,
+        "e3_e4_same_candidate_set": true,
+        "e4_e5_same_results": false,
+        "auto_e5_same_results": false
+      }
+    ],
+    "verification_status": "executed",
+    "status_label": "terverifikasi lewat eksekusi saat audit",
+    "code_reference": "music_ir/engine.py:200",
+    "evidence_file": "evidence/mode_comparisons.json",
+    "procedure": "audit_search.py cases",
+    "snapshot_commit": "d1fa4edf10189dbda73eda292b6e795238af2c7f",
+    "reason": null
+  },
+  {
+    "claim_id": "CLM-007",
+    "claim": "Jumlah kontribusi skor sesuai skor akhir",
+    "value": {
+      "checks": 2790,
+      "all_passed": true
+    },
+    "verification_status": "executed",
+    "status_label": "terverifikasi lewat eksekusi saat audit",
+    "code_reference": "music_ir/diagnostics.py:20",
+    "evidence_file": "evidence/score_verification.json",
+    "procedure": "audit_search.py cases; audit_verify.py fixtures",
+    "snapshot_commit": "d1fa4edf10189dbda73eda292b6e795238af2c7f",
+    "reason": null
+  },
+  {
+    "claim_id": "CLM-008",
+    "claim": "Tes backend tersedia",
+    "value": {
+      "run": 93,
+      "passed": 88,
+      "failed": 0,
+      "skipped": 5
+    },
+    "verification_status": "executed",
+    "status_label": "terverifikasi lewat eksekusi saat audit",
+    "code_reference": "tests/test_search.py",
+    "evidence_file": "evidence/backend_tests.json",
+    "procedure": "python -m unittest discover -s tests -v",
+    "snapshot_commit": "d1fa4edf10189dbda73eda292b6e795238af2c7f",
+    "reason": null
+  },
+  {
+    "claim_id": "CLM-009",
+    "claim": "Build frontend dan tes UI",
+    "value": {
+      "build_exit": 0,
+      "ui_passed": 15
+    },
+    "verification_status": "executed",
+    "status_label": "terverifikasi lewat eksekusi saat audit",
+    "code_reference": "frontend/playwright.config.ts",
+    "evidence_file": "evidence/frontend_tests.json",
+    "procedure": "npm run build; npm test -- --output=<audit>",
+    "snapshot_commit": "d1fa4edf10189dbda73eda292b6e795238af2c7f",
+    "reason": null
+  },
+  {
+    "claim_id": "CLM-010",
+    "claim": "Kasus HTTP audit",
+    "value": {
+      "cases": 51,
+      "failures": 0
+    },
+    "verification_status": "executed",
+    "status_label": "terverifikasi lewat eksekusi saat audit",
+    "code_reference": "music_ir/api.py:114",
+    "evidence_file": "evidence/case_results.json",
+    "procedure": "audit_search.py plan; audit_search.py cases",
+    "snapshot_commit": "d1fa4edf10189dbda73eda292b6e795238af2c7f",
+    "reason": null
+  },
+  {
+    "claim_id": "CLM-011",
+    "claim": "Label manusia belum tersedia",
+    "value": {
+      "draft_queries": 160,
+      "reviews": 0,
+      "judgments": 0
+    },
+    "verification_status": "executed",
+    "status_label": "terverifikasi lewat eksekusi saat audit",
+    "code_reference": "music_ir/benchmark.py:182",
+    "evidence_file": "evidence/benchmark_audit.json",
+    "procedure": "read-only SQLite active dataset; actual query/qrels inspection",
+    "snapshot_commit": "d1fa4edf10189dbda73eda292b6e795238af2c7f",
+    "reason": null
+  },
+  {
+    "claim_id": "CLM-012",
+    "claim": "Efektivitas retrieval belum dapat diukur",
+    "value": null,
+    "verification_status": "not_verified",
+    "status_label": "belum tersedia/tidak dapat diverifikasi",
+    "code_reference": "music_ir/evaluate.py:26",
+    "evidence_file": "evidence/retrieval_metrics_summary.json",
+    "procedure": "read_benchmark rejects real draft data",
+    "snapshot_commit": "d1fa4edf10189dbda73eda292b6e795238af2c7f",
+    "reason": "Lihat batas kesimpulan pada laporan"
+  },
+  {
+    "claim_id": "CLM-013",
+    "claim": "Distribusi latensi subset tetap",
+    "value": {
+      "warmups": 60,
+      "measured": 180,
+      "errors": 0
+    },
+    "verification_status": "executed",
+    "status_label": "terverifikasi lewat eksekusi saat audit",
+    "code_reference": "music_ir/engine.py:340",
+    "evidence_file": "evidence/latency_summary.json",
+    "procedure": "audit_checks.py latency",
+    "snapshot_commit": "d1fa4edf10189dbda73eda292b6e795238af2c7f",
+    "reason": null
+  },
+  {
+    "claim_id": "CLM-014",
+    "claim": "Durasi pembentukan embedding corpus",
+    "value": 3267.37,
+    "verification_status": "historical_only",
+    "status_label": "hanya tercatat pada artefak historis",
+    "code_reference": "music_ir/semantic.py:122",
+    "evidence_file": "evidence/embedding_audit.json",
+    "procedure": "read artifacts/semantic/metadata.json; embedding not rebuilt",
+    "snapshot_commit": "d1fa4edf10189dbda73eda292b6e795238af2c7f",
+    "reason": "Lihat batas kesimpulan pada laporan"
+  },
+  {
+    "claim_id": "CLM-015",
+    "claim": "Evaluator tidak menyimpan status incomplete saat error",
+    "value": true,
+    "verification_status": "executed",
+    "status_label": "terverifikasi lewat eksekusi saat audit",
+    "code_reference": "music_ir/evaluate.py:75",
+    "evidence_file": "evidence/evaluator_failure_reproduction.json",
+    "procedure": "audit_verify.py fixtures; failure on call13",
+    "snapshot_commit": "d1fa4edf10189dbda73eda292b6e795238af2c7f",
+    "reason": null
+  },
+  {
+    "claim_id": "CLM-016",
+    "claim": "Pool anonim siap ditinjau manusia",
+    "value": {
+      "queries": 10,
+      "pairs": 191
+    },
+    "verification_status": "executed",
+    "status_label": "terverifikasi lewat eksekusi saat audit",
+    "code_reference": "audit_search.py annotation",
+    "evidence_file": "evidence/annotation_manifest.json",
+    "procedure": "audit_checks.py annotation",
+    "snapshot_commit": "d1fa4edf10189dbda73eda292b6e795238af2c7f",
+    "reason": null
+  },
+  {
+    "claim_id": "CLM-017",
+    "claim": "Fallback AUTO pada gangguan semantik",
+    "value": {
+      "fixture_tests": "passed",
+      "live_fault_injection": false
+    },
+    "verification_status": "executed",
+    "status_label": "terverifikasi lewat eksekusi saat audit",
+    "code_reference": "music_ir/engine.py:143",
+    "evidence_file": "evidence/backend_tests.json",
+    "procedure": "test_missing_semantic_* and test_semantic_failures_fallback_only_in_auto",
+    "snapshot_commit": "d1fa4edf10189dbda73eda292b6e795238af2c7f",
+    "reason": null
+  },
+  {
+    "claim_id": "CLM-018",
+    "claim": "Adapter Elasticsearch tersedia, runtime belum diuji",
+    "value": null,
+    "verification_status": "code_only",
+    "status_label": "ditemukan dalam kode tetapi belum dijalankan",
+    "code_reference": "music_ir/lexical.py:44",
+    "evidence_file": "evidence/source/music_ir/lexical.py",
+    "procedure": "read source; service connection refused; five integration tests skipped",
+    "snapshot_commit": "d1fa4edf10189dbda73eda292b6e795238af2c7f",
+    "reason": "Lihat batas kesimpulan pada laporan"
+  },
+  {
+    "claim_id": "CLM-019",
+    "claim": "Screenshot aplikasi nyata",
+    "value": 4,
+    "verification_status": "executed",
+    "status_label": "terverifikasi lewat eksekusi saat audit",
+    "code_reference": "frontend/src/DiagnosticsPanel.tsx",
+    "evidence_file": "evidence/live_ui.json",
+    "procedure": "node audit_ui.cjs; Chrome headless; no mock routes",
+    "snapshot_commit": "d1fa4edf10189dbda73eda292b6e795238af2c7f",
+    "reason": null
+  },
+  {
+    "claim_id": "CLM-020",
+    "claim": "Riwayat tuning berbasis label",
+    "value": null,
+    "verification_status": "not_verified",
+    "status_label": "belum tersedia/tidak dapat diverifikasi",
+    "code_reference": "music_ir/tune.py:27",
+    "evidence_file": "evidence/historical_reference.json",
+    "procedure": "search *trials* in artifacts; inspect empty qrels",
+    "snapshot_commit": "d1fa4edf10189dbda73eda292b6e795238af2c7f",
+    "reason": "Lihat batas kesimpulan pada laporan"
+  },
+  {
+    "claim_id": "CLM-021",
+    "claim": "Panjang token corpus dan kebutuhan chunking",
+    "value": {
+      "max_content_tokens": 2217,
+      "over_8192": 0
+    },
+    "verification_status": "executed",
+    "status_label": "terverifikasi lewat eksekusi saat audit",
+    "code_reference": "music_ir/semantic.py:73",
+    "evidence_file": "evidence/tokenization_audit.json",
+    "procedure": "audit_tokenizer.py; local pinned tokenizer",
+    "snapshot_commit": "d1fa4edf10189dbda73eda292b6e795238af2c7f",
+    "reason": null
+  },
+  {
+    "claim_id": "CLM-022",
+    "claim": "Struktur split dan paparan regresi",
+    "value": {
+      "group_count": 64,
+      "group_cross_split": {},
+      "exact_normalized_query_duplicates": [],
+      "token_only_collisions_not_equivalent_queries": [
+        {
+          "text": "tempo 120 bpm",
+          "queries": [
+            {
+              "query_id": "audio-001",
+              "query": "tempo > 120 BPM",
+              "split": "dev"
+            },
+            {
+              "query_id": "audio-024",
+              "query": "tempo <= 120 BPM",
+              "split": "test"
+            }
+          ]
+        }
+      ],
+      "hint_track_ids_cross_split": {},
+      "exact_normalized_overlap_with_current_regression_cases": [
+        "artist-001",
+        "lyrics-001",
+        "title-016"
+      ],
+      "development_history": "Full authoring/tuning chronology unavailable; structural split checks do not establish independence from rule development"
+    },
+    "verification_status": "executed",
+    "status_label": "terverifikasi lewat eksekusi saat audit",
+    "code_reference": "music_ir/benchmark.py:29",
+    "evidence_file": "evidence/query_independence.json",
+    "procedure": "audit_supplement.py; compare actual query definitions",
+    "snapshot_commit": "d1fa4edf10189dbda73eda292b6e795238af2c7f",
+    "reason": null
+  }
+]

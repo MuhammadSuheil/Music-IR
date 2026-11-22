@@ -64,6 +64,7 @@ export default function BenchmarkPage({ onSearch }: { onSearch: (query: string) 
   return <div className="page-content benchmark-page">
     <p className="eyebrow">EKSPERIMEN LOKAL</p><h1>Benchmark & penilaian</h1>
     <p className="page-description">Tinjau maksud query, lalu nilai relevansi lagu. Nilai disimpan di backend lokal dan tidak dipakai untuk melatih model secara otomatis.</p>
+    <p><a className="text-button" href="/?view=relevance">Buka review label awal LLM →</a></p>
     {error && <div className="research-error" role="alert">{error}</div>}
     {!summary ? <div className="research-loading"><LoaderCircle className="spin" size={24} /><button className="text-button" onClick={() => act(loadSummary)}>Muat ulang benchmark</button></div> : <>
       <div className="research-stats"><span><strong>{summary.total}</strong> draft query</span><span><strong>{summary.approved}</strong> disetujui</span><span><strong>{summary.judgments}</strong> penilaian manusia</span><span>Label relevan: <strong>2–3</strong></span></div>

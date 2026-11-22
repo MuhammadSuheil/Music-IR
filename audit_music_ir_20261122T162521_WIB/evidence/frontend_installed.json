@@ -1,0 +1,16 @@
+{
+  "command": [
+    "npm.cmd",
+    "ls",
+    "--depth=0",
+    "--json"
+  ],
+  "cwd": "D:\\CODINGGG\\Music IR\\frontend",
+  "started_at": "2026-11-22T16:28:08.205528+07:00",
+  "duration_seconds": 4.09010530001251,
+  "exit_code": 0,
+  "stdout": "{\n  \"version\": \"1.0.0\",\n  \"name\": \"music-ir-ui\",\n  \"dependencies\": {\n    \"@playwright/test\": {\n      \"version\": \"1.65.1\",\n      \"resolved\": \"https://registry.npmjs.org/@playwright/test/-/test-1.65.1.tgz\",\n      \"overridden\": false\n    },\n    \"@types/node\": {\n      \"version\": \"24.19.2\",\n      \"resolved\": \"https://registry.npmjs.org/@types/node/-/node-24.19.2.tgz\",\n      \"overridden\": false\n    },\n    \"@types/react-dom\": {\n      \"version\": \"19.3.0\",\n      \"resolved\": \"https://registry.npmjs.org/@types/react-dom/-/react-dom-19.3.0.tgz\",\n      \"overridden\": false\n    },\n    \"@types/react\": {\n      \"version\": \"19.3.0\",\n      \"resolved\": \"https://registry.npmjs.org/@types/react/-/react-19.3.0.tgz\",\n      \"overridden\": false\n    },\n    \"@vitejs/plugin-react\": {\n      \"version\": \"6.3.0\",\n      \"resolved\": \"https://registry.npmjs.org/@vitejs/plugin-react/-/plugin-react-6.3.0.tgz\",\n      \"overridden\": false\n    },\n    \"lucide-react\": {\n      \"version\": \"1.73.0\",\n      \"resolved\": \"https://registry.npmjs.org/lucide-react/-/lucide-react-1.73.0.tgz\",\n      \"overridden\": false\n    },\n    \"react-dom\": {\n      \"version\": \"19.3.1\",\n      \"resolved\": \"https://registry.npmjs.org/react-dom/-/react-dom-19.3.1.tgz\",\n      \"overridden\": false\n    },\n    \"react\": {\n      \"version\": \"19.3.1\",\n      \"resolved\": \"https://registry.npmjs.org/react/-/react-19.3.1.tgz\",\n      \"overridden\": false\n    },\n    \"typescript\": {\n      \"version\": \"7.0.2\",\n      \"resolved\": \"https://registry.npmjs.org/typescript/-/typescript-7.0.2.tgz\",\n      \"overridden\": false\n    },\n    \"vite\": {\n      \"version\": \"8.3.8\",\n      \"resolved\": \"https://registry.npmjs.org/vite/-/vite-8.3.8.tgz\",\n      \"overridden\": false\n    }\n  }\n}\n",
+  "stderr": "",
+  "ended_at": "2026-11-22T16:28:12.295633+07:00",
+  "start_time_method": "reconstructed from completion timestamp minus measured perf_counter duration; original collector mislabeled end as start"
+}

@@ -1,0 +1,180 @@
+{
+  "status": "complete",
+  "plan": {
+    "frozen_before_run": true,
+    "queries": [
+      {
+        "query_id": "L-title",
+        "query": "Die With A Smile",
+        "category": "title"
+      },
+      {
+        "query_id": "L-artist",
+        "query": "Bruno Mars",
+        "category": "artist"
+      },
+      {
+        "query_id": "L-lyrics",
+        "query": "I just woke up from a dream",
+        "category": "lyrics"
+      },
+      {
+        "query_id": "L-theme",
+        "query": "lagu bermakna cinta",
+        "category": "semantic"
+      },
+      {
+        "query_id": "L-audio",
+        "query": "tempo > 120 BPM",
+        "category": "audio"
+      },
+      {
+        "query_id": "L-mixed",
+        "query": "leaving memories dengan energi rendah",
+        "category": "mixed"
+      }
+    ],
+    "modes": [
+      "E1",
+      "E2",
+      "E3",
+      "E4",
+      "E5",
+      "AUTO"
+    ],
+    "warmups_per_mode": 10,
+    "repeats_per_query_mode": 5,
+    "seed": 42,
+    "top_k": 30,
+    "trace": true,
+    "active_requests": 1,
+    "boundary": "perf_counter immediately before urllib.urlopen until response bytes fully read; excludes JSON decode and file writing",
+    "engine_boundary": "response latency_ms excludes explicit semantic warmup/model loading; excludes diagnostics, JSON serialization, network; includes formatting reasons",
+    "cache_policy": "existing user caches retained; no response cache in code; passage cache grows normally; no controlled cold cache; warmups excluded from statistics"
+  },
+  "warmup_mode_order": [
+    "E4",
+    "E2",
+    "E3",
+    "E5",
+    "E1",
+    "AUTO"
+  ],
+  "total_warmup_requests": 60,
+  "total_measured_requests": 180,
+  "aggregation": "each mode equally weights 6 queries x5 repetitions; p95 numpy linear percentile over 30 observations; successful requests only with error counts retained",
+  "summary": {
+    "E1": {
+      "requests": 30,
+      "errors": 0,
+      "degraded": 0,
+      "http_ms": {
+        "n": 30,
+        "mean": 116.00368667665559,
+        "median": 118.3244000421837,
+        "p95": 146.8407200241927
+      },
+      "engine_ms": {
+        "n": 30,
+        "mean": 16.871333333333332,
+        "median": 15.785,
+        "p95": 38.5595
+      }
+    },
+    "E2": {
+      "requests": 30,
+      "errors": 0,
+      "degraded": 0,
+      "http_ms": {
+        "n": 30,
+        "mean": 118.94935000260982,
+        "median": 114.35255000833422,
+        "p95": 147.00821498990987
+      },
+      "engine_ms": {
+        "n": 30,
+        "mean": 19.36766666666667,
+        "median": 15.985,
+        "p95": 41.769
+      }
+    },
+    "E3": {
+      "requests": 30,
+      "errors": 0,
+      "degraded": 0,
+      "http_ms": {
+        "n": 30,
+        "mean": 273.9682500037209,
+        "median": 283.19980000378564,
+        "p95": 426.6418800019891
+      },
+      "engine_ms": {
+        "n": 30,
+        "mean": 167.178,
+        "median": 169.79500000000002,
+        "p95": 297.35549999999995
+      }
+    },
+    "E4": {
+      "requests": 30,
+      "errors": 0,
+      "degraded": 0,
+      "http_ms": {
+        "n": 30,
+        "mean": 288.0158866639249,
+        "median": 308.00384999020025,
+        "p95": 396.0863550018984
+      },
+      "engine_ms": {
+        "n": 30,
+        "mean": 177.742,
+        "median": 193.32,
+        "p95": 267.17849999999993
+      }
+    },
+    "E5": {
+      "requests": 30,
+      "errors": 0,
+      "degraded": 0,
+      "http_ms": {
+        "n": 30,
+        "mean": 288.76300666015595,
+        "median": 294.95489998953417,
+        "p95": 409.21018000517495
+      },
+      "engine_ms": {
+        "n": 30,
+        "mean": 179.189,
+        "median": 183.10500000000002,
+        "p95": 309.92249999999984
+      }
+    },
+    "AUTO": {
+      "requests": 30,
+      "errors": 0,
+      "degraded": 0,
+      "http_ms": {
+        "n": 30,
+        "mean": 281.43571333300014,
+        "median": 224.42484999191947,
+        "p95": 642.8709199914009
+      },
+      "engine_ms": {
+        "n": 30,
+        "mean": 174.868,
+        "median": 106.89,
+        "p95": 543.7019999999999
+      }
+    }
+  },
+  "cache_before": {
+    "entries": 214,
+    "sha256": "7e6a9cd902fd8f26f8875db75547665dff8d65c05d25d1e556567f335c6fb730",
+    "bytes": 1019904
+  },
+  "cache_after": {
+    "entries": 214,
+    "sha256": "7e6a9cd902fd8f26f8875db75547665dff8d65c05d25d1e556567f335c6fb730",
+    "bytes": 1019904
+  }
+}

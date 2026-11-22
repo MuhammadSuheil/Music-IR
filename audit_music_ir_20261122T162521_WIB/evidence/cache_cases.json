@@ -1,0 +1,13 @@
+{
+  "before": {
+    "entries": 214,
+    "sha256": "7e6a9cd902fd8f26f8875db75547665dff8d65c05d25d1e556567f335c6fb730",
+    "bytes": 1019904
+  },
+  "after": {
+    "entries": 214,
+    "sha256": "7e6a9cd902fd8f26f8875db75547665dff8d65c05d25d1e556567f335c6fb730",
+    "bytes": 1019904
+  },
+  "policy": "no deletion or manual modification; normal application writes only"
+}

@@ -1,0 +1,15 @@
+.relevance-page { padding-bottom: 48px; }
+.relevance-page select, .relevance-page input, .relevance-page textarea { max-width: 100%; min-width: 0; }
+.relevance-page select { width: 100%; }
+.relevance-run { display: grid; gap: 8px; margin: 24px 0; }
+.relevance-run select, .relevance-filters select { background: #252525; color: white; border: 1px solid #555; border-radius: 5px; padding: 10px; }
+.relevance-filters { display: grid; grid-template-columns: 160px minmax(0, 1fr); gap: 16px; margin: 24px 0; }
+.relevance-filters label, .relevance-revision label { display: grid; gap: 8px; min-width: 0; }
+.relevance-navigation { display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: 12px; margin: 24px 0; }
+.relevance-page .annotation-card { overflow-wrap: anywhere; }
+.relevance-lyrics { white-space: pre-wrap; line-height: 1.8; padding: 20px; background: #121212; border-radius: 8px; }
+.relevance-proposal, .relevance-numeric { background: #17251e; padding: 20px; margin: 24px 0; border-radius: 8px; }
+.relevance-proposal blockquote { margin-left: 0; border-left: 3px solid #1ed760; padding-left: 16px; }
+.relevance-revision { margin-top: 20px; }
+.relevance-revision textarea { background: #242424; color: white; border: 1px solid #555; border-radius: 4px; min-height: 70px; padding: 10px; margin-bottom: 12px; width: 100%; }
+@media (max-width: 650px) { .relevance-filters { grid-template-columns: minmax(0, 1fr); } .relevance-navigation { align-items: flex-start; } .relevance-proposal, .relevance-numeric, .relevance-lyrics { padding: 12px; } }

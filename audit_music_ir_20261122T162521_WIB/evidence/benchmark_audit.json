@@ -1,0 +1,695 @@
+{
+  "dataset_identity": "6375261581944be28d6aabf939996fffec8b2ad1270a4a407262a616bfde291e",
+  "queries_total": 160,
+  "raw_review_status": {
+    "draft": 160
+  },
+  "approved_query_ids_from_db": [],
+  "query_category": {
+    "title": 32,
+    "artist": 32,
+    "lyrics": 32,
+    "semantic": 32,
+    "audio": 32
+  },
+  "split_counts": {
+    "dev": 40,
+    "test": 120
+  },
+  "category_split": {
+    "title/dev": 8,
+    "artist/dev": 8,
+    "lyrics/dev": 8,
+    "title/test": 24,
+    "artist/test": 24,
+    "lyrics/test": 24,
+    "semantic/dev": 8,
+    "semantic/test": 24,
+    "audio/dev": 8,
+    "audio/test": 24
+  },
+  "sources": {
+    "corpus_draft": 96,
+    "authored_draft": 64
+  },
+  "group_ids_crossing_splits": {},
+  "judgment_records_active": 0,
+  "judged_pairs_active": 0,
+  "queries_with_judgment": 0,
+  "queries_with_grade_ge2": 0,
+  "annotator_count_active": 0,
+  "pairs_multiple_annotators": 0,
+  "conflicting_pairs": 0,
+  "records_all_dataset_identities": {
+    "judgments": 0,
+    "reviews": 0
+  },
+  "pool_identity_matches": true,
+  "historical_pool_queries": 5,
+  "historical_pool_metadata": [
+    {
+      "runs": {
+        "E1": {
+          "ranking": [
+            "7BqBn9nzAq8spo5e7cZ0dJ",
+            "2bLqfJjuC5syrsgDsZfGmn",
+            "0a7BloCiNzLDD9qSQHh5m7",
+            "5mIOsPuQdXchVY0jB5NO9Q",
+            "5dTHtzHFPyi8TlTtzoz1J9"
+          ],
+          "pipeline": {
+            "lexical": true,
+            "semantic": false,
+            "audio": false,
+            "reranking": false,
+            "degraded": false
+          },
+          "warnings": []
+        },
+        "E2": {
+          "ranking": [
+            "7BqBn9nzAq8spo5e7cZ0dJ",
+            "2bLqfJjuC5syrsgDsZfGmn",
+            "45Ia1U4KtIjAPPU7Wv1Sea",
+            "15JINEqzVMv3SvJTAXAKED",
+            "5ruzrDWcT0vuJIOMW7gMnW"
+          ],
+          "pipeline": {
+            "lexical": true,
+            "semantic": false,
+            "audio": false,
+            "reranking": false,
+            "degraded": false
+          },
+          "warnings": []
+        },
+        "E3": {
+          "ranking": [
+            "7BqBn9nzAq8spo5e7cZ0dJ",
+            "2bLqfJjuC5syrsgDsZfGmn",
+            "15JINEqzVMv3SvJTAXAKED",
+            "4NnWuGQujzWUEg0uZokO5M",
+            "30XU4suKzCeoCK9YFzdufg"
+          ],
+          "pipeline": {
+            "lexical": true,
+            "semantic": true,
+            "audio": false,
+            "reranking": false,
+            "degraded": false
+          },
+          "warnings": []
+        },
+        "E4": {
+          "ranking": [
+            "7BqBn9nzAq8spo5e7cZ0dJ",
+            "2bLqfJjuC5syrsgDsZfGmn",
+            "15JINEqzVMv3SvJTAXAKED",
+            "5ruzrDWcT0vuJIOMW7gMnW",
+            "45Ia1U4KtIjAPPU7Wv1Sea"
+          ],
+          "pipeline": {
+            "lexical": true,
+            "semantic": true,
+            "audio": false,
+            "reranking": true,
+            "degraded": false
+          },
+          "warnings": []
+        },
+        "E5": {
+          "ranking": [
+            "7BqBn9nzAq8spo5e7cZ0dJ",
+            "2bLqfJjuC5syrsgDsZfGmn",
+            "15JINEqzVMv3SvJTAXAKED",
+            "5ruzrDWcT0vuJIOMW7gMnW",
+            "45Ia1U4KtIjAPPU7Wv1Sea"
+          ],
+          "pipeline": {
+            "lexical": true,
+            "semantic": true,
+            "audio": false,
+            "reranking": true,
+            "degraded": false
+          },
+          "warnings": []
+        },
+        "AUTO": {
+          "ranking": [
+            "7BqBn9nzAq8spo5e7cZ0dJ",
+            "2bLqfJjuC5syrsgDsZfGmn",
+            "0vB4Vd6PtkJSEnWsmqATnZ",
+            "0WbMK4wrZ1wFSty9F7FCgu",
+            "15JINEqzVMv3SvJTAXAKED"
+          ],
+          "pipeline": {
+            "lexical": true,
+            "semantic": true,
+            "audio": false,
+            "reranking": true,
+            "degraded": false
+          },
+          "warnings": []
+        }
+      },
+      "depth": 5,
+      "implementation_sha256": "fca115fb05395f8e556e30cb1edd45cc3d8099391405a2708db435f6fa711c43",
+      "config": {
+        "field_weights": [
+          3,
+          2,
+          1
+        ],
+        "text_weights": [
+          0.25,
+          0.25,
+          0.25,
+          0.25,
+          0.0
+        ],
+        "audio_weight": 0.5,
+        "candidate_limit": 100,
+        "rrf_constant": 60,
+        "bm25_k1": 1.2,
+        "bm25_b": 0.75,
+        "model_name": "BAAI/bge-m3",
+        "model_revision": "5617a9f61b028005a4858fdac845db406aefb181",
+        "tuned": false
+      },
+      "corpus_sha256": "2708d05f6486650d00bec7db689c2672b61829952f8a9b22ec2c3c9755402758",
+      "created_utc": "2026-11-20T07:48:30.181205+00:00"
+    },
+    {
+      "runs": {
+        "E1": {
+          "ranking": [
+            "5hUYsaOyMY32yjRXeuQwGj",
+            "7BqBn9nzAq8spo5e7cZ0dJ",
+            "0nJW01T7XtvILxQgC5J7Wh",
+            "2plbrEY59IikOBgBGLjaoe",
+            "3w3y8KPTfNeOKPiqUTakBh"
+          ],
+          "pipeline": {
+            "lexical": true,
+            "semantic": false,
+            "audio": false,
+            "reranking": false,
+            "degraded": false
+          },
+          "warnings": []
+        },
+        "E2": {
+          "ranking": [
+            "5hUYsaOyMY32yjRXeuQwGj",
+            "0KKkJNfGyhkQ5aFogxQAPU",
+            "0nJW01T7XtvILxQgC5J7Wh",
+            "3w3y8KPTfNeOKPiqUTakBh",
+            "6SKwQghsR8AISlxhcwyA9R"
+          ],
+          "pipeline": {
+            "lexical": true,
+            "semantic": false,
+            "audio": false,
+            "reranking": false,
+            "degraded": false
+          },
+          "warnings": []
+        },
+        "E3": {
+          "ranking": [
+            "0nJW01T7XtvILxQgC5J7Wh",
+            "5hUYsaOyMY32yjRXeuQwGj",
+            "6b8Be6ljOzmkOmFslEb23P",
+            "3w3y8KPTfNeOKPiqUTakBh",
+            "6SKwQghsR8AISlxhcwyA9R"
+          ],
+          "pipeline": {
+            "lexical": true,
+            "semantic": true,
+            "audio": false,
+            "reranking": false,
+            "degraded": false
+          },
+          "warnings": []
+        },
+        "E4": {
+          "ranking": [
+            "0nJW01T7XtvILxQgC5J7Wh",
+            "6b8Be6ljOzmkOmFslEb23P",
+            "7BqBn9nzAq8spo5e7cZ0dJ",
+            "6SKwQghsR8AISlxhcwyA9R",
+            "3w3y8KPTfNeOKPiqUTakBh"
+          ],
+          "pipeline": {
+            "lexical": true,
+            "semantic": true,
+            "audio": false,
+            "reranking": true,
+            "degraded": false
+          },
+          "warnings": []
+        },
+        "E5": {
+          "ranking": [
+            "0nJW01T7XtvILxQgC5J7Wh",
+            "6b8Be6ljOzmkOmFslEb23P",
+            "7BqBn9nzAq8spo5e7cZ0dJ",
+            "6SKwQghsR8AISlxhcwyA9R",
+            "3w3y8KPTfNeOKPiqUTakBh"
+          ],
+          "pipeline": {
+            "lexical": true,
+            "semantic": true,
+            "audio": false,
+            "reranking": true,
+            "degraded": false
+          },
+          "warnings": []
+        },
+        "AUTO": {
+          "ranking": [
+            "0nJW01T7XtvILxQgC5J7Wh",
+            "6b8Be6ljOzmkOmFslEb23P",
+            "7BqBn9nzAq8spo5e7cZ0dJ",
+            "6SKwQghsR8AISlxhcwyA9R",
+            "3w3y8KPTfNeOKPiqUTakBh"
+          ],
+          "pipeline": {
+            "lexical": true,
+            "semantic": true,
+            "audio": false,
+            "reranking": true,
+            "degraded": false
+          },
+          "warnings": []
+        }
+      },
+      "depth": 5,
+      "implementation_sha256": "fca115fb05395f8e556e30cb1edd45cc3d8099391405a2708db435f6fa711c43",
+      "config": {
+        "field_weights": [
+          3,
+          2,
+          1
+        ],
+        "text_weights": [
+          0.25,
+          0.25,
+          0.25,
+          0.25,
+          0.0
+        ],
+        "audio_weight": 0.5,
+        "candidate_limit": 100,
+        "rrf_constant": 60,
+        "bm25_k1": 1.2,
+        "bm25_b": 0.75,
+        "model_name": "BAAI/bge-m3",
+        "model_revision": "5617a9f61b028005a4858fdac845db406aefb181",
+        "tuned": false
+      },
+      "corpus_sha256": "2708d05f6486650d00bec7db689c2672b61829952f8a9b22ec2c3c9755402758",
+      "created_utc": "2026-11-20T07:48:31.757150+00:00"
+    },
+    {
+      "runs": {
+        "E1": {
+          "ranking": [
+            "7BqBn9nzAq8spo5e7cZ0dJ",
+            "63CSozvYUEudPp12679UVF",
+            "2JN3ugW1cEahbYw0I5mw5U",
+            "5yDL13y5giogKs2fSNf7sj",
+            "7oJrVhiTPZGBXWPwhxjy9S"
+          ],
+          "pipeline": {
+            "lexical": true,
+            "semantic": false,
+            "audio": false,
+            "reranking": false,
+            "degraded": false
+          },
+          "warnings": []
+        },
+        "E2": {
+          "ranking": [
+            "6sy3LkhNFjJWlaeSMNwQ62",
+            "6AI3ezQ4o3HUoP6Dhudph3",
+            "7BqBn9nzAq8spo5e7cZ0dJ",
+            "09CnYHiZ5jGT1wr1TXJ9Zt",
+            "10y7iW3rc8bzGbhAC3mNPA"
+          ],
+          "pipeline": {
+            "lexical": true,
+            "semantic": false,
+            "audio": false,
+            "reranking": false,
+            "degraded": false
+          },
+          "warnings": []
+        },
+        "E3": {
+          "ranking": [
+            "4MSj19TwYBLgDFj3ddEeco",
+            "7BqBn9nzAq8spo5e7cZ0dJ",
+            "5yDL13y5giogKs2fSNf7sj",
+            "6sy3LkhNFjJWlaeSMNwQ62",
+            "6RUKPb4LETWmmr3iAEQktW"
+          ],
+          "pipeline": {
+            "lexical": true,
+            "semantic": true,
+            "audio": false,
+            "reranking": false,
+            "degraded": false
+          },
+          "warnings": []
+        },
+        "E4": {
+          "ranking": [
+            "6AI3ezQ4o3HUoP6Dhudph3",
+            "6sy3LkhNFjJWlaeSMNwQ62",
+            "4NnWuGQujzWUEg0uZokO5M",
+            "09CnYHiZ5jGT1wr1TXJ9Zt",
+            "6jbYpRPTEFl1HFKHk1IC0m"
+          ],
+          "pipeline": {
+            "lexical": true,
+            "semantic": true,
+            "audio": false,
+            "reranking": true,
+            "degraded": false
+          },
+          "warnings": []
+        },
+        "E5": {
+          "ranking": [
+            "6AI3ezQ4o3HUoP6Dhudph3",
+            "6sy3LkhNFjJWlaeSMNwQ62",
+            "4NnWuGQujzWUEg0uZokO5M",
+            "09CnYHiZ5jGT1wr1TXJ9Zt",
+            "6jbYpRPTEFl1HFKHk1IC0m"
+          ],
+          "pipeline": {
+            "lexical": true,
+            "semantic": true,
+            "audio": false,
+            "reranking": true,
+            "degraded": false
+          },
+          "warnings": []
+        },
+        "AUTO": {
+          "ranking": [
+            "7BqBn9nzAq8spo5e7cZ0dJ",
+            "6AI3ezQ4o3HUoP6Dhudph3",
+            "6sy3LkhNFjJWlaeSMNwQ62",
+            "09CnYHiZ5jGT1wr1TXJ9Zt",
+            "4NnWuGQujzWUEg0uZokO5M"
+          ],
+          "pipeline": {
+            "lexical": true,
+            "semantic": true,
+            "audio": false,
+            "reranking": true,
+            "degraded": false
+          },
+          "warnings": []
+        }
+      },
+      "depth": 5,
+      "implementation_sha256": "fca115fb05395f8e556e30cb1edd45cc3d8099391405a2708db435f6fa711c43",
+      "config": {
+        "field_weights": [
+          3,
+          2,
+          1
+        ],
+        "text_weights": [
+          0.25,
+          0.25,
+          0.25,
+          0.25,
+          0.0
+        ],
+        "audio_weight": 0.5,
+        "candidate_limit": 100,
+        "rrf_constant": 60,
+        "bm25_k1": 1.2,
+        "bm25_b": 0.75,
+        "model_name": "BAAI/bge-m3",
+        "model_revision": "5617a9f61b028005a4858fdac845db406aefb181",
+        "tuned": false
+      },
+      "corpus_sha256": "2708d05f6486650d00bec7db689c2672b61829952f8a9b22ec2c3c9755402758",
+      "created_utc": "2026-11-20T07:48:33.709386+00:00"
+    },
+    {
+      "runs": {
+        "E1": {
+          "ranking": [
+            "4MSj19TwYBLgDFj3ddEeco",
+            "6sqNctd7MlJoKDOxPVCAvU",
+            "1TcF5F10EN17vraisG1gQv",
+            "5fRvePkRGdpn2nKacG7I6d",
+            "3c8iiZGfEammKJuWTErE5x"
+          ],
+          "pipeline": {
+            "lexical": true,
+            "semantic": false,
+            "audio": false,
+            "reranking": false,
+            "degraded": false
+          },
+          "warnings": []
+        },
+        "E2": {
+          "ranking": [
+            "6sqNctd7MlJoKDOxPVCAvU",
+            "4MSj19TwYBLgDFj3ddEeco",
+            "1TcF5F10EN17vraisG1gQv",
+            "5fRvePkRGdpn2nKacG7I6d",
+            "3c8iiZGfEammKJuWTErE5x"
+          ],
+          "pipeline": {
+            "lexical": true,
+            "semantic": false,
+            "audio": false,
+            "reranking": false,
+            "degraded": false
+          },
+          "warnings": []
+        },
+        "E3": {
+          "ranking": [
+            "1TcF5F10EN17vraisG1gQv",
+            "4MSj19TwYBLgDFj3ddEeco",
+            "6sqNctd7MlJoKDOxPVCAvU",
+            "5fRvePkRGdpn2nKacG7I6d",
+            "3khEEPRyBeOUabbmOPJzAG"
+          ],
+          "pipeline": {
+            "lexical": true,
+            "semantic": true,
+            "audio": false,
+            "reranking": false,
+            "degraded": false
+          },
+          "warnings": []
+        },
+        "E4": {
+          "ranking": [
+            "6sqNctd7MlJoKDOxPVCAvU",
+            "4MSj19TwYBLgDFj3ddEeco",
+            "1TcF5F10EN17vraisG1gQv",
+            "5fRvePkRGdpn2nKacG7I6d",
+            "2EjXfH91m7f8HiJN1yQg97"
+          ],
+          "pipeline": {
+            "lexical": true,
+            "semantic": true,
+            "audio": false,
+            "reranking": true,
+            "degraded": false
+          },
+          "warnings": []
+        },
+        "E5": {
+          "ranking": [
+            "6sqNctd7MlJoKDOxPVCAvU",
+            "4MSj19TwYBLgDFj3ddEeco",
+            "1TcF5F10EN17vraisG1gQv",
+            "5fRvePkRGdpn2nKacG7I6d",
+            "2EjXfH91m7f8HiJN1yQg97"
+          ],
+          "pipeline": {
+            "lexical": true,
+            "semantic": true,
+            "audio": false,
+            "reranking": true,
+            "degraded": false
+          },
+          "warnings": []
+        },
+        "AUTO": {
+          "ranking": [
+            "0WbMK4wrZ1wFSty9F7FCgu",
+            "3koCCeSaVUyrRo3N2gHrd8",
+            "7BqHUALzNBTanL6OvsqmC1",
+            "2M2WJ7gBlcKNxdhyfPp9zY",
+            "0DiWol3AO6WpXZgp0goxAV"
+          ],
+          "pipeline": {
+            "lexical": true,
+            "semantic": true,
+            "audio": false,
+            "reranking": true,
+            "degraded": false
+          },
+          "warnings": []
+        }
+      },
+      "depth": 5,
+      "implementation_sha256": "fca115fb05395f8e556e30cb1edd45cc3d8099391405a2708db435f6fa711c43",
+      "config": {
+        "field_weights": [
+          3,
+          2,
+          1
+        ],
+        "text_weights": [
+          0.25,
+          0.25,
+          0.25,
+          0.25,
+          0.0
+        ],
+        "audio_weight": 0.5,
+        "candidate_limit": 100,
+        "rrf_constant": 60,
+        "bm25_k1": 1.2,
+        "bm25_b": 0.75,
+        "model_name": "BAAI/bge-m3",
+        "model_revision": "5617a9f61b028005a4858fdac845db406aefb181",
+        "tuned": false
+      },
+      "corpus_sha256": "2708d05f6486650d00bec7db689c2672b61829952f8a9b22ec2c3c9755402758",
+      "created_utc": "2026-11-20T07:48:35.116581+00:00"
+    },
+    {
+      "runs": {
+        "E1": {
+          "ranking": [],
+          "pipeline": {
+            "lexical": false,
+            "semantic": false,
+            "audio": false,
+            "reranking": false,
+            "degraded": false
+          },
+          "warnings": []
+        },
+        "E2": {
+          "ranking": [],
+          "pipeline": {
+            "lexical": false,
+            "semantic": false,
+            "audio": false,
+            "reranking": false,
+            "degraded": false
+          },
+          "warnings": []
+        },
+        "E3": {
+          "ranking": [],
+          "pipeline": {
+            "lexical": false,
+            "semantic": false,
+            "audio": false,
+            "reranking": false,
+            "degraded": false
+          },
+          "warnings": []
+        },
+        "E4": {
+          "ranking": [],
+          "pipeline": {
+            "lexical": false,
+            "semantic": false,
+            "audio": false,
+            "reranking": true,
+            "degraded": false
+          },
+          "warnings": []
+        },
+        "E5": {
+          "ranking": [
+            "00Mb3DuaIH1kjrwOku9CGU",
+            "01Lr5YepbgjXAWR9iOEyH1",
+            "02YMpD1xbZZzpZbuZNvmD7",
+            "02itaCXOdC54J0ISjqqFAp",
+            "03ThZweiBWFP8tOGsk6QMO"
+          ],
+          "pipeline": {
+            "lexical": false,
+            "semantic": false,
+            "audio": true,
+            "reranking": true,
+            "degraded": false
+          },
+          "warnings": []
+        },
+        "AUTO": {
+          "ranking": [
+            "00Mb3DuaIH1kjrwOku9CGU",
+            "01Lr5YepbgjXAWR9iOEyH1",
+            "02YMpD1xbZZzpZbuZNvmD7",
+            "02itaCXOdC54J0ISjqqFAp",
+            "03ThZweiBWFP8tOGsk6QMO"
+          ],
+          "pipeline": {
+            "lexical": false,
+            "semantic": false,
+            "audio": true,
+            "reranking": true,
+            "degraded": false
+          },
+          "warnings": []
+        }
+      },
+      "depth": 5,
+      "implementation_sha256": "fca115fb05395f8e556e30cb1edd45cc3d8099391405a2708db435f6fa711c43",
+      "config": {
+        "field_weights": [
+          3,
+          2,
+          1
+        ],
+        "text_weights": [
+          0.25,
+          0.25,
+          0.25,
+          0.25,
+          0.0
+        ],
+        "audio_weight": 0.5,
+        "candidate_limit": 100,
+        "rrf_constant": 60,
+        "bm25_k1": 1.2,
+        "bm25_b": 0.75,
+        "model_name": "BAAI/bge-m3",
+        "model_revision": "5617a9f61b028005a4858fdac845db406aefb181",
+        "tuned": false
+      },
+      "corpus_sha256": "2708d05f6486650d00bec7db689c2672b61829952f8a9b22ec2c3c9755402758",
+      "created_utc": "2026-11-20T07:48:35.513536+00:00"
+    }
+  ],
+  "qrels_template_data_rows": 0,
+  "evaluation_ready": false,
+  "effectiveness": {
+    "ndcg@10": null,
+    "mrr@10": null,
+    "recall@100": null
+  },
+  "reason": "Human qrels must be reviewed and eligible; no labels are inferred from hints or retrieval."
+}

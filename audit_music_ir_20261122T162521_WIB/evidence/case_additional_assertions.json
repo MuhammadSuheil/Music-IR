@@ -1,0 +1,65 @@
+[
+  {
+    "case_id": "REG-09",
+    "assertions": {
+      "bounded_memory_error": true
+    },
+    "passed": true
+  },
+  {
+    "case_id": "TITLE",
+    "assertions": {
+      "catalog_exact_ids": true
+    },
+    "passed": true
+  },
+  {
+    "case_id": "COLLAB",
+    "assertions": {
+      "artist_credit": true
+    },
+    "passed": true
+  },
+  {
+    "case_id": "LYRIC",
+    "assertions": {
+      "literal_lyric_evidence": true
+    },
+    "passed": true
+  },
+  {
+    "case_id": "AUDIO",
+    "assertions": {
+      "indicator_1": true
+    },
+    "passed": true
+  },
+  {
+    "case_id": "MIXED",
+    "assertions": {
+      "artist_and_audio": true
+    },
+    "passed": true
+  },
+  {
+    "case_id": "UNICODE",
+    "assertions": {
+      "catalog_exact_ids": true
+    },
+    "passed": true
+  },
+  {
+    "case_id": "NOLYRICS",
+    "assertions": {
+      "without_lyrics_retrieved": true
+    },
+    "passed": true
+  },
+  {
+    "case_id": "MOODAUDIO",
+    "assertions": {
+      "mood_audio_only": true
+    },
+    "passed": true
+  }
+]

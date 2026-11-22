@@ -1,0 +1,372 @@
+Audit Music IR: complete captured command outputs. Environment: runtime.json. Some initial command starts reconstructed from end minus duration; see audit_tool_notes.json. Unrelated netstat output removed for privacy.
+
+RECORD git_head.json
+{"command": ["git", "rev-parse", "HEAD"], "cwd": "D:\\CODINGGG\\Music IR", "started_at": "2026-11-22T16:28:01.601400+07:00", "duration_seconds": 0.04548359999898821, "exit_code": 0, "ended_at": "2026-11-22T16:28:01.646884+07:00", "start_time_method": "reconstructed from completion timestamp minus measured perf_counter duration; original collector mislabeled end as start"}
+STDOUT
+d1fa4edf10189dbda73eda292b6e795238af2c7f
+
+STDERR
+
+
+RECORD git_status_before.json
+{"command": ["git", "status", "--porcelain=v1", "--untracked-files=all"], "cwd": "D:\\CODINGGG\\Music IR", "started_at": "2026-11-22T16:28:01.648100+07:00", "duration_seconds": 0.058011600049212575, "exit_code": 0, "ended_at": "2026-11-22T16:28:01.706112+07:00", "start_time_method": "reconstructed from completion timestamp minus measured perf_counter duration; original collector mislabeled end as start"}
+STDOUT
+?? audit_music_ir_20261122T162521_WIB/audit_collect.py
+?? audit_music_ir_20261122T162521_WIB/evidence/git_head.json
+?? audit_music_ir_20261122T162521_WIB/evidence/verification_log.txt
+
+STDERR
+
+
+RECORD node_version.json
+{"command": ["node", "--version"], "cwd": "D:\\CODINGGG\\Music IR", "started_at": "2026-11-22T16:28:07.380164+07:00", "duration_seconds": 0.06737479998264462, "exit_code": 0, "ended_at": "2026-11-22T16:28:07.447539+07:00", "start_time_method": "reconstructed from completion timestamp minus measured perf_counter duration; original collector mislabeled end as start"}
+STDOUT
+v24.15.0
+
+STDERR
+
+
+RECORD npm_version.json
+{"command": ["npm.cmd", "--version"], "cwd": "D:\\CODINGGG\\Music IR", "started_at": "2026-11-22T16:28:07.448775+07:00", "duration_seconds": 0.7555434999521822, "exit_code": 0, "ended_at": "2026-11-22T16:28:08.204318+07:00", "start_time_method": "reconstructed from completion timestamp minus measured perf_counter duration; original collector mislabeled end as start"}
+STDOUT
+11.12.1
+
+STDERR
+
+
+RECORD frontend_installed.json
+{"command": ["npm.cmd", "ls", "--depth=0", "--json"], "cwd": "D:\\CODINGGG\\Music IR\\frontend", "started_at": "2026-11-22T16:28:08.205528+07:00", "duration_seconds": 4.09010530001251, "exit_code": 0, "ended_at": "2026-11-22T16:28:12.295633+07:00", "start_time_method": "reconstructed from completion timestamp minus measured perf_counter duration; original collector mislabeled end as start"}
+STDOUT
+{
+  "version": "1.0.0",
+  "name": "music-ir-ui",
+  "dependencies": {
+    "@playwright/test": {
+      "version": "1.65.1",
+      "resolved": "https://registry.npmjs.org/@playwright/test/-/test-1.65.1.tgz",
+      "overridden": false
+    },
+    "@types/node": {
+      "version": "24.19.2",
+      "resolved": "https://registry.npmjs.org/@types/node/-/node-24.19.2.tgz",
+      "overridden": false
+    },
+    "@types/react-dom": {
+      "version": "19.3.0",
+      "resolved": "https://registry.npmjs.org/@types/react-dom/-/react-dom-19.3.0.tgz",
+      "overridden": false
+    },
+    "@types/react": {
+      "version": "19.3.0",
+      "resolved": "https://registry.npmjs.org/@types/react/-/react-19.3.0.tgz",
+      "overridden": false
+    },
+    "@vitejs/plugin-react": {
+      "version": "6.3.0",
+      "resolved": "https://registry.npmjs.org/@vitejs/plugin-react/-/plugin-react-6.3.0.tgz",
+      "overridden": false
+    },
+    "lucide-react": {
+      "version": "1.73.0",
+      "resolved": "https://registry.npmjs.org/lucide-react/-/lucide-react-1.73.0.tgz",
+      "overridden": false
+    },
+    "react-dom": {
+      "version": "19.3.1",
+      "resolved": "https://registry.npmjs.org/react-dom/-/react-dom-19.3.1.tgz",
+      "overridden": false
+    },
+    "react": {
+      "version": "19.3.1",
+      "resolved": "https://registry.npmjs.org/react/-/react-19.3.1.tgz",
+      "overridden": false
+    },
+    "typescript": {
+      "version": "7.0.2",
+      "resolved": "https://registry.npmjs.org/typescript/-/typescript-7.0.2.tgz",
+      "overridden": false
+    },
+    "vite": {
+      "version": "8.3.8",
+      "resolved": "https://registry.npmjs.org/vite/-/vite-8.3.8.tgz",
+      "overridden": false
+    }
+  }
+}
+
+STDERR
+
+
+RECORD netstat.json
+{"command": ["netstat", "-ano"], "cwd": "D:\\CODINGGG\\Music IR", "started_at": "2026-11-22T16:28:12.296582+07:00", "duration_seconds": 0.035944600007496774, "exit_code": 0, "ended_at": "2026-11-22T16:28:12.332527+07:00", "start_time_method": "reconstructed from completion timestamp minus measured perf_counter duration; original collector mislabeled end as start", "privacy_filter": "Output retained only for local listening ports 8000,8501,9200; unrelated network addresses omitted"}
+STDOUT
+
+STDERR
+
+
+RECORD backend_tests.json
+{"command": ["D:\\CODINGGG\\Music IR\\.venv\\Scripts\\python.exe", "-m", "unittest", "discover", "-s", "tests", "-v"], "cwd": "D:\\CODINGGG\\Music IR", "started_at": "2026-11-22T16:28:36.858095+07:00", "duration_seconds": 8.507886100036558, "exit_code": 0, "ended_at": "2026-11-22T16:28:45.365981+07:00", "start_time_method": "reconstructed from completion timestamp minus measured perf_counter duration; original collector mislabeled end as start"}
+STDOUT
+Embedding 1/3 potongan selesai
+Embedding 2/3 potongan selesai
+Embedding 3/3 potongan selesai
+
+STDERR
+test_benchmark_api_collects_only_explicit_human_grades (test_benchmark.BenchmarkTests.test_benchmark_api_collects_only_explicit_human_grades) ... ok
+test_changed_query_or_corpus_does_not_reuse_old_reviews (test_benchmark.BenchmarkTests.test_changed_query_or_corpus_does_not_reuse_old_reviews) ... ok
+test_draft_file_cannot_be_evaluated_and_degraded_auto_is_not_a_full_run (test_benchmark.BenchmarkTests.test_draft_file_cannot_be_evaluated_and_degraded_auto_is_not_a_full_run) ... ok
+test_draft_has_160_queries_and_does_not_generate_human_labels (test_benchmark.BenchmarkTests.test_draft_has_160_queries_and_does_not_generate_human_labels) ... ok
+test_export_rejects_unreviewed_incomplete_and_conflicting_judgments (test_benchmark.BenchmarkTests.test_export_rejects_unreviewed_incomplete_and_conflicting_judgments) ... ok
+test_group_leak_and_zero_relevant_query_are_rejected (test_benchmark.BenchmarkTests.test_group_leak_and_zero_relevant_query_are_rejected) ... ok
+test_human_reviews_persist_and_export_works_before_test_is_judged (test_benchmark.BenchmarkTests.test_human_reviews_persist_and_export_works_before_test_is_judged) ... ok
+test_no_implicit_grade_and_pool_must_be_complete (test_benchmark.BenchmarkTests.test_no_implicit_grade_and_pool_must_be_complete) ... ok
+test_pool_is_blind_stable_and_starts_unjudged (test_benchmark.BenchmarkTests.test_pool_is_blind_stable_and_starts_unjudged) ... ok
+test_catalog_is_paginated_sorted_and_excludes_full_lyrics (test_catalog.CatalogTests.test_catalog_is_paginated_sorted_and_excludes_full_lyrics) ... ok
+test_detail_returns_full_lyrics_and_missing_track_is_404 (test_catalog.CatalogTests.test_detail_returns_full_lyrics_and_missing_track_is_404) ... ok
+test_genre_filter_and_query_validation (test_catalog.CatalogTests.test_genre_filter_and_query_validation) ... ok
+test_search_and_catalog_share_track_metadata (test_catalog.CatalogTests.test_search_and_catalog_share_track_metadata) ... ok
+test_interrupted_build_resumes_without_reencoding_completed_text (test_checkpoint.CheckpointTests.test_interrupted_build_resumes_without_reencoding_completed_text) ... ok
+test_api_only_returns_trace_when_requested (test_diagnostics.DiagnosticsTests.test_api_only_returns_trace_when_requested) ... ok
+test_filtered_target_explains_failed_constraint (test_diagnostics.DiagnosticsTests.test_filtered_target_explains_failed_constraint) ... ok
+test_inspector_distinguishes_candidate_limit_and_missing_track (test_diagnostics.DiagnosticsTests.test_inspector_distinguishes_candidate_limit_and_missing_track) ... ok
+test_trace_preserves_results_and_contributions_sum_to_scores (test_diagnostics.DiagnosticsTests.test_trace_preserves_results_and_contributions_sum_to_scores) ... ok
+test_artist_collaboration (test_elasticsearch.ElasticsearchTests.test_artist_collaboration) ... skipped 'Set MUSIC_IR_TEST_ES=1 setelah indeks Elasticsearch dibuat'
+test_corpus_mismatch_is_rejected (test_elasticsearch.ElasticsearchTests.test_corpus_mismatch_is_rejected) ... skipped 'Set MUSIC_IR_TEST_ES=1 setelah indeks Elasticsearch dibuat'
+test_index_has_entire_corpus (test_elasticsearch.ElasticsearchTests.test_index_has_entire_corpus) ... skipped 'Set MUSIC_IR_TEST_ES=1 setelah indeks Elasticsearch dibuat'
+test_lyrics_fragment (test_elasticsearch.ElasticsearchTests.test_lyrics_fragment) ... skipped 'Set MUSIC_IR_TEST_ES=1 setelah indeks Elasticsearch dibuat'
+test_title_and_case (test_elasticsearch.ElasticsearchTests.test_title_and_case) ... skipped 'Set MUSIC_IR_TEST_ES=1 setelah indeks Elasticsearch dibuat'
+test_approximate_title_is_not_a_global_lyric_rewrite (test_intents.IntentTests.test_approximate_title_is_not_a_global_lyric_rewrite) ... ok
+test_artist_matches_whole_credit_not_partial_name (test_intents.IntentTests.test_artist_matches_whole_credit_not_partial_name) ... ok
+test_breakup_facet_separates_generic_romance_into_related_results (test_intents.IntentTests.test_breakup_facet_separates_generic_romance_into_related_results) ... ok
+test_comma_inside_artist_name_is_matched_in_collaborations (test_intents.IntentTests.test_comma_inside_artist_name_is_matched_in_collaborations) ... ok
+test_exact_lyric_evidence_wins_over_an_approximate_title_guess (test_intents.IntentTests.test_exact_lyric_evidence_wins_over_an_approximate_title_guess) ... ok
+test_exact_title_keeps_title_type_even_when_also_a_lyric (test_intents.IntentTests.test_exact_title_keeps_title_type_even_when_also_a_lyric) ... ok
+test_fuzzy_title_does_not_accept_multiple_changed_words (test_intents.IntentTests.test_fuzzy_title_does_not_accept_multiple_changed_words) ... ok
+test_genre_uses_playlist_label_and_audio_constraints (test_intents.IntentTests.test_genre_uses_playlist_label_and_audio_constraints) ... ok
+test_lyric_results_separate_verified_hits_from_similar_songs (test_intents.IntentTests.test_lyric_results_separate_verified_hits_from_similar_songs) ... ok
+test_passage_failure_is_explicit_without_breaking_retrieval (test_intents.IntentTests.test_passage_failure_is_explicit_without_breaking_retrieval) ... ok
+test_passage_signal_changes_theme_order_and_is_fully_explained (test_intents.IntentTests.test_passage_signal_changes_theme_order_and_is_fully_explained) ... ok
+test_real_corpus_metadata_regressions (test_intents.IntentTests.test_real_corpus_metadata_regressions) ... ok
+test_unknown_explicit_artist_and_genre_return_no_unrelated_filler (test_intents.IntentTests.test_unknown_explicit_artist_and_genre_return_no_unrelated_filler) ... ok
+test_cache_reuses_content_and_invalidates_model_and_lyric_changes (test_intents.PassageTests.test_cache_reuses_content_and_invalidates_model_and_lyric_changes) ... ok
+test_chunks_preserve_source_and_cover_the_end (test_intents.PassageTests.test_chunks_preserve_source_and_cover_the_end) ... ok
+test_contractions_punctuation_and_line_breaks_are_normalized (test_lyrics.LyricTests.test_contractions_punctuation_and_line_breaks_are_normalized) ... ok
+test_disconnected_words_do_not_count_as_a_lyric_phrase (test_lyrics.LyricTests.test_disconnected_words_do_not_count_as_a_lyric_phrase) ... ok
+test_evidenced_track_is_retained_with_a_tiny_candidate_budget (test_lyrics.LyricTests.test_evidenced_track_is_retained_with_a_tiny_candidate_budget) ... ok
+test_experiment_modes_keep_their_original_ranking (test_lyrics.LyricTests.test_experiment_modes_keep_their_original_ranking) ... ok
+test_lyric_priority_does_not_bypass_audio_constraints (test_lyrics.LyricTests.test_lyric_priority_does_not_bypass_audio_constraints) ... ok
+test_misremembered_words_return_the_track_with_matching_lyric (test_lyrics.LyricTests.test_misremembered_words_return_the_track_with_matching_lyric) ... ok
+test_no_evidence_is_reported_without_claiming_a_lyric_match (test_lyrics.LyricTests.test_no_evidence_is_reported_without_claiming_a_lyric_match) ... ok
+test_quoted_audio_words_are_literal (test_lyrics.LyricTests.test_quoted_audio_words_are_literal) ... ok
+test_transposed_character_typo_is_bounded (test_lyrics.LyricTests.test_transposed_character_typo_is_bounded) ... ok
+test_theme_fallback_stays_explicit_when_semantic_is_missing (test_lyrics.QueryPlanTests.test_theme_fallback_stays_explicit_when_semantic_is_missing) ... ok
+test_theme_ranking_uses_semantic_signal_instead_of_metadata_overlap (test_lyrics.QueryPlanTests.test_theme_ranking_uses_semantic_signal_instead_of_metadata_overlap) ... ok
+test_theme_wrappers_and_moods_are_focused_without_audio_inference (test_lyrics.QueryPlanTests.test_theme_wrappers_and_moods_are_focused_without_audio_inference) ... ok
+test_users_bruno_mars_fragment_works_without_a_semantic_encoder (test_lyrics.UserCorpusRegressionTests.test_users_bruno_mars_fragment_works_without_a_semantic_encoder) ... ok
+test_api_validates_mood_basis (test_mood.MoodTests.test_api_validates_mood_basis) ... ok
+test_audio_filter_is_applied_before_candidate_budget (test_mood.MoodTests.test_audio_filter_is_applied_before_candidate_budget) ... ok
+test_audio_only_needs_no_encoder (test_mood.MoodTests.test_audio_only_needs_no_encoder) ... ok
+test_both_filters_cheerful_intense_and_missing_audio (test_mood.MoodTests.test_both_filters_cheerful_intense_and_missing_audio) ... ok
+test_experiments_unchanged_and_unsupported_scope_is_rejected (test_mood.MoodTests.test_experiments_unchanged_and_unsupported_scope_is_rejected) ... ok
+test_explicit_constraints_are_not_relaxed (test_mood.MoodTests.test_explicit_constraints_are_not_relaxed) ... ok
+test_lyrics_only_does_not_assume_audio_is_sad (test_mood.MoodTests.test_lyrics_only_does_not_assume_audio_is_sad) ... ok
+test_real_sugar_is_excluded_by_general_policy_without_a_blacklist (test_mood.MoodTests.test_real_sugar_is_excluded_by_general_policy_without_a_blacklist) ... ok
+test_sad_query_variants_share_meaning_and_mood (test_mood.MoodTests.test_sad_query_variants_share_meaning_and_mood) ... ok
+test_titles_and_quoted_lyrics_are_not_mood_requests (test_mood.MoodTests.test_titles_and_quoted_lyrics_are_not_mood_requests) ... ok
+test_exact_genre_match_has_constant_indicator_with_explicit_order (test_ranking_policy.RankingPolicyTests.test_exact_genre_match_has_constant_indicator_with_explicit_order) ... ok
+test_experimental_e5_keeps_its_previous_id_tie_break (test_ranking_policy.RankingPolicyTests.test_experimental_e5_keeps_its_previous_id_tie_break) ... ok
+test_filter_does_not_implicitly_prefer_higher_tempo (test_ranking_policy.RankingPolicyTests.test_filter_does_not_implicitly_prefer_higher_tempo) ... ok
+test_hard_constraint_scores_are_eligibility_and_order_by_popularity (test_ranking_policy.RankingPolicyTests.test_hard_constraint_scores_are_eligibility_and_order_by_popularity) ... ok
+test_latest_real_cases_keep_all_constraints_and_trace_sums (test_ranking_policy.RankingPolicyTests.test_latest_real_cases_keep_all_constraints_and_trace_sums) ... ok
+test_popularity_selection_happens_before_candidate_budget (test_ranking_policy.RankingPolicyTests.test_popularity_selection_happens_before_candidate_budget) ... ok
+test_api_validation_and_semantic_unavailable (test_search.CorpusTests.test_api_validation_and_semantic_unavailable) ... ok
+test_supplied_dataset (test_search.CorpusTests.test_supplied_dataset) ... ok
+test_api_defaults_to_auto_and_reports_fallback (test_search.SearchTests.test_api_defaults_to_auto_and_reports_fallback) ... ok
+test_api_startup_does_not_require_encoder_loading (test_search.SearchTests.test_api_startup_does_not_require_encoder_loading) ... ok
+test_audio_boundary_and_missing (test_search.SearchTests.test_audio_boundary_and_missing) ... ok
+test_audio_only_needs_no_semantic_model (test_search.SearchTests.test_audio_only_needs_no_semantic_model) ... ok
+test_cosine_only_configuration_can_fallback (test_search.SearchTests.test_cosine_only_configuration_can_fallback) ... ok
+test_default_pipeline_matches_e5_with_semantic (test_search.SearchTests.test_default_pipeline_matches_e5_with_semantic) ... ok
+test_default_pipeline_retrieves_meaning_without_word_matches (test_search.SearchTests.test_default_pipeline_retrieves_meaning_without_word_matches) ... ok
+test_e5_equals_e4_without_audio (test_search.SearchTests.test_e5_equals_e4_without_audio) ... ok
+test_evaluation_runner_on_reviewed_fixture (test_search.SearchTests.test_evaluation_runner_on_reviewed_fixture) ... ok
+test_invalid_query (test_search.SearchTests.test_invalid_query) ... ok
+test_metrics_known_ranking (test_search.SearchTests.test_metrics_known_ranking) ... ok
+test_missing_semantic_falls_back_with_renormalized_weights (test_search.SearchTests.test_missing_semantic_falls_back_with_renormalized_weights) ... ok
+test_missing_semantic_keeps_audio_constraints_and_audio_only_path (test_search.SearchTests.test_missing_semantic_keeps_audio_constraints_and_audio_only_path) ... ok
+test_negation (test_search.SearchTests.test_negation) ... ok
+test_no_lyrics_still_searchable (test_search.SearchTests.test_no_lyrics_still_searchable) ... ok
+test_percentile_ties_and_constant_fields (test_search.SearchTests.test_percentile_ties_and_constant_fields) ... ok
+test_prepare_merge_without_discarding_versions (test_search.SearchTests.test_prepare_merge_without_discarding_versions) ... ok
+test_same_candidates_e3_e4 (test_search.SearchTests.test_same_candidates_e3_e4) ... ok
+test_semantic_failures_fallback_only_in_auto (test_search.SearchTests.test_semantic_failures_fallback_only_in_auto) ... ok
+test_soft_audio_prefers_high_energy (test_search.SearchTests.test_soft_audio_prefers_high_energy) ... ok
+test_test_and_dev_groups_must_not_overlap (test_search.SearchTests.test_test_and_dev_groups_must_not_overlap) ... ok
+test_text_candidates_obey_audio_constraint (test_search.SearchTests.test_text_candidates_obey_audio_constraint) ... ok
+test_title_case_unicode_and_collaboration (test_search.SearchTests.test_title_case_unicode_and_collaboration) ... ok
+test_tuning_uses_dev_and_keeps_main_config (test_search.SearchTests.test_tuning_uses_dev_and_keeps_main_config) ... ok
+
+----------------------------------------------------------------------
+Ran 93 tests in 6.304s
+
+OK (skipped=5)
+
+
+RECORD frontend_build.json
+{"command": ["npm.cmd", "run", "build"], "cwd": "D:\\CODINGGG\\Music IR\\frontend", "started_at": "2026-11-22T16:28:37.272753+07:00", "duration_seconds": 3.1109506000066176, "exit_code": 0, "ended_at": "2026-11-22T16:28:40.383704+07:00", "start_time_method": "reconstructed from completion timestamp minus measured perf_counter duration; original collector mislabeled end as start"}
+STDOUT
+
+> music-ir-ui@1.0.0 build
+> tsc --noEmit && vite build
+
+vite v8.3.8 building client environment for production...
+transforming...
+✓ 2095 modules transformed.
+rendering chunks...
+computing gzip size...
+dist/index.html                   0.65 kB │ gzip:  0.40 kB
+dist/assets/index-WqvNyuNC.css   54.08 kB │ gzip: 11.54 kB
+dist/assets/index-C0h7DZoQ.js   300.26 kB │ gzip: 92.01 kB
+
+✓ built in 927ms
+
+STDERR
+
+
+RECORD frontend_tests.json
+{"command": ["npm.cmd", "test", "--", "--output=D:\\CODINGGG\\Music IR\\audit_music_ir_20261122T162521_WIB\\evidence\\playwright_results"], "cwd": "D:\\CODINGGG\\Music IR\\frontend", "started_at": "2026-11-22T16:32:01.086097+07:00", "duration_seconds": 31.892151900043245, "exit_code": 0, "ended_at": "2026-11-22T16:32:32.978249+07:00", "start_time_method": "reconstructed from completion timestamp minus measured perf_counter duration; original collector mislabeled end as start"}
+STDOUT
+
+> music-ir-ui@1.0.0 test
+> playwright test --output=D:\CODINGGG\Music IR\audit_music_ir_20261122T162521_WIB\evidence\playwright_results
+
+
+Running 15 tests using 2 workers
+
+  ok  2 tests\app.spec.ts:25:1 › home displays real metadata, artwork, and working genre navigation (6.7s)
+  ok  1 tests\app.spec.ts:39:1 › search sends AUTO and opens song details and lyrics (6.9s)
+  ok  3 tests\app.spec.ts:52:1 › liked songs persist across page reload (5.7s)
+  ok  4 tests\app.spec.ts:64:1 › create playlist, add a song, and reopen stored playlist (6.4s)
+  ok  5 tests\app.spec.ts:80:1 › backend errors can be retried and unsupported backend is explained (3.2s)
+  ok  6 tests\app.spec.ts:92:1 › settings select an explicit experiment without changing AUTO default (2.9s)
+  ok  7 tests\app.spec.ts:104:1 › Spotify player uses the selected track and has a working close control (3.2s)
+  ok  8 tests\app.spec.ts:113:1 › mobile layout fits the viewport and supports library and search (3.3s)
+  ok 10 tests\intents.spec.ts:29:1 › genre results explain playlist labels and show the catalog search type (1.5s)
+  ok  9 tests\intents.spec.ts:3:1 › verified lyric hits and related tracks are separate and both remain playable (1.9s)
+  ok 11 tests\research.spec.ts:60:1 › diagnostics are opt-in, inspect missing targets, and export the full trace (2.2s)
+  ok 12 tests\mood.spec.ts:3:1 › mood scope changes the results and resets for a new title search (2.5s)
+  ok 14 tests\research.spec.ts:106:1 › benchmark is reachable from settings and fits a mobile viewport (2.2s)
+  ok 13 tests\research.spec.ts:83:1 › benchmark has no automatic grades and human reviews persist after reload (3.9s)
+  ok 15 tests\score-policy.spec.ts:4:1 › filter audit explains constant scores and exports the actual order policy (1.8s)
+
+  15 passed (30.1s)
+
+STDERR
+(node:16180) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+(node:28664) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+
+
+RECORD latency_execution.json
+{"command": ["D:\\CODINGGG\\Music IR\\.venv\\Scripts\\python.exe", "D:\\CODINGGG\\Music IR\\audit_music_ir_20261122T162521_WIB\\audit_search.py", "latency"], "cwd": "D:\\CODINGGG\\Music IR", "started_at": "2026-11-22T16:33:41.859480+07:00", "duration_seconds": 74.59174709999934, "exit_code": 0, "ended_at": "2026-11-22T16:34:56.451227+07:00", "start_time_method": "reconstructed from completion timestamp minus measured perf_counter duration; original collector mislabeled end as start"}
+STDOUT
+warmup E4
+warmup E2
+warmup E3
+warmup E5
+warmup E1
+warmup AUTO
+latency 1 / 180
+latency 19 / 180
+latency 37 / 180
+latency 55 / 180
+latency 73 / 180
+latency 91 / 180
+latency 109 / 180
+latency 127 / 180
+latency 145 / 180
+latency 163 / 180
+
+STDERR
+
+
+RECORD annotation_execution.json
+{"command": ["D:\\CODINGGG\\Music IR\\.venv\\Scripts\\python.exe", "D:\\CODINGGG\\Music IR\\audit_music_ir_20261122T162521_WIB\\audit_search.py", "annotation"], "cwd": "D:\\CODINGGG\\Music IR", "started_at": "2026-11-22T16:35:43.339767+07:00", "duration_seconds": 101.07817270001397, "exit_code": 0, "ended_at": "2026-11-22T16:37:24.417940+07:00", "start_time_method": "reconstructed from completion timestamp minus measured perf_counter duration; original collector mislabeled end as start"}
+STDOUT
+annotation title-001 23 errors 0
+annotation artist-001 12 errors 0
+annotation lyrics-001 21 errors 0
+annotation title-009 21 errors 0
+annotation artist-009 10 errors 0
+annotation lyrics-009 27 errors 0
+annotation semantic-001 22 errors 0
+annotation semantic-009 15 errors 0
+annotation audio-001 20 errors 0
+annotation audio-009 20 errors 0
+
+STDERR
+
+
+RECORD live_ui.json
+{"command": ["node", "D:\\CODINGGG\\Music IR\\audit_music_ir_20261122T162521_WIB\\audit_ui.cjs"], "cwd": "D:\\CODINGGG\\Music IR", "started_at": "2026-11-22T16:38:10.774840+07:00", "ended_at": "2026-11-22T16:38:14.338688+07:00", "duration_seconds": 3.5638761000009254, "exit_code": 0}
+STDOUT
+{"screenshots":4,"real_backend":true,"mocked_routes":false,"page_errors":[]}
+
+STDERR
+
+
+RECORD api_observed_teardown.json
+{"command": ["taskkill", "/PID", "29500", "/T", "/F"], "cwd": "D:\\CODINGGG\\Music IR", "started_at": "2026-11-22T16:48:32.704573+07:00", "ended_at": "2026-11-22T16:48:32.748735+07:00", "duration_seconds": 0.04418440000154078, "exit_code": 1}
+STDOUT
+
+STDERR
+ERROR: Access denied
+
+
+
+RECORD ui_teardown.json
+{"command": ["taskkill", "/PID", "34272", "/T", "/F"], "cwd": "D:\\CODINGGG\\Music IR", "started_at": "2026-11-22T16:48:32.750062+07:00", "ended_at": "2026-11-22T16:48:32.785282+07:00", "duration_seconds": 0.03524439997272566, "exit_code": 1}
+STDOUT
+
+STDERR
+ERROR: Access denied
+
+
+
+RECORD services_teardown_powershell.json
+{"command": ["powershell.exe", "-NoProfile", "-Command", "foreach ($taskAuditPid in @(32676,28504)) { $taskAuditProcess = Get-Process -Id $taskAuditPid -ErrorAction SilentlyContinue; if ($taskAuditProcess) { Stop-Process -Id $taskAuditPid -ErrorAction Stop; Write-Output ('Stopped owned audit service ' + $taskAuditPid) } else { Write-Output ('Owned audit service already exited ' + $taskAuditPid) } }"], "cwd": "D:\\CODINGGG\\Music IR", "started_at": "2026-11-22T16:49:08.345518+07:00", "ended_at": "2026-11-22T16:49:08.704330+07:00", "duration_seconds": 0.35885449999477714, "exit_code": 0}
+STDOUT
+Owned audit service already exited 32676
+Stopped owned audit service 28504
+
+STDERR
+
+
+RECORD git_status_after.json
+{"command": ["git", "status", "--porcelain=v1", "--untracked-files=normal"], "cwd": "D:\\CODINGGG\\Music IR", "started_at": "2026-11-22T16:49:09.702924+07:00", "ended_at": "2026-11-22T16:49:09.741734+07:00", "duration_seconds": 0.03883909998694435, "exit_code": 0}
+STDOUT
+?? audit_music_ir_20261122T162521_WIB/
+
+STDERR
+
+
+RECORD git_diff_after.json
+{"command": ["git", "diff", "--exit-code"], "cwd": "D:\\CODINGGG\\Music IR", "started_at": "2026-11-22T16:49:09.742496+07:00", "ended_at": "2026-11-22T16:49:09.779268+07:00", "duration_seconds": 0.036791899998206645, "exit_code": 0}
+STDOUT
+
+STDERR
+
+
+RECORD git_cached_diff_after.json
+{"command": ["git", "diff", "--cached", "--exit-code"], "cwd": "D:\\CODINGGG\\Music IR", "started_at": "2026-11-22T16:49:09.780019+07:00", "ended_at": "2026-11-22T16:49:09.814021+07:00", "duration_seconds": 0.03402249998180196, "exit_code": 0}
+STDOUT
+
+STDERR
+
+
+ADDITIONAL PROCEDURES
+audit_search.py plan; audit_search.py cases: frozen 51-case plan and all actual HTTP responses/timings in cases.jsonl and search_traces.jsonl. Whole script duration not separately measured.
+audit_verify.py fixtures: manual metric fixture; injected evaluator failure; additional case assertions and eight independent score calculations. Results in corresponding JSON files.
+audit_tokenizer.py: local pinned tokenizer across 1437 serialized docs, max content tokens2217, would chunk0. Actual output captured in tokenization_audit.json; no corpus embedding build.
+audit_supplement.py: actual lock/installed comparison, query independence inspection, read_benchmark eligibility rejection, cache config identity.

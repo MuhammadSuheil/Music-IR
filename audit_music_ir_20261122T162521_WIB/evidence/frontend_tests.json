@@ -1,0 +1,16 @@
+{
+  "command": [
+    "npm.cmd",
+    "test",
+    "--",
+    "--output=D:\\CODINGGG\\Music IR\\audit_music_ir_20261122T162521_WIB\\evidence\\playwright_results"
+  ],
+  "cwd": "D:\\CODINGGG\\Music IR\\frontend",
+  "started_at": "2026-11-22T16:32:01.086097+07:00",
+  "duration_seconds": 31.892151900043245,
+  "exit_code": 0,
+  "stdout": "\n> music-ir-ui@1.0.0 test\n> playwright test --output=D:\\CODINGGG\\Music IR\\audit_music_ir_20261122T162521_WIB\\evidence\\playwright_results\n\n\nRunning 15 tests using 2 workers\n\n  ok  2 tests\\app.spec.ts:25:1 › home displays real metadata, artwork, and working genre navigation (6.7s)\n  ok  1 tests\\app.spec.ts:39:1 › search sends AUTO and opens song details and lyrics (6.9s)\n  ok  3 tests\\app.spec.ts:52:1 › liked songs persist across page reload (5.7s)\n  ok  4 tests\\app.spec.ts:64:1 › create playlist, add a song, and reopen stored playlist (6.4s)\n  ok  5 tests\\app.spec.ts:80:1 › backend errors can be retried and unsupported backend is explained (3.2s)\n  ok  6 tests\\app.spec.ts:92:1 › settings select an explicit experiment without changing AUTO default (2.9s)\n  ok  7 tests\\app.spec.ts:104:1 › Spotify player uses the selected track and has a working close control (3.2s)\n  ok  8 tests\\app.spec.ts:113:1 › mobile layout fits the viewport and supports library and search (3.3s)\n  ok 10 tests\\intents.spec.ts:29:1 › genre results explain playlist labels and show the catalog search type (1.5s)\n  ok  9 tests\\intents.spec.ts:3:1 › verified lyric hits and related tracks are separate and both remain playable (1.9s)\n  ok 11 tests\\research.spec.ts:60:1 › diagnostics are opt-in, inspect missing targets, and export the full trace (2.2s)\n  ok 12 tests\\mood.spec.ts:3:1 › mood scope changes the results and resets for a new title search (2.5s)\n  ok 14 tests\\research.spec.ts:106:1 › benchmark is reachable from settings and fits a mobile viewport (2.2s)\n  ok 13 tests\\research.spec.ts:83:1 › benchmark has no automatic grades and human reviews persist after reload (3.9s)\n  ok 15 tests\\score-policy.spec.ts:4:1 › filter audit explains constant scores and exports the actual order policy (1.8s)\n\n  15 passed (30.1s)\n",
+  "stderr": "(node:16180) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.\n(Use `node --trace-warnings ...` to show where the warning was created)\n(node:28664) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.\n(Use `node --trace-warnings ...` to show where the warning was created)\n",
+  "ended_at": "2026-11-22T16:32:32.978249+07:00",
+  "start_time_method": "reconstructed from completion timestamp minus measured perf_counter duration; original collector mislabeled end as start"
+}

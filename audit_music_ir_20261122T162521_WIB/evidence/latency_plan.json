@@ -1,0 +1,52 @@
+{
+  "frozen_before_run": true,
+  "queries": [
+    {
+      "query_id": "L-title",
+      "query": "Die With A Smile",
+      "category": "title"
+    },
+    {
+      "query_id": "L-artist",
+      "query": "Bruno Mars",
+      "category": "artist"
+    },
+    {
+      "query_id": "L-lyrics",
+      "query": "I just woke up from a dream",
+      "category": "lyrics"
+    },
+    {
+      "query_id": "L-theme",
+      "query": "lagu bermakna cinta",
+      "category": "semantic"
+    },
+    {
+      "query_id": "L-audio",
+      "query": "tempo > 120 BPM",
+      "category": "audio"
+    },
+    {
+      "query_id": "L-mixed",
+      "query": "leaving memories dengan energi rendah",
+      "category": "mixed"
+    }
+  ],
+  "modes": [
+    "E1",
+    "E2",
+    "E3",
+    "E4",
+    "E5",
+    "AUTO"
+  ],
+  "warmups_per_mode": 10,
+  "repeats_per_query_mode": 5,
+  "seed": 42,
+  "top_k": 30,
+  "trace": true,
+  "active_requests": 1,
+  "boundary": "perf_counter immediately before urllib.urlopen until response bytes fully read; excludes JSON decode and file writing",
+  "engine_boundary": "response latency_ms excludes explicit semantic warmup/model loading; excludes diagnostics, JSON serialization, network; includes formatting reasons",
+  "cache_policy": "existing user caches retained; no response cache in code; passage cache grows normally; no controlled cold cache; warmups excluded from statistics"
+}

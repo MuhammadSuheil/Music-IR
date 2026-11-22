@@ -1,0 +1,16 @@
+{
+  "command": [
+    "git",
+    "status",
+    "--porcelain=v1",
+    "--untracked-files=all"
+  ],
+  "cwd": "D:\\CODINGGG\\Music IR",
+  "started_at": "2026-11-22T16:28:01.648100+07:00",
+  "duration_seconds": 0.058011600049212575,
+  "exit_code": 0,
+  "stdout": "?? audit_music_ir_20261122T162521_WIB/audit_collect.py\n?? audit_music_ir_20261122T162521_WIB/evidence/git_head.json\n?? audit_music_ir_20261122T162521_WIB/evidence/verification_log.txt\n",
+  "stderr": "",
+  "ended_at": "2026-11-22T16:28:01.706112+07:00",
+  "start_time_method": "reconstructed from completion timestamp minus measured perf_counter duration; original collector mislabeled end as start"
+}

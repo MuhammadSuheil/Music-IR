@@ -1,0 +1,14 @@
+{
+  "command": [
+    "node",
+    "--version"
+  ],
+  "cwd": "D:\\CODINGGG\\Music IR",
+  "started_at": "2026-11-22T16:28:07.380164+07:00",
+  "duration_seconds": 0.06737479998264462,
+  "exit_code": 0,
+  "stdout": "v24.15.0\n",
+  "stderr": "",
+  "ended_at": "2026-11-22T16:28:07.447539+07:00",
+  "start_time_method": "reconstructed from completion timestamp minus measured perf_counter duration; original collector mislabeled end as start"
+}

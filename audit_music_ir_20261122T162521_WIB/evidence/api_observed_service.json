@@ -1,0 +1,11 @@
+{
+  "command": [
+    "D:\\CODINGGG\\Music IR\\.venv\\Scripts\\python.exe",
+    "D:\\CODINGGG\\Music IR\\audit_music_ir_20261122T162521_WIB\\audit_live_api.py"
+  ],
+  "cwd": "D:\\CODINGGG\\Music IR",
+  "pid": 29500,
+  "started_epoch": 1795339992.791787,
+  "backend_env": null,
+  "reload": false
+}
